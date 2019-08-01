@@ -157,7 +157,6 @@ nav li a:hover{
 #intro{
     margin: auto;
     max-width: 1000px;
-    padding-bottom: 50px;
 }
 
 img {
@@ -240,7 +239,7 @@ img {
     #info{
         display:flex;
         max-width:1000px;
-        margin:auto;
+        margin: 25px auto;
     }
     
     #hours{
