@@ -47,11 +47,13 @@ h1{
 
 h2{
     text-decoration: underline;
-    font-size: 32px;
+    font-size: 28px;
+    font-family: 'Kanit';
 }
 
 h3{
-    font-size: 25px;
+    font-size: 22px;
+    font-family: 'Kanit';
 }
 
 .sidenav {
@@ -175,7 +177,6 @@ img {
     text-align: center;
     padding-bottom: 20px;
     color: #700;
-    font-family: 'Kanit';
 }
 
 
@@ -208,7 +209,7 @@ img {
     }
     
     #logo img{
-        max-width: 250px;
+        max-width: 200px;
         margin: auto 20px;
     }
 }
