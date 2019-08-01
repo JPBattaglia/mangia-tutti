@@ -4,7 +4,7 @@ html{
 }
 
 .animated {
-            background-color: tan;
+            background-color: #e7b779;
             background-position: left top;
             padding-top:5px;
             margin-bottom:30px;
@@ -28,10 +28,8 @@ html{
          }
 
 body{
-    background: url(stucco.jpg);
-    background-repeat: repeat;
-    background-size: 150px;
     margin: 20px;
+    background:url(stucco.png);
 }
 
 h1{
@@ -169,8 +167,6 @@ img {
 
 #intro img{
     width: 1000px;
-    border: 3px solid #900;
-    border-radius: 30px;
     max-width: 100%;
     margin: auto;
 }
@@ -202,7 +198,7 @@ img {
     }
     
     #logo{
-        font-size: 15px;
+        font-size: 10px;
         color: #800;
         font-style: italic;
         font-weight: bolder;
