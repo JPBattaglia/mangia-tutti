@@ -30,7 +30,7 @@ html{
 body{
     background: url(stucco.jpg);
     background-repeat: repeat;
-    background-size: 200px;
+    background-size: 250px;
     margin: 20px;
 }
 
@@ -153,13 +153,6 @@ nav li a:hover{
        1px 1px 0 darkred;
 }
 
-#logo{
-    color: #800;
-    font-style: italic;
-    font-weight: bolder;
-    font-size: 22px;
-}
-
 
 #intro{
     margin: auto;
@@ -210,12 +203,18 @@ img {
     }
     
     #logo{
-        font-size: 20px;
+        font-size: 18px;
+        color: #800;
+        font-style: italic;
+        font-weight: bolder;
+        width: 350px;
+        margin: auto;
+        text-align: center;
     }
     
     #logo img{
-        max-width: 600px;
-        margin: 0 20px;
+        max-width: 800px;
+        margin: auto 20px;
     }
 }
 
@@ -225,12 +224,17 @@ img {
     }
     
     #logo{
-        margin:auto;
+        font-size: 20px;
+        color: #800;
+        font-style: italic;
+        font-weight: bolder;
+        margin: auto;
         text-align: center;
     }
     
     #logo img{
-        width: 30%;
+        margin: auto;
+        width: 35%;
     }
     
     #info{
