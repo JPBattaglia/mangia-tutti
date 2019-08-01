@@ -2,6 +2,8 @@
 
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">    
 	<meta property="og:title" content="Batt Bros" />
 	<meta property="og:image:type" content="image/png" />
 	<meta property="og:image:width" content="400" />
@@ -22,6 +24,7 @@
     
     <body id="animated-example" class="animated fadeOut">
         
+
         <script>
             window.addEventListener("beforeunload", function () {
             document.body.classList.add("animate-out");
@@ -61,31 +64,51 @@
         <div id="logo">
             
             <img src="MTLogo.png"><br>
-            Classic Italian Cuisine Since 1997
-            
+            Classic Italian Cuisine Since 1997          
         </div>
         
         <div id="intro"> 
-            <h1>Benvenuti a Mangia Tutti</h1>
-            <img draggable="false" src="Family.png"><br>
+                <h1>Benvenuti a Mangia Tutti</h1>
+                <img class="mySlides w3-animate-fading" draggable="false" src="Family.png">
+                <img class="mySlides w3-animate-fading" draggable="false" src="Mare.png">
+                <img class="mySlides w3-animate-fading" draggable="false" src="Tuna.png">
+                <img class="mySlides w3-animate-fading" draggable="false" src="Front.png">
+            <br>
         </div>
         
-        <div id="info">
-            <div id="location">
-                <h2>Location</h2>
-                <h3>635 Clay St, San Francisco, CA 94111 Financial District</h3>
-            </div>
-            
-            <div id="reservations">
-                <h2>Reservations</h2><br>
-                <a id="reservation" href="https://www.opentable.com/mangia-tutti?rid=4057">Book Table</a><br><br><h3>Phone:<br>(415) 788-2088</h3>
-            </div>
+        <script>
+            var myIndex = 0;
+            carousel();
 
-            <div id="hours">
-                <h2>Hours</h2>
-                <h3>Mon-Fri 11:30 - 10:00<br>
-                Saturday 5:30 - 10:30<br>Sunday - Closed</h3>
-            </div>
+            function carousel() {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              myIndex++;
+              if (myIndex > x.length) {myIndex = 1}    
+              x[myIndex-1].style.display = "block";  
+              setTimeout(carousel, 9000);    
+            }
+        </script>
+
+        <div id="info">
+                <div id="location">
+                    <h2>Location</h2>
+                    <h3>635 Clay St, San Francisco, CA 94111 Financial District</h3>
+                </div>
+
+                <div id="reservations">
+                    <h2>Reservations</h2><br>
+                    <a id="reservation" href="https://www.opentable.com/mangia-tutti?rid=4057">Book Table</a><br><br><h3>Phone:<br>(415) 788-2088</h3>
+                </div>
+
+                <div id="hours">
+                    <h2>Hours</h2>
+                    <h3>Mon-Fri 11:30 - 10:00<br>
+                    Saturday 5:30 - 10:30<br>Sunday - Closed</h3>
+                </div>
         </div>
         
         <footer>
