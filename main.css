@@ -76,13 +76,13 @@ h4{
     overflow-x: hidden;
     transition: .8s;
     padding-top: 150px;
-    font-family: 'Orbitron';
+    font-family: 'Quintessential';
     font-weight: bold;
 }
 
 .sidenav a {
     padding: 35px 27px;
-    font-size: 25px;
+    font-size: 32px;
     text-align: center;
     color: #090;
     display: block;
@@ -131,7 +131,7 @@ nav{
 
 nav li {
     font-family: 'Kanit';
-    font-size: 32px;
+    font-size: 28px;
     font-weight:bolder;
     display:inline;
     text-align: center;
@@ -294,18 +294,21 @@ img {
         flex: 3;
         text-align: center;
         max-width: 250px;
+        margin: auto;
     }
     
     #reservations{
         flex: 2;
         text-align: center;
         max-width: 350px;
+        margin: auto;
     }
     
     #location{ 
         text-align: center;
         flex: 1;
-        max-width: 350px;
+        max-width: 250px;
+        margin: auto;
     }
     
     
@@ -328,6 +331,123 @@ img {
 
     }
 }
+
+textarea, input{
+    font-family: 'federant', serif;
+    color:red;
+    text-align: center;
+    font-size: 18px;
+    font-weight:bolder;
+    max-width: 500px;
+}
+
+select{
+    font-family: 'federant', serif;
+    color:red;
+    text-align: center;
+    font-size: 18px;
+    font-weight:bolder;
+    max-width: 50%;
+    box-sizing: border-box;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: darkseagreen;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: red;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: red;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    margin: auto;
+    text-align: center;
+    width: 90%; /* Full width */
+    padding: 8px; /* Some padding */  
+    border: 1.5px solid red; /* Gray border */
+    border-radius: 20px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 10px; /* Add a top margin */
+    margin-bottom: 30px; /* Bottom margin */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    margin: auto;
+    text-align: center;
+    font-size: 22px;
+    background-color: darkcyan;
+    color: #ffdead;
+    padding: 8px 30px;
+    border: 1px solid tan;
+    cursor: pointer;
+    border-radius: 25px;
+    box-shadow: 0px 5px 25px black;
+    text-shadow:
+       1px 1px 0 black,
+      -1px -1px 0 black,  
+       1px -1px 0 black,
+      -1px 1px 0 black,
+       1px 1px 0 black;
+    -webkit-transition: background-color 1s ease-out;
+    -moz-transition: background-color 1s ease-out;
+    -o-transition: background-color 1s ease-out;
+    transition: background-color 1s ease-out;
+}
+
+/* When moving the mouse over the submit button, add a blue color */
+input[type=submit]:hover {
+    margin: auto;
+    text-align: center;
+    border: 1px solid white;
+    background-color: red;
+    border-radius: 25px;
+    text-shadow:
+       1px 1px 0 black,
+      -1px -1px 0 black,  
+       1px -1px 0 black,
+      -1px 1px 0 black,
+       1px 1px 0 black;
+}
+
+/* Add a background color and some padding around the form */
+.container{
+    border-radius: 50px;
+    border: 10px double tan;
+    padding: 50px 0px;
+    background-color: #600;
+    width: 650px;
+    max-width: 95%;
+    margin: 50px auto;
+}
+
+#form {
+    padding:20px 0px 40px;
+    text-align: center;
+}
+
+label{
+    text-align: center;
+    font-size: 25px;
+    text-align: center;
+    font-family:'Quintessential', serif;
+    color:#ffdead;
+    list-style-type: none;
+    text-shadow:
+       1px 1px 0 #070,
+      -1px -1px 0 firebrick,  
+       1px -1px 0 firebrick,
+      -1px 1px 0 firebrick,
+       1px 1px 0 firebrick;
+}
+
 
 footer{
     margin-top: 20px;
