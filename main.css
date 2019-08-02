@@ -207,6 +207,7 @@ img {
         text-decoration: none;
         border: .5px solid #600;
         box-shadow: 2px 4px 8px #700;
+
     }
     
     #logo{
@@ -261,21 +262,18 @@ img {
     #hours{
         flex: 3;
         text-align: center;
-        margin: 0 30px;
         max-width: 250px;
     }
     
     #reservations{
         flex: 1;
         text-align: center;
-        margin: 0 30px;
-        max-width: 350px;
+        max-width: 450px;
     }
     
     #location{ 
         text-align: center;
         flex: 2;
-        margin: 0 30px;
         max-width: 250px;
     }
     
@@ -286,7 +284,7 @@ img {
     
     #reservation{
         color:#ffeecc;
-        padding: 10px 25px;
+        padding: 10px 20px;
         background: repeating-linear-gradient(to top, #500, #900, red 100%);
         width: 100px;
         border-radius: 30px;
@@ -295,6 +293,7 @@ img {
         text-decoration: none;
         border: .5px solid #800;
         box-shadow: 2px 4px 8px #700;
+
     }
 }
 
