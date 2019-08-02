@@ -30,6 +30,7 @@ html{
 body{
     margin: 20px;
     background:url(stucco.png);
+    background-attachment: fixed;
 }
 
 h1{
@@ -107,17 +108,12 @@ h4{
 }
 
 .sidenav .closebtn {
-    padding: 16px 18px 28px 22px;
+    padding: 20px 20px 28px 22px;
     position:absolute;
     top: 0px;
     right: 0px;
     font-size: 40px;
     text-decoration: none;
-}
-
-@media screen and (max-height: 450px) {
-.sidenav {padding-top: 15px;}
-.sidenav a {font-weight: bolder; font-size: 30px;}
 }
 
 .navicon {
@@ -190,9 +186,40 @@ img {
     color: #700;
 }
 
-
-
 @media (max-width: 849px){
+    nav{
+        display: none;
+    }
+    
+    #logo{
+        font-size: 18px;
+        color: #800;
+        font-style: italic;
+        font-weight: bolder;
+        width: 350px;
+        margin: auto;
+        text-align: center;
+    }
+    
+    #intro h1{
+        font-size: 38px;
+    }
+    
+    #reservation{
+        color:#ffeecc;
+        padding: 10px 25px;
+        background: repeating-linear-gradient(to top, #500, #900, red 100%);
+        width: 100px;
+        border-radius: 30px;
+        font-family: 'federant';
+        text-decoration: none;
+        border: .5px solid #600;
+        box-shadow: 2px 4px 8px #700;
+
+    }
+}
+
+@media (max-width: 600px){
     nav{
         display: none;
     }
@@ -208,6 +235,10 @@ img {
         border: .5px solid #600;
         box-shadow: 2px 4px 8px #700;
 
+    }
+    
+    #intro h1{
+        font-size: 22px;
     }
     
     #logo{
@@ -266,20 +297,21 @@ img {
     }
     
     #reservations{
-        flex: 1;
+        flex: 2;
         text-align: center;
-        max-width: 450px;
+        max-width: 350px;
     }
     
     #location{ 
         text-align: center;
-        flex: 2;
-        max-width: 250px;
+        flex: 1;
+        max-width: 350px;
     }
     
     
     h1{
         font-size: 50px;
+        margin: 50px;
     }
     
     #reservation{
@@ -296,7 +328,6 @@ img {
 
     }
 }
-
 
 footer{
     margin-top: 20px;
