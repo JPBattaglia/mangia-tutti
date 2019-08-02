@@ -72,11 +72,13 @@ h4{
     z-index: 1;
     top: 0;
     right: 0;
-    background: repeating-linear-gradient(to right, #995c00, #ffd699, #995c00 100%);
+    background: url(column.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     overflow-x: hidden;
     transition: .8s;
     padding-top: 150px;
-    font-family: 'Quintessential';
+    font-family: 'federant';
     font-weight: bold;
 }
 
@@ -84,16 +86,16 @@ h4{
     padding: 35px 27px;
     font-size: 32px;
     text-align: center;
-    color: #090;
+    color: #ffdead;
     display: block;
     transition: 1s;
     max-width: 100%;
     text-shadow:
-       1px 1px 0 white,
-      -1px -1px 0 #040,  
-       1px -1px 0 #040,
-      -1px 1px 0 #040,
-       1px 1px 0 #040;
+       1px 1px 0 red,
+      -1px -1px 0 #800,  
+       1px -1px 0 #800,
+      -1px 1px 0 #800,
+       1px 1px 0 #800;
     text-decoration: none;
 }
 
