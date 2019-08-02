@@ -421,12 +421,12 @@ input[type=submit]:hover {
 .container{
     border-radius: 50px;
     border: 10px double tan;
-    padding: 50px 0px;
+    padding: 100px 0px;
     background: url(hiclipart.com-id_ioucp.png);
     background-size:100% 100%;
     background-repeat: no-repeat;
     background-color: #600;
-    width: 650px;
+    width: 850px;
     max-width: 95%;
     margin: 50px auto;
 }
