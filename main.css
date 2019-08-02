@@ -225,117 +225,123 @@ img {
     font-size: 18px;
     font-weight:bolder;
     max-width: 500px;
-}
+    }
 
-select{
-    font-family: 'federant', serif;
-    color:red;
+    select{
+        font-family: 'federant', serif;
+        color:red;
+        text-align: center;
+        font-size: 18px;
+        font-weight:bolder;
+        max-width: 50%;
+        box-sizing: border-box;
+    }
+
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: darkseagreen;
+        opacity: 1; /* Firefox */
+    }
+
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: red;
+    }
+
+    ::-ms-input-placeholder { /* Microsoft Edge */
+        color: red;
+    }
+
+    /* Style inputs with type="text", select elements and textareas */
+    input[type=text], select, textarea {
+        margin: auto;
+        text-align: center;
+        width: 90%; /* Full width */
+        padding: 8px; /* Some padding */  
+        border: 1.5px solid red; /* Gray border */
+        border-radius: 20px; /* Rounded borders */
+        box-sizing: border-box; /* Make sure that padding and width stays in place */
+        margin-top: 10px; /* Add a top margin */
+        margin-bottom: 30px; /* Bottom margin */
+        resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+    }
+
+    /* Style the submit button with a specific background color etc */
+    input[type=submit] {
+        margin: auto;
+        text-align: center;
+        font-size: 22px;
+        background-color: darkcyan;
+        color: #ffdead;
+        padding: 8px 30px;
+        border: 1px solid tan;
+        cursor: pointer;
+        border-radius: 25px;
+        box-shadow: 0px 5px 25px black;
+        text-shadow:
+           1px 1px 0 black,
+          -1px -1px 0 black,  
+           1px -1px 0 black,
+          -1px 1px 0 black,
+           1px 1px 0 black;
+        -webkit-transition: background-color 1s ease-out;
+        -moz-transition: background-color 1s ease-out;
+        -o-transition: background-color 1s ease-out;
+        transition: background-color 1s ease-out;
+    }
+
+    /* When moving the mouse over the submit button, add a blue color */
+    input[type=submit]:hover {
+        margin: auto;
+        text-align: center;
+        border: 1px solid white;
+        background-color: red;
+        border-radius: 25px;
+        text-shadow:
+           1px 1px 0 black,
+          -1px -1px 0 black,  
+           1px -1px 0 black,
+          -1px 1px 0 black,
+           1px 1px 0 black;
+    }
+
+    /* Add a background color and some padding around the form */
+    .container{
+        border-radius: 50px;
+        border: 10px double tan;
+        padding: 100px 0px;
+        background: url(hiclipart.png);
+        background-size:100% 100%;
+        background-repeat: no-repeat;
+        background-color: #600;
+        width: 850px;
+        max-width: 95%;
+        margin: 50px auto;
+    }
+
+    #form {
+        padding:20px 0px 40px;
+        text-align: center;
+    }
+
+    label{
+        text-align: center;
+        font-size: 25px;
+        text-align: center;
+        font-family:'Quintessential', serif;
+        color:#ffdead;
+        list-style-type: none;
+        text-shadow:
+           1px 1px 0 #070,
+          -1px -1px 0 firebrick,  
+           1px -1px 0 firebrick,
+          -1px 1px 0 firebrick,
+           1px 1px 0 firebrick;
+    }
+    footer{
+    margin-top: 20px;
     text-align: center;
-    font-size: 18px;
-    font-weight:bolder;
-    max-width: 50%;
-    box-sizing: border-box;
-}
-
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: darkseagreen;
-    opacity: 1; /* Firefox */
-}
-
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: red;
-}
-
-::-ms-input-placeholder { /* Microsoft Edge */
-    color: red;
-}
-
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-    margin: auto;
-    text-align: center;
-    width: 90%; /* Full width */
-    padding: 8px; /* Some padding */  
-    border: 1.5px solid red; /* Gray border */
-    border-radius: 20px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 10px; /* Add a top margin */
-    margin-bottom: 30px; /* Bottom margin */
-    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
-}
-
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-    margin: auto;
-    text-align: center;
-    font-size: 22px;
-    background-color: darkcyan;
-    color: #ffdead;
-    padding: 8px 30px;
-    border: 1px solid tan;
-    cursor: pointer;
-    border-radius: 25px;
-    box-shadow: 0px 5px 25px black;
-    text-shadow:
-       1px 1px 0 black,
-      -1px -1px 0 black,  
-       1px -1px 0 black,
-      -1px 1px 0 black,
-       1px 1px 0 black;
-    -webkit-transition: background-color 1s ease-out;
-    -moz-transition: background-color 1s ease-out;
-    -o-transition: background-color 1s ease-out;
-    transition: background-color 1s ease-out;
-}
-
-/* When moving the mouse over the submit button, add a blue color */
-input[type=submit]:hover {
-    margin: auto;
-    text-align: center;
-    border: 1px solid white;
-    background-color: red;
-    border-radius: 25px;
-    text-shadow:
-       1px 1px 0 black,
-      -1px -1px 0 black,  
-       1px -1px 0 black,
-      -1px 1px 0 black,
-       1px 1px 0 black;
-}
-
-/* Add a background color and some padding around the form */
-.container{
-    border-radius: 50px;
-    border: 10px double tan;
-    padding: 100px 0px;
-    background: url(hiclipart.png);
-    background-size:100% 100%;
-    background-repeat: no-repeat;
-    background-color: #600;
-    width: 850px;
-    max-width: 95%;
-    margin: 50px auto;
-}
-
-#form {
-    padding:20px 0px 40px;
-    text-align: center;
-}
-
-label{
-    text-align: center;
-    font-size: 25px;
-    text-align: center;
-    font-family:'Quintessential', serif;
-    color:#ffdead;
-    list-style-type: none;
-    text-shadow:
-       1px 1px 0 #070,
-      -1px -1px 0 firebrick,  
-       1px -1px 0 firebrick,
-      -1px 1px 0 firebrick,
-       1px 1px 0 firebrick;
-}
+    font-size: 20PX;
+    color: #800; 
+    }
 }
 
 @media (max-width: 600px){
@@ -383,115 +389,122 @@ label{
         font-size: 20px;
     }
 
-select{
-    font-family: 'federant', serif;
-    color:red;
+    select{
+        font-family: 'federant', serif;
+        color:red;
+        text-align: center;
+        font-size: 18px;
+        font-weight:bolder;
+        max-width: 50%;
+        box-sizing: border-box;
+    }
+
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: darkseagreen;
+        opacity: 1; /* Firefox */
+    }
+
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: red;
+    }
+
+    ::-ms-input-placeholder { /* Microsoft Edge */
+        color: red;
+    }
+
+    /* Style inputs with type="text", select elements and textareas */
+    input[type=text], select, textarea {
+        margin: auto;
+        text-align: center;
+        width: 80%; /* Full width */
+        padding: 8px; /* Some padding */  
+        border: 1.5px solid red; /* Gray border */
+        border-radius: 20px; /* Rounded borders */
+        box-sizing: border-box; /* Make sure that padding and width stays in place */
+        margin-top: 10px; /* Add a top margin */
+        margin-bottom: 10px; /* Bottom margin */
+        resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+    }
+
+    /* Style the submit button with a specific background color etc */
+    input[type=submit] {
+        margin: auto;
+        text-align: center;
+        font-size: 22px;
+        background-color: darkcyan;
+        color: #ffdead;
+        padding: 8px 30px;
+        border: 1px solid tan;
+        cursor: pointer;
+        border-radius: 25px;
+        box-shadow: 0px 5px 25px black;
+        text-shadow:
+           1px 1px 0 black,
+          -1px -1px 0 black,  
+           1px -1px 0 black,
+          -1px 1px 0 black,
+           1px 1px 0 black;
+        -webkit-transition: background-color 1s ease-out;
+        -moz-transition: background-color 1s ease-out;
+        -o-transition: background-color 1s ease-out;
+        transition: background-color 1s ease-out;
+    }
+
+    /* When moving the mouse over the submit button, add a blue color */
+    input[type=submit]:hover {
+        margin: auto;
+        text-align: center;
+        border: 1px solid white;
+        background-color: red;
+        border-radius: 25px;
+        text-shadow:
+           1px 1px 0 black,
+          -1px -1px 0 black,  
+           1px -1px 0 black,
+          -1px 1px 0 black,
+           1px 1px 0 black;
+    }
+
+    /* Add a background color and some padding around the form */
+    .container{
+        border-radius: 30px;
+        border: 10px double tan;
+        padding: 50px 0px;
+        background: url(hiclipart.png);
+        background-size:100% 100%;
+        background-repeat: no-repeat;
+        background-color: #600;
+        width: 850px;
+        max-width: 98%;
+        margin: auto;
+    }
+
+    #form {
+        padding:20px 0px 40px;
+        text-align: center;
+    }
+
+    label{
+        text-align: center;
+        font-size: 25px;
+        text-align: center;
+        font-family:'Quintessential', serif;
+        color:#ffdead;
+        list-style-type: none;
+        text-shadow:
+           1px 1px 0 #070,
+          -1px -1px 0 firebrick,  
+           1px -1px 0 firebrick,
+          -1px 1px 0 firebrick,
+           1px 1px 0 firebrick;
+    }
+    
+    footer{
+    margin-top: 20px;
     text-align: center;
-    font-size: 18px;
-    font-weight:bolder;
-    max-width: 50%;
-    box-sizing: border-box;
-}
-
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: darkseagreen;
-    opacity: 1; /* Firefox */
-}
-
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: red;
-}
-
-::-ms-input-placeholder { /* Microsoft Edge */
-    color: red;
-}
-
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-    margin: auto;
-    text-align: center;
-    width: 80%; /* Full width */
-    padding: 8px; /* Some padding */  
-    border: 1.5px solid red; /* Gray border */
-    border-radius: 20px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 10px; /* Add a top margin */
-    margin-bottom: 10px; /* Bottom margin */
-    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
-}
-
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-    margin: auto;
-    text-align: center;
-    font-size: 22px;
-    background-color: darkcyan;
-    color: #ffdead;
-    padding: 8px 30px;
-    border: 1px solid tan;
-    cursor: pointer;
-    border-radius: 25px;
-    box-shadow: 0px 5px 25px black;
-    text-shadow:
-       1px 1px 0 black,
-      -1px -1px 0 black,  
-       1px -1px 0 black,
-      -1px 1px 0 black,
-       1px 1px 0 black;
-    -webkit-transition: background-color 1s ease-out;
-    -moz-transition: background-color 1s ease-out;
-    -o-transition: background-color 1s ease-out;
-    transition: background-color 1s ease-out;
-}
-
-/* When moving the mouse over the submit button, add a blue color */
-input[type=submit]:hover {
-    margin: auto;
-    text-align: center;
-    border: 1px solid white;
-    background-color: red;
-    border-radius: 25px;
-    text-shadow:
-       1px 1px 0 black,
-      -1px -1px 0 black,  
-       1px -1px 0 black,
-      -1px 1px 0 black,
-       1px 1px 0 black;
-}
-
-/* Add a background color and some padding around the form */
-.container{
-    border-radius: 30px;
-    border: 10px double tan;
-    padding: 50px 0px;
-    background: url(hiclipart.png);
-    background-size:100% 100%;
-    background-repeat: no-repeat;
-    background-color: #600;
-    width: 850px;
-    max-width: 95%;
-    margin: auto;
-}
-
-#form {
-    padding:20px 0px 40px;
-    text-align: center;
-}
-
-label{
-    text-align: center;
-    font-size: 25px;
-    text-align: center;
-    font-family:'Quintessential', serif;
-    color:#ffdead;
-    list-style-type: none;
-    text-shadow:
-       1px 1px 0 #070,
-      -1px -1px 0 firebrick,  
-       1px -1px 0 firebrick,
-      -1px 1px 0 firebrick,
-       1px 1px 0 firebrick;
-}
+    font-size: 20PX;
+    color: #800; 
+    }
 }
 
 @media (min-width: 850px){
@@ -567,121 +580,121 @@ label{
     font-size: 18px;
     font-weight:bolder;
     max-width: 500px;
-}
+    }
 
-select{
-    font-family: 'federant', serif;
-    color:red;
-    text-align: center;
-    font-size: 18px;
-    font-weight:bolder;
-    max-width: 50%;
-    box-sizing: border-box;
-}
+    select{
+        font-family: 'federant', serif;
+        color:red;
+        text-align: center;
+        font-size: 18px;
+        font-weight:bolder;
+        max-width: 50%;
+        box-sizing: border-box;
+    }
 
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: darkseagreen;
-    opacity: 1; /* Firefox */
-}
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: darkseagreen;
+        opacity: 1; /* Firefox */
+    }
 
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: red;
-}
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: red;
+    }
 
-::-ms-input-placeholder { /* Microsoft Edge */
-    color: red;
-}
+    ::-ms-input-placeholder { /* Microsoft Edge */
+        color: red;
+    }
 
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-    margin: auto;
-    text-align: center;
-    width: 90%; /* Full width */
-    padding: 8px; /* Some padding */  
-    border: 1.5px solid red; /* Gray border */
-    border-radius: 20px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 10px; /* Add a top margin */
-    margin-bottom: 30px; /* Bottom margin */
-    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
-}
+    /* Style inputs with type="text", select elements and textareas */
+    input[type=text], select, textarea {
+        margin: auto;
+        text-align: center;
+        width: 90%; /* Full width */
+        padding: 8px; /* Some padding */  
+        border: 1.5px solid red; /* Gray border */
+        border-radius: 20px; /* Rounded borders */
+        box-sizing: border-box; /* Make sure that padding and width stays in place */
+        margin-top: 10px; /* Add a top margin */
+        margin-bottom: 30px; /* Bottom margin */
+        resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+    }
 
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-    margin: auto;
-    text-align: center;
-    font-size: 22px;
-    background-color: darkcyan;
-    color: #ffdead;
-    padding: 8px 30px;
-    border: 1px solid tan;
-    cursor: pointer;
-    border-radius: 25px;
-    box-shadow: 0px 5px 25px black;
-    text-shadow:
-       1px 1px 0 black,
-      -1px -1px 0 black,  
-       1px -1px 0 black,
-      -1px 1px 0 black,
-       1px 1px 0 black;
-    -webkit-transition: background-color 1s ease-out;
-    -moz-transition: background-color 1s ease-out;
-    -o-transition: background-color 1s ease-out;
-    transition: background-color 1s ease-out;
-}
+    /* Style the submit button with a specific background color etc */
+    input[type=submit] {
+        margin: auto;
+        text-align: center;
+        font-size: 22px;
+        background-color: darkcyan;
+        color: #ffdead;
+        padding: 8px 30px;
+        border: 1px solid tan;
+        cursor: pointer;
+        border-radius: 25px;
+        box-shadow: 0px 5px 25px black;
+        text-shadow:
+           1px 1px 0 black,
+          -1px -1px 0 black,  
+           1px -1px 0 black,
+          -1px 1px 0 black,
+           1px 1px 0 black;
+        -webkit-transition: background-color 1s ease-out;
+        -moz-transition: background-color 1s ease-out;
+        -o-transition: background-color 1s ease-out;
+        transition: background-color 1s ease-out;
+    }
 
-/* When moving the mouse over the submit button, add a blue color */
-input[type=submit]:hover {
-    margin: auto;
-    text-align: center;
-    border: 1px solid white;
-    background-color: red;
-    border-radius: 25px;
-    text-shadow:
-       1px 1px 0 black,
-      -1px -1px 0 black,  
-       1px -1px 0 black,
-      -1px 1px 0 black,
-       1px 1px 0 black;
-}
+    /* When moving the mouse over the submit button, add a blue color */
+    input[type=submit]:hover {
+        margin: auto;
+        text-align: center;
+        border: 1px solid white;
+        background-color: red;
+        border-radius: 25px;
+        text-shadow:
+           1px 1px 0 black,
+          -1px -1px 0 black,  
+           1px -1px 0 black,
+          -1px 1px 0 black,
+           1px 1px 0 black;
+    }
 
-/* Add a background color and some padding around the form */
-.container{
-    border-radius: 50px;
-    border: 10px double tan;
-    padding: 100px 0px;
-    background: url(hiclipart.png);
-    background-size:100% 100%;
-    background-repeat: no-repeat;
-    background-color: #600;
-    width: 850px;
-    max-width: 95%;
-    margin: 50px auto;
-}
+    /* Add a background color and some padding around the form */
+    .container{
+        border-radius: 50px;
+        border: 10px double tan;
+        padding: 100px 0px;
+        background: url(hiclipart.png);
+        background-size:100% 100%;
+        background-repeat: no-repeat;
+        background-color: #600;
+        width: 850px;
+        max-width: 95%;
+        margin: 50px auto;
+    }
 
-#form {
-    padding:20px 0px 40px;
-    text-align: center;
-}
+    #form {
+        padding:20px 0px 40px;
+        text-align: center;
+    }
 
-label{
-    text-align: center;
-    font-size: 25px;
-    text-align: center;
-    font-family:'Quintessential', serif;
-    color:#ffdead;
-    list-style-type: none;
-    text-shadow:
-       1px 1px 0 #070,
-      -1px -1px 0 firebrick,  
-       1px -1px 0 firebrick,
-      -1px 1px 0 firebrick,
-       1px 1px 0 firebrick;
-}
+    label{
+        text-align: center;
+        font-size: 25px;
+        text-align: center;
+        font-family:'Quintessential', serif;
+        color:#ffdead;
+        list-style-type: none;
+        text-shadow:
+           1px 1px 0 #070,
+          -1px -1px 0 firebrick,  
+           1px -1px 0 firebrick,
+          -1px 1px 0 firebrick,
+           1px 1px 0 firebrick;
+    }
 
-footer{
-    margin-top: 20px;
-    text-align: center;
-    font-size: 20PX;
-    color: #800; 
-}
+    footer{
+        margin-top: 20px;
+        text-align: center;
+        font-size: 20PX;
+        color: #800; 
+    }
