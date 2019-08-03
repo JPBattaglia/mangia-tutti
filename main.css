@@ -86,13 +86,13 @@ h1{
 h2{
     text-decoration: underline;
     font-size: 28px;
-    font-family: serif;
+    font-family: 'federant', serif;
     font-weight: bolder;
 }
 
 h3{
     font-size: 22px;
-    font-family: serif;
+    font-family: 'quintessential', serif;
     font-weight: 600;
 }
 
@@ -168,7 +168,7 @@ nav{
 }
 
 nav li {
-    font-family: 'Kanit';
+    font-family: 'quintessentia';
     font-size: 28px;
     font-weight:bolder;
     display:inline;
