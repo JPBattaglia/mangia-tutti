@@ -256,7 +256,7 @@ img {
     input[type=text], select, textarea {
         margin: auto;
         text-align: center;
-        width: 90%; /* Full width */
+        width: 75%; /* Full width */
         padding: 8px; /* Some padding */  
         border: 1.5px solid red; /* Gray border */
         border-radius: 20px; /* Rounded borders */
@@ -271,7 +271,7 @@ img {
         margin: auto;
         text-align: center;
         font-size: 22px;
-        background-color: darkcyan;
+        background-color: darkgreen;
         color: #ffdead;
         padding: 8px 30px;
         border: 1px solid tan;
@@ -312,6 +312,7 @@ img {
         background-repeat: no-repeat;
         max-width: 95%;
         margin: 50px auto;
+        padding: 100px 0px;
     }
 
     #form {
@@ -322,13 +323,13 @@ img {
 
     label{
         text-align: center;
-        font-size: 25px;
+        font-size: 28px;
         text-align: center;
         font-family:'Quintessential', serif;
-        color:red;
+        color:#800;
         list-style-type: none;
         text-shadow:
-           1px 1px 0 black,
+           1px 1px 0 #ffdead,
           -1px -1px 0 firebrick,  
            1px -1px 0 firebrick,
           -1px 1px 0 firebrick,
@@ -418,7 +419,7 @@ img {
         text-align: center;
         width: 80%; /* Full width */
         padding: 8px; /* Some padding */  
-        border: 1.5px solid red; /* Gray border */
+        border: 1.5px solid #900; /* Gray border */
         border-radius: 20px; /* Rounded borders */
         box-sizing: border-box; /* Make sure that padding and width stays in place */
         margin-top: 10px; /* Add a top margin */
@@ -431,12 +432,13 @@ img {
         margin: auto;
         text-align: center;
         font-size: 22px;
-        background-color: darkcyan;
+        background-color: darkgreen;
         color: #ffdead;
         padding: 8px 30px;
         border: 1px solid tan;
         cursor: pointer;
         border-radius: 25px;
+        font-family: 'federant';
         box-shadow: 0px 5px 25px black;
         text-shadow:
            1px 1px 0 black,
@@ -455,7 +457,7 @@ img {
         margin: auto;
         text-align: center;
         border: 1px solid white;
-        background-color: red;
+        background-color: #900;
         border-radius: 25px;
         text-shadow:
            1px 1px 0 black,
@@ -480,13 +482,13 @@ img {
 
     label{
         text-align: center;
-        font-size: 25px;
+        font-size: 28px;
         text-align: center;
         font-family:'Quintessential', serif;
-        color:red;
+        color:#900;
         list-style-type: none;
         text-shadow:
-           1px 1px 0 black,
+           1px 1px 0 #ffdead,
           -1px -1px 0 firebrick,  
            1px -1px 0 firebrick,
           -1px 1px 0 firebrick,
@@ -618,7 +620,7 @@ img {
         margin: auto;
         text-align: center;
         font-size: 22px;
-        background-color: darkcyan;
+        background-color: darkgreen;
         color: #ffdead;
         padding: 8px 30px;
         border: 1px solid tan;
@@ -654,7 +656,7 @@ img {
 
     /* Add a background color and some padding around the form */
     .container{
-        padding: 100px 0px;
+        padding: 100px 30px;
         background: url(hiclipart.png);
         background-size:100% 100%;
         background-repeat: no-repeat;
@@ -670,13 +672,13 @@ img {
 
     label{
         text-align: center;
-        font-size: 25px;
+        font-size: 32px;
         text-align: center;
         font-family:'Quintessential', serif;
-        color:red;
+        color:#900;
         list-style-type: none;
         text-shadow:
-           1px 1px 0 black,
+           1px 1px 0 #ffdead,
           -1px -1px 0 firebrick,  
            1px -1px 0 firebrick,
           -1px 1px 0 firebrick,
