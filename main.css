@@ -33,6 +33,42 @@ body{
     background-attachment: fixed;
 }
 
+#button1{
+        color:#ffeecc;
+        padding: 10px 30px;
+        background: repeating-linear-gradient(to top, #500, #900, red 100%);
+        width: 100px;
+        border-radius: 30px;
+        font-family: 'Federant';
+        font-size: 20px;
+        text-decoration: none;
+        border: .5px solid #800;
+    }
+
+#button2{
+        color:#ffeecc;
+        padding: 10px 30px;
+        background: repeating-linear-gradient(to top, #b36b00, #ffad33, #ffdead 100%);
+        width: 100px;
+        border-radius: 30px;
+        font-family: 'Federant';
+        font-size: 20px;
+        text-decoration: none;
+        border: .5px solid #ffad33;
+    }
+
+#button3{
+        color:#ffeecc;
+        padding: 10px 30px;
+        background: repeating-linear-gradient(to top, #050, #090, green 100%);
+        width: 100px;
+        border-radius: 30px;
+        font-family: 'Federant';
+        font-size: 20px;
+        text-decoration: none;
+        border: .5px solid #060;
+    }
+
 h1{
     color: #070;
     font-family: serif;
@@ -362,7 +398,7 @@ img {
     }
     
     #intro h1{
-        font-size: 22px;
+        font-size: 24px;
     }
     
     #logo{
