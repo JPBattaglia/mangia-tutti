@@ -73,7 +73,7 @@ h4{
     top: 0;
     right: 0;
     background: url(column.png);
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: 100% 100%;
     overflow-x: hidden;
     transition: .8s;
@@ -188,7 +188,7 @@ img {
     color: #700;
 }
 
-@media (max-width: 849px){
+@media (max-width: 849px) and (min-width: 601px){
     nav{
         display: none;
     }
@@ -307,14 +307,9 @@ img {
 
     /* Add a background color and some padding around the form */
     .container{
-        border-radius: 50px;
-        border: 10px double tan;
-        padding: 100px 0px;
         background: url(hiclipart.png);
         background-size:100% 100%;
         background-repeat: no-repeat;
-        background-color: #600;
-        width: 850px;
         max-width: 95%;
         margin: 50px auto;
     }
@@ -322,6 +317,7 @@ img {
     #form {
         padding:20px 0px 40px;
         text-align: center;
+        width: 100%;
     }
 
     label{
@@ -329,10 +325,10 @@ img {
         font-size: 25px;
         text-align: center;
         font-family:'Quintessential', serif;
-        color:#ffdead;
+        color:red;
         list-style-type: none;
         text-shadow:
-           1px 1px 0 #070,
+           1px 1px 0 black,
           -1px -1px 0 firebrick,  
            1px -1px 0 firebrick,
           -1px 1px 0 firebrick,
@@ -404,6 +400,8 @@ img {
     ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
         color: darkseagreen;
         opacity: 1; /* Firefox */
+        font-family: 'federant';
+        font-size: 15px;
     }
 
     :-ms-input-placeholder { /* Internet Explorer 10-11 */
@@ -469,13 +467,7 @@ img {
 
     /* Add a background color and some padding around the form */
     .container{
-        border-radius: 30px;
-        border: 10px double tan;
         padding: 50px 0px;
-        background: url(hiclipart.png);
-        background-size:100% 100%;
-        background-repeat: no-repeat;
-        background-color: #600;
         width: 850px;
         max-width: 98%;
         margin: auto;
@@ -491,10 +483,10 @@ img {
         font-size: 25px;
         text-align: center;
         font-family:'Quintessential', serif;
-        color:#ffdead;
+        color:red;
         list-style-type: none;
         text-shadow:
-           1px 1px 0 #070,
+           1px 1px 0 black,
           -1px -1px 0 firebrick,  
            1px -1px 0 firebrick,
           -1px 1px 0 firebrick,
@@ -662,13 +654,10 @@ img {
 
     /* Add a background color and some padding around the form */
     .container{
-        border-radius: 50px;
-        border: 10px double tan;
         padding: 100px 0px;
         background: url(hiclipart.png);
         background-size:100% 100%;
         background-repeat: no-repeat;
-        background-color: #600;
         width: 850px;
         max-width: 95%;
         margin: 50px auto;
@@ -684,10 +673,10 @@ img {
         font-size: 25px;
         text-align: center;
         font-family:'Quintessential', serif;
-        color:#ffdead;
+        color:red;
         list-style-type: none;
         text-shadow:
-           1px 1px 0 #070,
+           1px 1px 0 black,
           -1px -1px 0 firebrick,  
            1px -1px 0 firebrick,
           -1px 1px 0 firebrick,
