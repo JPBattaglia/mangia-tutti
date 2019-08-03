@@ -291,6 +291,7 @@ img {
     /* Style inputs with type="text", select elements and textareas */
     input[type=text], select, textarea {
         margin: auto;
+        box-shadow: 2px 4px 10px #600;
         text-align: center;
         width: 75%; /* Full width */
         padding: 8px; /* Some padding */  
@@ -304,7 +305,7 @@ img {
 
     /* Style the submit button with a specific background color etc */
     input[type=submit] {
-        margin: auto;
+        margin: 20px auto;
         text-align: center;
         font-size: 22px;
         background-color: darkgreen;
@@ -313,7 +314,7 @@ img {
         border: 1px solid tan;
         cursor: pointer;
         border-radius: 25px;
-        box-shadow: 0px 5px 25px black;
+        box-shadow: 2px 4px 10px #040;
         text-shadow:
            1px 1px 0 black,
           -1px -1px 0 black,  
@@ -328,11 +329,12 @@ img {
 
     /* When moving the mouse over the submit button, add a blue color */
     input[type=submit]:hover {
-        margin: auto;
+        margin: 20px auto;
         text-align: center;
-        border: 1px solid white;
-        background-color: red;
+        border: 1px solid #ffdead;
+        background-color: #900;
         border-radius: 25px;
+        box-shadow: 2px 4px 10px #800;
         text-shadow:
            1px 1px 0 black,
           -1px -1px 0 black,  
@@ -452,6 +454,7 @@ img {
     /* Style inputs with type="text", select elements and textareas */
     input[type=text], select, textarea {
         margin: auto;
+        box-shadow: 2px 4px 10px #600;
         text-align: center;
         width: 80%; /* Full width */
         padding: 8px; /* Some padding */  
@@ -465,7 +468,7 @@ img {
 
     /* Style the submit button with a specific background color etc */
     input[type=submit] {
-        margin: auto;
+        margin: 20px auto;
         text-align: center;
         font-size: 22px;
         background-color: darkgreen;
@@ -475,7 +478,7 @@ img {
         cursor: pointer;
         border-radius: 25px;
         font-family: 'federant';
-        box-shadow: 0px 5px 25px black;
+        box-shadow: 2px 4px 10px #030;
         text-shadow:
            1px 1px 0 black,
           -1px -1px 0 black,  
@@ -490,11 +493,12 @@ img {
 
     /* When moving the mouse over the submit button, add a blue color */
     input[type=submit]:hover {
-        margin: auto;
+        margin: 20px auto;
         text-align: center;
-        border: 1px solid white;
+        border: 1px solid #ffdead;
         background-color: #900;
         border-radius: 25px;
+        box-shadow: 2px 4px 10px #600;
         text-shadow:
            1px 1px 0 black,
           -1px -1px 0 black,  
@@ -641,6 +645,7 @@ img {
     input[type=text], select, textarea {
         margin: auto;
         text-align: center;
+        box-shadow: 2px 4px 10px #600;
         width: 90%; /* Full width */
         padding: 8px; /* Some padding */  
         border: 1.5px solid red; /* Gray border */
@@ -653,16 +658,16 @@ img {
 
     /* Style the submit button with a specific background color etc */
     input[type=submit] {
-        margin: auto;
+        margin: 20px auto;
         text-align: center;
         font-size: 22px;
         background-color: darkgreen;
         color: #ffdead;
         padding: 8px 30px;
-        border: 1px solid tan;
+        border: 1px solid #ffdead;
         cursor: pointer;
         border-radius: 25px;
-        box-shadow: 0px 5px 25px black;
+        box-shadow: 2px 4px 10px #040;
         text-shadow:
            1px 1px 0 black,
           -1px -1px 0 black,  
@@ -677,11 +682,12 @@ img {
 
     /* When moving the mouse over the submit button, add a blue color */
     input[type=submit]:hover {
-        margin: auto;
+        margin: 20px auto;
         text-align: center;
-        border: 1px solid white;
-        background-color: red;
+        border: 1px solid #ffdead;
+        background-color: #900;
         border-radius: 25px;
+        box-shadow: 2px 4px 10px #600;
         text-shadow:
            1px 1px 0 black,
           -1px -1px 0 black,  
