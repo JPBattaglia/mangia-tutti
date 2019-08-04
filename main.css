@@ -137,7 +137,7 @@ h4{
 .sidenav a {
     padding: 45px 10px;
     font-size: 28px;
-    color: bisque;
+    color: beige;
     display: block;
     transition: 1s;
     max-width: 100%;
@@ -342,6 +342,8 @@ img {
     padding-bottom: 20px;
     color: #700;
 }
+
+
 
 @media (max-width: 849px) and (min-width: 601px){
     nav{
@@ -675,6 +677,10 @@ img {
 @media (min-width: 850px){
     .sidenav, .navicon{
         display: none;
+    }
+    
+    nav li{
+        margin: 0px 36px;
     }
     
     #logo{
