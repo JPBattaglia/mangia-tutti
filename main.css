@@ -551,6 +551,7 @@ img {
     }
 
     select{
+        padding: 0px;
         font-family: 'federant', serif;
         color:red;
         text-align: center;
