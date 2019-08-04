@@ -45,14 +45,14 @@ body{
         text-decoration: none;
         border: .5px solid red;
         box-shadow: 
-            2px 4px 10px black,
-            -2px 4px 10px black;
+            2px 8px 10px black,
+            -2px 8px 10px black;
     }
 
 .menus  {
         margin: auto;
         background: url(dishes-light.jpeg) no-repeat center;
-        height: 700;
+        height: 600;
         background-size: 800px;
 }
 
