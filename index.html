@@ -68,29 +68,13 @@
         
         <div id="intro"> 
                 <h1>Benvenuti a Mangia Tutti</h1>
-                <img class="mySlides w3-animate-fading" draggable="false" src="Family.png">
-                <img class="mySlides w3-animate-fading" draggable="false" src="Mare.png">
-                <img class="mySlides w3-animate-fading" draggable="false" src="Tuna.png">
-                <img class="mySlides w3-animate-fading" draggable="false" src="Front.png">
-            <br>
+            <div class="carousel fade responsive" style="overflow:hidden;display:none;">
+                <div class="car-cont">
+                <a><img src="Family.png" border="0"></a>
+                <a><img src="Mare.png"border="0"></a>
+                <a><img src="Tuna.png" border="0"></a>
+            </div>
         </div>
-        
-        <script>
-            var myIndex = 0;
-            carousel();
-
-            function carousel() {
-              var i;
-              var x = document.getElementsByClassName("mySlides");
-              for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";  
-              }
-              myIndex++;
-              if (myIndex > x.length) {myIndex = 1}    
-              x[myIndex-1].style.display = "block";  
-              setTimeout(carousel, 5000);    
-            }
-        </script>
 
         <div id="info">
                 <div id="location">
@@ -110,7 +94,7 @@
                     <h3>Mon - Sat <br>Lunch 11:30 - 3:00<br>Dinner 5:30 - 10:00
                     <br>Sunday 5:30 - 10:00</h3>
                 </div>
-        </div>
+            </div>
         
         <footer>
             <h4> &copy; Mangia Tutti Ristorante</h4>
