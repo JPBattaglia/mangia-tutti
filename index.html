@@ -21,7 +21,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     
-    <body class="animated fadeOut">
+    <body id="animated-example" class="animated fadeOut">
         
 
         <script>
@@ -37,17 +37,19 @@
           <a href="contact.html">Contact</a>
         </div>
 
-        <span style="float:right;margin-top: 5px;cursor:pointer" onclick="openNav()"><div class=navicon></div><div class="navicon"></div><div class=navicon></div></span>
+        <span style="float:right;margin-top: 5px;cursor:pointer" onclick="openNav()"><div class=navicon></div><div class="navicon"></div><div class=navicon></div>
+        </span>
 
         <script>
 
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "125px";
-        }
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "125px";
+            }
 
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-        }
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+            
         </script>
         
         <nav>
@@ -65,16 +67,19 @@
         </div>
         
         <div id="intro"> 
-                <h1>Benvenuti a Mangia Tutti</h1>
+            
+            <h1>Benvenuti a Mangia Tutti</h1>
+            
             <div class="carousel fade responsive" style="overflow:hidden;display:none;">
                 <div class="car-cont">
-                <a><img src="Family.png" border="0"></a>
-                <a><img src="Mare.png"border="0"></a>
-                <a><img src="Tuna.png" border="0"></a>
+                <a><img src="Family.png"></a>
+                <a><img src="Mare.png"></a>
+                <a><img src="Tuna.png"></a>
+                </div>
             </div>
-            </div>
-        </div>
-        <div id="info">
+         </div>
+        
+            <div id="info">
                 <div id="location"><br>
                     <h2>Location</h2>
                     <h3>635 Clay St <br> San Francisco, CA 94111 <br>Financial District</h3><br>
