@@ -124,7 +124,7 @@ h4{
     z-index: 1;
     top: 0;
     right: 0;
-    background: url(castle.png);
+    background: url(SlideNav.png);
     background-repeat: repeat;
     background-size: 100% 103%;
     overflow-x: hidden;
@@ -135,13 +135,13 @@ h4{
 }
 
 .sidenav a {
-    padding: 35px 10px;
+    padding: 45px 10px;
     font-size: 28px;
     color: bisque;
     display: block;
     transition: 1s;
     max-width: 100%;
-    margin: 0px 60px;
+    text-align: center;
     text-shadow:
        1px 1px 0 red,
       -1px -1px 0 #800,  
