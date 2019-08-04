@@ -4,7 +4,7 @@ html{
 }
 
 .animated {
-            background-color: tan;
+            background-color: #ffdead;
             background-position: left top;
             margin-bottom:30px;
             -webkit-animation-duration: 3s;animation-duration: 3s;
@@ -598,7 +598,7 @@ img {
         margin: 20px auto;
         text-align: center;
         font-size: 22px;
-        background-color: darkgreen;
+        background-color: green;
         color: #ffdead;
         padding: 8px 30px;
         border: 1px solid tan;
