@@ -237,7 +237,7 @@ img {
   .carousel{
     display:block !important;
     max-height:none !important;
-    position:relative;
+    position: sticky;
   }
 
   /* 
