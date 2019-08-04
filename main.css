@@ -124,7 +124,7 @@ h4{
     z-index: 1;
     top: 0;
     right: 0;
-    background: url(column.png);
+    background: url(castle.png);
     background-repeat: repeat;
     background-size: 100% 103%;
     overflow-x: hidden;
@@ -137,11 +137,11 @@ h4{
 .sidenav a {
     padding: 35px 10px;
     font-size: 28px;
-    text-align: center;
-    color: #ffdead;
+    color: bisque;
     display: block;
     transition: 1s;
     max-width: 100%;
+    margin: 0px 60px;
     text-shadow:
        1px 1px 0 red,
       -1px -1px 0 #800,  
@@ -162,6 +162,7 @@ h4{
 }
 
 .sidenav .closebtn {
+    margin: 0px;
     padding: 20px 20px 28px 22px;
     position:absolute;
     top: 0px;
