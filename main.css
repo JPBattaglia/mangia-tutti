@@ -45,6 +45,10 @@ body{
         border: .5px solid #800;
     }
 
+.menus{
+    margin: 100px auto;
+}
+
 #button2{
         color:#ffeecc;
         padding: 10px 30px;
@@ -589,7 +593,6 @@ img {
         margin: auto;
     }
     
-    
     h1{
         font-size: 50px;
         margin: 50px;
@@ -733,3 +736,4 @@ img {
         font-size: 20PX;
         color: #800; 
     }
+}
