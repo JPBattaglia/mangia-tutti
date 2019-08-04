@@ -382,6 +382,7 @@ img {
     font-size: 18px;
     font-weight:bolder;
     max-width: 500px;
+    background-color: antiquewhite;
     }
 
     select{
@@ -557,7 +558,7 @@ img {
         font-weight:bolder;
         max-width: 50%;
         box-sizing: border-box;
-        background-color: white;
+        background-color: antiquewhite;
     }
 
     ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -577,6 +578,7 @@ img {
 
     /* Style inputs with type="text", select elements and textareas */
     input[type=text], select, textarea {
+        background-color: antiquewhite;
         margin: auto;
         box-shadow: 2px 4px 10px #600;
         text-align: center;
@@ -740,6 +742,7 @@ img {
         font-size: 18px;
         font-weight:bolder;
         max-width: 500px;
+        background-color: antiquewhite;
     }
 
     select{
@@ -750,6 +753,7 @@ img {
         font-weight:bolder;
         max-width: 50%;
         box-sizing: border-box;
+        background-color: antiquewhite;
     }
 
     ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
