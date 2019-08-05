@@ -394,6 +394,10 @@ img {
         margin:  20px 35px;
     }
     
+     #sociallinkmobile1 img{
+        width: 55px;
+        margin:  20px 35px;
+    }
     #intro h1{
         font-size: 38px;
     }
@@ -718,7 +722,7 @@ img {
 }
 
 @media (min-width: 850px){
-    .sidenav, .navicon, #sociallinkmobile{
+    .sidenav, .navicon, #sociallinkmobile, #sociallinkmobile1{
         display: none;
     }
     
