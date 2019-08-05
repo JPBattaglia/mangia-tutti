@@ -589,7 +589,7 @@ img {
     
     #logo img{
         max-width: 200px;
-        margin: auto 20px;
+        margin: auto 0px;
     }
     
     h2{
@@ -598,6 +598,11 @@ img {
     
     h3{
         font-size: 20px;
+    }
+    
+    p{
+        width:250px;
+        margin: auto;
     }
 
     select{
