@@ -471,22 +471,18 @@ img {
 
     /* Style the submit button with a specific background color etc */
     input[type=submit] {
-        margin: 20px auto;
-        text-align: center;
-        font-size: 22px;
-        background-color: darkgreen;
-        color: #ffdead;
-        padding: 8px 30px;
-        border: 1px solid tan;
-        cursor: pointer;
-        border-radius: 25px;
-        box-shadow: 2px 4px 10px #040;
-        text-shadow:
-           1px 1px 0 black,
-          -1px -1px 0 black,  
-           1px -1px 0 black,
-          -1px 1px 0 black,
-           1px 1px 0 black;
+        color:#ffeecc;
+        padding: 10px 39px;
+        background: repeating-linear-gradient(to top, #030, #070, lightgreen 100%);
+        width: 150px;
+        border-radius: 30px;
+        font-family: 'Federant';
+        font-size: 20px;
+        text-decoration: none;
+        border: .5px solid #66cc00;
+        box-shadow: 
+            2px 8px 10px black,
+            -2px 8px 10px black;
         -webkit-transition: background-color 1s ease-out;
         -moz-transition: background-color 1s ease-out;
         -o-transition: background-color 1s ease-out;
@@ -495,18 +491,16 @@ img {
 
     /* When moving the mouse over the submit button, add a blue color */
     input[type=submit]:hover {
-        margin: 20px auto;
-        text-align: center;
-        border: 1px solid #ffdead;
-        background-color: #900;
-        border-radius: 25px;
-        box-shadow: 2px 4px 10px #800;
+        box-shadow: 2px 8px 10px green;
+        color: orangered;
         text-shadow:
-           1px 1px 0 black,
-          -1px -1px 0 black,  
-           1px -1px 0 black,
-          -1px 1px 0 black,
-           1px 1px 0 black;
+        1px 1px 0 white,
+        -1px -1px 0 tan,  
+        1px -1px 0 tan,
+        -1px 1px 0 tan,
+        1px 1px 0 tan;
+        cursor: pointer;
+        
     }
 
     /* Add a background color and some padding around the form */
@@ -657,25 +651,21 @@ img {
         resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
     }
 
-    /* Style the submit button with a specific background color etc */
+     /* Style the submit button with a specific background color etc */
     input[type=submit] {
-        margin: 20px auto;
-        text-align: center;
-        font-size: 22px;
-        background-color: green;
-        color: #ffdead;
-        padding: 8px 30px;
-        border: 1px solid tan;
-        cursor: pointer;
-        border-radius: 25px;
-        font-family: 'federant';
-        box-shadow: 2px 4px 10px #030;
-        text-shadow:
-           1px 1px 0 black,
-          -1px -1px 0 black,  
-           1px -1px 0 black,
-          -1px 1px 0 black,
-           1px 1px 0 black;
+        color:#ffeecc;
+        margin: 20px 0;
+        padding: 10px 39px;
+        background: repeating-linear-gradient(to top, #030, #070, lightgreen 100%);
+        width: 150px;
+        border-radius: 30px;
+        font-family: 'Federant';
+        font-size: 20px;
+        text-decoration: none;
+        border: .5px solid #66cc00;
+        box-shadow: 
+            2px 8px 10px black,
+            -2px 8px 10px black;
         -webkit-transition: background-color 1s ease-out;
         -moz-transition: background-color 1s ease-out;
         -o-transition: background-color 1s ease-out;
@@ -684,18 +674,16 @@ img {
 
     /* When moving the mouse over the submit button, add a blue color */
     input[type=submit]:hover {
-        margin: 20px auto;
-        text-align: center;
-        border: 1px solid #ffdead;
-        background-color: #900;
-        border-radius: 25px;
-        box-shadow: 2px 4px 10px #600;
+        box-shadow: 2px 8px 10px green;
+        color: orangered;
         text-shadow:
-           1px 1px 0 black,
-          -1px -1px 0 black,  
-           1px -1px 0 black,
-          -1px 1px 0 black,
-           1px 1px 0 black;
+        1px 1px 0 white,
+        -1px -1px 0 tan,  
+        1px -1px 0 tan,
+        -1px 1px 0 tan,
+        1px 1px 0 tan;
+        cursor: pointer;
+        
     }
 
     /* Add a background color and some padding around the form */
@@ -866,24 +854,21 @@ img {
         resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
     }
 
-    /* Style the submit button with a specific background color etc */
+     /* Style the submit button with a specific background color etc */
     input[type=submit] {
-        margin: 20px auto;
-        text-align: center;
-        font-size: 22px;
-        background-color: darkgreen;
-        color: #ffdead;
-        padding: 8px 30px;
-        border: 1px solid #ffdead;
-        cursor: pointer;
-        border-radius: 25px;
-        box-shadow: 2px 4px 10px #040;
-        text-shadow:
-           1px 1px 0 black,
-          -1px -1px 0 black,  
-           1px -1px 0 black,
-          -1px 1px 0 black,
-           1px 1px 0 black;
+        color:#ffeecc;
+        margin: 20px 0;
+        padding: 10px 39px;
+        background: repeating-linear-gradient(to top, #030, #070, lightgreen 100%);
+        width: 150px;
+        border-radius: 30px;
+        font-family: 'Federant';
+        font-size: 20px;
+        text-decoration: none;
+        border: .5px solid #66cc00;
+        box-shadow: 
+            2px 8px 10px black,
+            -2px 8px 10px black;
         -webkit-transition: background-color 1s ease-out;
         -moz-transition: background-color 1s ease-out;
         -o-transition: background-color 1s ease-out;
@@ -892,18 +877,16 @@ img {
 
     /* When moving the mouse over the submit button, add a blue color */
     input[type=submit]:hover {
-        margin: 20px auto;
-        text-align: center;
-        border: 1px solid #ffdead;
-        background-color: #900;
-        border-radius: 25px;
-        box-shadow: 2px 4px 10px #600;
+        box-shadow: 2px 8px 10px green;
+        color: orangered;
         text-shadow:
-           1px 1px 0 black,
-          -1px -1px 0 black,  
-           1px -1px 0 black,
-          -1px 1px 0 black,
-           1px 1px 0 black;
+        1px 1px 0 white,
+        -1px -1px 0 tan,  
+        1px -1px 0 tan,
+        -1px 1px 0 tan,
+        1px 1px 0 tan;
+        cursor: pointer;
+        
     }
 
     /* Add a background color and some padding around the form */
