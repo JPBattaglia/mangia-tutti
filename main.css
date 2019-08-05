@@ -40,14 +40,14 @@ body{
 }
 
 #button2:hover{
-    box-shadow: 2px 8px 10px white;
+    box-shadow: 2px 8px 10px #e38d1c;
     color:tan;
     text-shadow:
        1px 1px 0 white;
 }
 
 #button3:hover{
-    box-shadow: 2px 8px 10px green;
+    box-shadow: 2px 8px 10px limegreen;
     color: limegreen;
     text-shadow:
        1px 1px 0 white;
@@ -499,7 +499,7 @@ img {
 
     /* When moving the mouse over the submit button, add a blue color */
     input[type=submit]:hover {
-        box-shadow: 2px 8px 10px green;
+        box-shadow: 2px 8px 10px limegreen;
         color: antiquewhite;
         text-shadow:
         1px 1px 0 lime,
@@ -699,7 +699,7 @@ img {
 
     /* When moving the mouse over the submit button, add a blue color */
     input[type=submit]:hover {
-        box-shadow: 2px 8px 10px green;
+        box-shadow: 2px 8px 10px limegreen;
         color: antiquewhite;
         text-shadow:
         1px 1px 0 lime,
@@ -907,7 +907,7 @@ img {
 
     /* When moving the mouse over the submit button, add a blue color */
     input[type=submit]:hover {
-        box-shadow: 2px 8px 10px green;
+        box-shadow: 2px 8px 10px limegreen;
         color: antiquewhite;
         text-shadow:
         1px 1px 0 lime,
@@ -948,6 +948,11 @@ img {
            1px -1px 0 firebrick,
           -1px 1px 0 firebrick,
            1px 1px 0 firebrick;
+    }
+    
+    #menupdf{
+        max-width: 850px;
+        margin: auto;
     }
 
     footer{
