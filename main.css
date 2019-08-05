@@ -590,7 +590,7 @@ img {
     
     #logo img{
         max-width: 200px;
-        margin: auto 0px;
+        margin: auto;
     }
     
     h2{
