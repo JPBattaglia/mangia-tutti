@@ -143,6 +143,8 @@ h3{
 h4{
     font-family: serif;
     font-weight: bolder;
+    width:300px;
+    margin: auto;
 }
 
 
@@ -375,7 +377,7 @@ img {
 
 
 @media (max-width: 849px) and (min-width: 601px){
-    nav, #sociallink{
+    nav{
         display: none;
     }
     
@@ -396,15 +398,11 @@ img {
         text-align: center;
     }
     
-    #sociallinkmobile img{
-        width: 55px;
-        margin:  20px 0px 0px 35px;
+    #sociallink img{
+        width: 40px;
+        margin: 0px 20px
     }
     
-     #sociallinkmobile1 img{
-        width: 55px;
-        margin:  20px 35px;
-    }
     #intro h1{
         font-size: 38px;
     }
@@ -424,21 +422,21 @@ img {
     }
     
     textarea, input{
-    font-family: 'federant', serif;
-    color:red;
-    text-align: center;
-    font-size: 18px;
-    font-weight:bolder;
-    max-width: 500px;
-    background-color: antiquewhite;
+        font-family: 'federant', serif;
+        color: red;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bolder;
+        max-width: 500px;
+        background-color: antiquewhite;
     }
 
     select{
         font-family: 'federant', serif;
-        color:red;
+        color: red;
         text-align: center;
         font-size: 18px;
-        font-weight:bolder;
+        font-weight: bolder;
         max-width: 50%;
         box-sizing: border-box;
     }
@@ -542,18 +540,24 @@ img {
           -1px 1px 0 firebrick,
            1px 1px 0 firebrick;
     }
-        footer{
+    
+    footer{
         margin-top: 50px;
         text-align: center;
         font-size: 20PX;
         color: #800; 
+    }
+    
+    footer p{
+        width: 100%;
+        font-weight: bolder;
     }
 }
 
 
 
 @media (max-width: 600px){
-    nav, #sociallink{
+    nav{
         display: none;
     }
     
@@ -568,20 +572,10 @@ img {
         border: .5px solid #600;
         box-shadow: 2px 4px 8px #700;
         margin: 5px;
-
     }
     
     #intro h1{
         font-size: 24px;
-    }
-    
-    #sociallinkmobile img{
-        width: 35px;
-    }
-    
-    #sociallinkmobile1 img{
-        width: 35px;
-        margin-bottom: 15px;
     }
     
     #logo{
@@ -608,10 +602,15 @@ img {
     }
     
     p{
-        font-size: 12px;
-        width:200px;
+        font-size: 15px;
+        width: 250px;
         margin: auto;
         font-family: serif;
+    }
+    
+    #sociallink img{
+        width: 25px;
+        margin: 0px 20px;
     }
 
     select{
@@ -733,10 +732,15 @@ img {
     font-size: 20PX;
     color: #800; 
     }
+    
+    footer p{
+        width: 100%;
+        font-weight: bolder;
+    }
 }
 
 @media (min-width: 850px){
-    .sidenav, .navicon, #sociallinkmobile, #sociallinkmobile1{
+    .sidenav, .navicon{
         display: none;
     }
     
@@ -746,7 +750,7 @@ img {
     
     #sociallink img{
         width: 50px;
-        margin: 0px 100px;
+        margin: 0px 50px;
     }
     
     #logo{
@@ -756,12 +760,6 @@ img {
         font-weight: bolder;
         margin: auto;
         text-align: center;
-    }
-    
-    #logomt{
-        margin: auto;
-        width: 25%;
-        
     }
     
     #info{
@@ -817,7 +815,7 @@ img {
 
     }
     
-        textarea, input{
+    textarea, input{
         font-family: 'federant', serif;
         color:red;
         text-align: center;
@@ -942,6 +940,11 @@ img {
         margin-top: 100px;
         text-align: center;
         font-size: 20PX;
-        color: #800; 
+        color: #800;
+    }
+    
+    footer p{
+        width: 100%;
+        font-weight: bolder;
     }
 }
