@@ -586,6 +586,7 @@ img {
     
     #intro img{
         border-radius: 15px;
+        border: 2px solid firebrick;
     }
     
     #logo{
