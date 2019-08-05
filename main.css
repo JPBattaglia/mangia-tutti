@@ -415,6 +415,15 @@ img {
         font-size: 38px;
     }
     
+    #mobilemenu img{
+        width: 100%;
+    }
+    
+    #mobilemenu{
+        max-width:850px;
+        margin: auto;
+    }
+    
     #reservation{
         color:#ffeecc;
         padding: 10px 25px;
@@ -601,6 +610,15 @@ img {
     
     #logo img{
         max-width: 175px;
+        margin: auto;
+    }
+    
+    #mobilemenu img{
+        width: 100%;
+    }
+    
+    #mobilemenu{
+        max-width:850px;
         margin: auto;
     }
     
@@ -831,7 +849,15 @@ img {
         border: .5px solid #800;
         box-shadow: 2px 4px 8px #700;
         margin: 5px;
-
+    }
+    
+    #mobilemenu img{
+        width: 850px;
+    }
+    
+    #mobilemenu{
+        width:850px;
+        margin: auto;
     }
     
     textarea, input{
