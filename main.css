@@ -740,6 +740,12 @@ img {
            1px 1px 0 firebrick;
     }
     
+    #menupdf{
+        max-width: 20%;
+        max-height: 10%;
+        margin: auto;
+    }
+    
     footer{
         margin-top: 50px;
         text-align: center;
