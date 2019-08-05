@@ -602,15 +602,16 @@ img {
     }
     
     p{
-        font-size: 15px;
-        width: 250px;
+        font-size: 12px;
+        width: 300px;
         margin: auto;
         font-family: serif;
+        text-align: center;
     }
     
     #sociallink img{
         width: 25px;
-        margin: 0px 20px;
+        margin: 0px 10px;
     }
 
     select{
@@ -727,15 +728,16 @@ img {
     }
     
     footer{
-    margin-top: 50px;
-    text-align: center;
-    font-size: 20PX;
-    color: #800; 
+        margin-top: 50px;
+        text-align: center;
+        font-size: 20PX;
+        color: #800; 
     }
     
     footer p{
         width: 100%;
         font-weight: bolder;
+        font-size: 15px;
     }
 }
 
