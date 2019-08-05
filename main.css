@@ -577,7 +577,7 @@ img {
         color: #800;
         font-style: italic;
         font-weight: bolder;
-        width: 350px;
+        width: 200px;
         margin: auto;
         text-align: center;
     }
@@ -597,7 +597,7 @@ img {
     
     p{
         font-size: 12px;
-        width: 300px;
+        width: 200px;
         margin: auto;
         font-family: serif;
         text-align: center;
