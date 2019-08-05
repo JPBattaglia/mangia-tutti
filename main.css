@@ -492,15 +492,14 @@ img {
     /* When moving the mouse over the submit button, add a blue color */
     input[type=submit]:hover {
         box-shadow: 2px 8px 10px green;
-        color: orangered;
+        color: antiquewhite;
         text-shadow:
-        1px 1px 0 white,
-        -1px -1px 0 tan,  
-        1px -1px 0 tan,
-        -1px 1px 0 tan,
-        1px 1px 0 tan;
+        1px 1px 0 lime,
+        -1px -1px 0 green,  
+        1px -1px 0 green,
+        -1px 1px 0 green,
+        1px 1px 0 green;
         cursor: pointer;
-        
     }
 
     /* Add a background color and some padding around the form */
@@ -675,13 +674,13 @@ img {
     /* When moving the mouse over the submit button, add a blue color */
     input[type=submit]:hover {
         box-shadow: 2px 8px 10px green;
-        color: orangered;
+        color: antiquewhite;
         text-shadow:
-        1px 1px 0 white,
-        -1px -1px 0 tan,  
-        1px -1px 0 tan,
-        -1px 1px 0 tan,
-        1px 1px 0 tan;
+        1px 1px 0 lime,
+        -1px -1px 0 green,  
+        1px -1px 0 green,
+        -1px 1px 0 green,
+        1px 1px 0 green;
         cursor: pointer;
         
     }
@@ -861,6 +860,7 @@ img {
      /* Style the submit button with a specific background color etc */
     input[type=submit] {
         color:#ffeecc;
+        letter-spacing: .3px;
         margin: 20px 0;
         padding: 10px 39px;
         background: repeating-linear-gradient(to top, #030, #070, lightgreen 100%);
@@ -882,15 +882,14 @@ img {
     /* When moving the mouse over the submit button, add a blue color */
     input[type=submit]:hover {
         box-shadow: 2px 8px 10px green;
-        color: orangered;
+        color: antiquewhite;
         text-shadow:
-        1px 1px 0 white,
-        -1px -1px 0 tan,  
-        1px -1px 0 tan,
-        -1px 1px 0 tan,
-        1px 1px 0 tan;
+        1px 1px 0 lime,
+        -1px -1px 0 green,  
+        1px -1px 0 green,
+        -1px 1px 0 green,
+        1px 1px 0 green;
         cursor: pointer;
-        
     }
 
     /* Add a background color and some padding around the form */
