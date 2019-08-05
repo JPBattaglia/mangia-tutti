@@ -247,7 +247,7 @@ nav li a:hover{
 
 #intro{
     margin: 20px auto 0;
-    max-width: 875px;
+    max-width: 859px;
 }
 
 img {
@@ -361,11 +361,11 @@ img {
 
 
 #intro img{
-    width: 1000px;
+    width: 850px;
     max-width: 100%;
     margin: 10px auto;
     border: 3px solid firebrick;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 #info{
@@ -396,6 +396,14 @@ img {
         width: 350px;
         margin: auto;
         text-align: center;
+    }
+    
+    #hours{
+        margin-top: 30px;
+    }
+    
+    #reservations{
+        margin-top: 25px;
     }
     
     #sociallink img{
@@ -569,6 +577,10 @@ img {
     
     #intro h1{
         font-size: 24px;
+    }
+    
+    #intro img{
+        border-radius: 15px;
     }
     
     #logo{
