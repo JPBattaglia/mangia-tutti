@@ -566,7 +566,11 @@ img {
     
     #sociallinkmobile img{
         width: 35px;
-        margin:  10px 0px 0px;
+    }
+    
+    #sociallinkmobile1 img{
+        width: 35px;
+        margin-bottom: 10px;
     }
     
     #logo{
