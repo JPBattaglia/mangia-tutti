@@ -604,6 +604,7 @@ img {
         font-size: 12px;
         width:250px;
         margin: auto;
+        font-family: serif;
     }
 
     select{
