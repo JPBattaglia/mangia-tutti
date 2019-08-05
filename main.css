@@ -606,6 +606,10 @@ img {
         width: 25px;
         margin: 0px 10px;
     }
+    
+    #hours{
+        margin-top: 50px;
+    }
 
     select{
         padding: 0px;
@@ -765,21 +769,21 @@ img {
         flex: 3;
         text-align: center;
         max-width: 250px;
-        margin: auto;
+        margin: 0 auto;
     }
     
     #reservations{
         flex: 2;
         text-align: center;
         max-width: 350px;
-        margin: auto;
+        margin: 0 auto;
     }
     
     #location{ 
         text-align: center;
         flex: 1;
         max-width: 250px;
-        margin: auto;
+        margin: 0 auto;
     }
     
     h1{
