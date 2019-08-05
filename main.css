@@ -575,8 +575,13 @@ img {
         margin: 5px;
     }
     
+    #intro{
+        width: 100%;
+    }
+    
     #intro h1{
         font-size: 24px;
+        margin: 0 auto;
     }
     
     #intro img{
