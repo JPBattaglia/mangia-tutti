@@ -292,16 +292,16 @@ img {
 
   .carousel img{
     display:block!important;
-    width:850px !important;
+    width:100% !important;
     height:auto !important;
   }
 
   .carousel.responsive{
-    width:85opx !important;
+    width:100%; !important;
   }
 
   .carousel.responsive .car-cont{
-    width:850px !important;
+    width:100% !important;
     height:auto !important;
   }  
 
@@ -361,6 +361,7 @@ img {
 
 
 #intro img{
+    width: 850px;
     max-width: 850px;
     margin: 10px auto;
     border: 3px solid firebrick;
