@@ -1,156 +1,925 @@
-<!DOCTYPE html>
+html{
+    min-height:100%;
+    overflow:auto;
+}
 
-<html>
-    <head>
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">    
-        <meta property="og:title" content="Batt Bros" />
-        <meta property="og:image:type" content="image/png" />
-        <meta property="og:image:width" content="400" />
-        <meta property="og:image:height" content="300" />
-        <meta property="og:image" content="https://i.ibb.co/S33jms1/MTLogo.png" />
-        <meta property="og:image:secure_url" content="https://i.ibb.co/S33jms1/MTLogo.png" />
-        <meta name="keywords" content="Mangia Tutti, Ristorante, Raul Hernandez, Italian Food">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Mangia Tutti</title>
-        <meta name="description" content="Traditional Italian Dining in SF FiDi">
-        <link rel="stylesheet" href="main.css">
-        <link rel="shortcut icon" type="image/png" href="MTLogo.png">
-        <link href="https://fonts.googleapis.com/css?family=Federant|Akronim|Kaushan+Script|Fugaz+One|Righteous|Orbitron|Kanit|Quintessential" rel="stylesheet"> 
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
+.animated {
+            background-color: #ffdead;
+            background-position: left top;
+            margin-bottom:30px;
+            -webkit-animation-duration: 3s;animation-duration: 3s;
+            -webkit-animation-fill-mode: both;animation-fill-mode: both;
+         }
+
+         @-webkit-keyframes fadeOut {
+            100% {opacity: 1;}
+            0% {opacity: 0;}
+         }
+
+         @keyframes fadeOut {
+            100% {opacity: 1;}
+            0% {opacity: 0;}
+         }
+
+         .fadeOut {
+            -webkit-animation-name: fadeOut;
+            animation-name: fadeOut;
+         }
+
+body{
+    margin: 20px;
+    background:url(Stucco2MangrTutter.png);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+#button1:hover{
+    box-shadow: 2px 8px 10px red;
+    color:orangered;
+    text-shadow:
+       1px 1px 0 white;
+}
+
+#button2:hover{
+    box-shadow: 2px 8px 10px #e38d1c;
+    color:tan;
+    text-shadow:
+       1px 1px 0 white;
+}
+
+#button3:hover{
+    box-shadow: 2px 8px 10px limegreen;
+    color: limegreen;
+    text-shadow:
+       1px 1px 0 white;
+}
+
+#reservation:hover{
+    box-shadow: 2px 8px 10px red;
+    color:orangered;
+    text-shadow:
+       1px 1px 0 white;
+    }
+
+#button1{
+        
+    color:#ffeecc;
+    padding: 10px 30px;
+    background: repeating-linear-gradient(to top, #500, #900, red 100%);
+    width: 100px;
+    border-radius: 30px;
+    font-family: 'Federant';
+    font-size: 20px;
+    text-decoration: none;
+    border: .5px solid red;
+    box-shadow: 
+        2px 8px 10px black,
+        -2px 8px 10px black;
+    }
+
+.menus  {
+    margin: auto;
+    background: url(dishes-light.jpeg) no-repeat center;
+    height: 600;
+    background-size: 850px;
+}
+
+#button2{
+    color:#ffeecc;
+    padding: 10px 30px;
+    background: repeating-linear-gradient(to top, #785221, #b36b00, #ffdead 100%);
+    width: 100px;
+    border-radius: 30px;
+    font-family: 'Federant';
+    font-size: 20px;
+    text-decoration: none;
+    border: .5px solid #deb887;
+    box-shadow: 
+        2px 8px 10px black,
+        -2px 8px 10px black;
+    }
+
+#button3{
+    color:#ffeecc;
+    padding: 10px 39px;
+    background: repeating-linear-gradient(to top, #030, #070, lightgreen 100%);
+    width: 100px;
+    border-radius: 30px;
+    font-family: 'Federant';
+    font-size: 20px;
+    text-decoration: none;
+    border: .5px solid #66cc00;
+    box-shadow: 
+        2px 8px 10px black,
+        -2px 8px 10px black;
+    }
+
+h1{
+    color: #070;
+    font-family: serif;
+    text-align: center;
+    font-size: 25px;
+    text-shadow:
+       1px 1px 0 white,
+      -1px -1px 0 #060,  
+       1px -1px 0 #060,
+      -1px 1px 0 #060,
+       1px 1px 0 #060;
+    font-style: italic;      
+}
+
+h2{
+    text-decoration: underline;
+    font-size: 28px;
+    font-family: 'federant', serif;
+    font-weight: bolder;
+}
+
+h3{
+    font-size: 22px;
+    font-family: 'quintessential', serif;
+    font-weight: 600;
+}
+
+h4{
+    font-family: serif;
+    font-weight: bolder;
+    width:300px;
+    margin: auto;
+}
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background: url(SlideNavBGTrnsprnt.png);
+    background-repeat: repeat;
+    background-size: 100% 103%;
+    overflow-x: hidden;
+    transition: .8s;
+    padding-top: 150px;
+    font-family: 'federant';
+    font-weight: bold;
+}
+
+.sidenav a {
+    padding: 45px 10px;
+    font-size: 28px;
+    color: beige;
+    display: block;
+    transition: 1s;
+    max-width: 100%;
+    text-align: center;
+    text-shadow:
+       1px 1px 0 red,
+      -1px -1px 0 #800,  
+       1px -1px 0 #800,
+      -1px 1px 0 #800,
+       1px 1px 0 #800;
+    text-decoration: none;
+}
+
+.sidenav a:hover {
+    color: red;
+    text-shadow:
+       1px 1px 0 tan,
+      -1px -1px 0 white,  
+       1px -1px 0 white,
+      -1px 1px 0 white,
+       1px 1px 0 white;
+}
+
+.sidenav .closebtn {
+    margin: 0px;
+    padding: 20px 20px 28px 22px;
+    position:absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+.navicon {
+    width: 30px;
+    height: 4px;
+    background-color: firebrick;
+    margin: 6px 0px;
+}
+
+nav{
+    text-align:center;
+    margin:auto;
+    margin-bottom: 20px;
+}
+
+nav li {
+    font-family: 'Federant', serif;
+    font-size: 25px;
+    font-weight:bold;
+    display:inline;
+    text-align: center;
+    margin-top: 20px; 
+}
+
+/* unvisited link */
+nav li a:link, nav li a:visited {
+    color: #070;
+    text-decoration: none;
+    margin: 5px 45px;
+    text-shadow:
+       1px 1px 0 white;  
+}
+
+/* mouse over link */
+nav li a:hover{
+    color:white;
+    text-shadow:
+       1px 1px 0 darkred,
+      -1px -1px 0 darkred,  
+       1px -1px 0 darkred,
+      -1px 1px 0 darkred,
+       1px 1px 0 darkred;
+}
+
+
+#intro{
+    margin: 20px auto 0;
+    max-width: 859px;
+}
+
+img {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2.5s;
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .3} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .3} 
+  to {opacity: 1}
+}
+
+#intro img{
+    width: 850px;
+    max-width: 850px;
+    margin: 10px auto;
+    border: 3px solid firebrick;
+    border-radius: 20px;
+}
+
+#info{
+    text-align: center;
+    padding-bottom: 20px;
+    color: #700;
+}
+
+
+
+@media (max-width: 849px) and (min-width: 601px){
+    nav{
+        display: none;
+    }
     
-    <body id="animated-example" class="animated fadeOut">
+    p{
+        font-size: 17px;
+        width:250px;
+        margin: auto;
+        font-family: serif;
+    }
+    
+    #logo{
+        font-size: 18px;
+        color: #800;
+        font-style: italic;
+        font-weight: bolder;
+        width: 350px;
+        margin: auto;
+        text-align: center;
+    }
+    
+    #hours{
+        margin-top: 30px;
+    }
+    
+    #reservations{
+        margin-top: 25px;
+    }
+    
+    #sociallink img{
+        width: 40px;
+        margin: 0px 20px
+    }
+    
+    #intro h1{
+        font-size: 38px;
+    }
+    
+    #mobilemenu img{
+        width: 100%;
+    }
+    
+    #mobilemenu{
+        max-width:850px;
+        margin: auto;
+    }
+    
+    #reservation{
+        color:#ffeecc;
+        padding: 10px 25px;
+        background: repeating-linear-gradient(to top, #500, #900, red 100%);
+        width: 100px;
+        border-radius: 30px;
+        font-family: 'federant';
+        text-decoration: none;
+        border: .5px solid #600;
+        box-shadow: 2px 4px 8px #700;
+        margin: 5px;
+
+    }
+    
+    textarea, input{
+        font-family: 'federant', serif;
+        color: red;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bolder;
+        max-width: 500px;
+        background-color: antiquewhite;
+    }
+
+    select{
+        font-family: 'federant', serif;
+        color: red;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bolder;
+        max-width: 50%;
+        box-sizing: border-box;
+    }
+
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: darkseagreen;
+        opacity: 1; /* Firefox */
+    }
+
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: red;
+    }
+
+    ::-ms-input-placeholder { /* Microsoft Edge */
+        color: red;
+    }
+
+    /* Style inputs with type="text", select elements and textareas */
+    input[type=text], select, textarea {
+        margin: auto;
+        box-shadow: 2px 4px 10px #600;
+        text-align: center;
+        width: 75%; /* Full width */
+        padding: 8px; /* Some padding */  
+        border: 1.5px solid red; /* Gray border */
+        border-radius: 20px; /* Rounded borders */
+        box-sizing: border-box; /* Make sure that padding and width stays in place */
+        margin-top: 10px; /* Add a top margin */
+        margin-bottom: 30px; /* Bottom margin */
+        resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+    }
+
+    /* Style the submit button with a specific background color etc */
+    input[type=submit] {
+        color:#ffeecc;
+        padding: 10px 39px;
+        background: repeating-linear-gradient(to top, #030, #070, lightgreen 100%);
+        width: 150px;
+        border-radius: 30px;
+        font-family: 'Federant';
+        font-size: 20px;
+        text-decoration: none;
+        border: .5px solid #66cc00;
+        box-shadow: 
+            2px 8px 10px black,
+            -2px 8px 10px black;
+        -webkit-transition: background-color 1s ease-out;
+        -moz-transition: background-color 1s ease-out;
+        -o-transition: background-color 1s ease-out;
+        transition: background-color 1s ease-out;
+    }
+
+    /* When moving the mouse over the submit button, add a blue color */
+    input[type=submit]:hover {
+        box-shadow: 2px 8px 10px limegreen;
+        color: antiquewhite;
+        text-shadow:
+        1px 1px 0 lime,
+        -1px -1px 0 green,  
+        1px -1px 0 green,
+        -1px 1px 0 green,
+        1px 1px 0 green;
+        cursor: pointer;
+    }
+
+    /* Add a background color and some padding around the form */
+    .container{
+        background: url(hiclipart.png);
+        background-size:100% 100%;
+        background-repeat: no-repeat;
+        max-width: 95%;
+        margin: 50px auto;
+        padding: 100px 0px;
+    }
+
+    #form {
+        padding:20px 0px 40px;
+        text-align: center;
+        width: 100%;
+    }
+
+    label{
+        text-align: center;
+        font-size: 28px;
+        text-align: center;
+        font-family:'Quintessential', serif;
+        color:#800;
+        list-style-type: none;
+        font-weight: bolder;
+        text-shadow:
+           1px 1px 0 #ffdead,
+          -1px -1px 0 firebrick,  
+           1px -1px 0 firebrick,
+          -1px 1px 0 firebrick,
+           1px 1px 0 firebrick;
+    }
+    
+    footer{
+        margin-top: 50px;
+        text-align: center;
+        font-size: 20PX;
+        color: #800; 
+    }
+    
+    footer p{
+        width: 100%;
+        font-weight: bolder;
+    }
+}
+
+
+
+@media (max-width: 600px){
+    nav{
+        display: none;
+    }
+    
+    #reservation{
+        color:#ffeecc;
+        padding: 10px 25px;
+        background: repeating-linear-gradient(to top, #500, #900, red 100%);
+        width: 100px;
+        border-radius: 30px;
+        font-family: 'federant';
+        text-decoration: none;
+        border: .5px solid #600;
+        box-shadow: 2px 4px 8px #700;
+        margin: 5px;
+    }
+    
+    #intro{
+        width: 100%;
+    }
+    
+    #intro h1{
+        font-size: 24px;
+        margin: 0 auto;
+    }
+    
+    #intro img{
+        border-radius: 15px;
+        border: 2px solid firebrick;
+    }
+    
+    #logo{
+        font-size: 12px;
+        color: #800;
+        font-style: italic;
+        font-weight: bolder;
+        width: 225px;
+        margin: auto;
+        text-align: center;
+    }
+    
+    #logo img{
+        max-width: 175px;
+        margin: auto;
+    }
+    
+    #mobilemenu img{
+        width: 100%;
+    }
+    
+    #mobilemenu{
+        max-width:850px;
+        margin: auto;
+    }
+    
+    h2{
+        font-size: 22px;
+    }
+    
+    h3{
+        font-size: 20px;
+    }
+    
+    p{
+        font-size: 12px;
+        width: 225px;
+        margin: auto;
+        font-family: serif;
+        text-align: center;
+    }
+    
+    #sociallink img{
+        width: 25px;
+        margin: 0px 10px;
+    }
+    
+    #hours{
+        margin-top: 30px;
+    }
+    
+    #reservations{
+        margin-top: 25px;
+    }
+
+    select{
+        padding: 0px;
+        font-family: 'federant', serif;
+        color:red;
+        text-align: center;
+        font-size: 18px;
+        font-weight:bolder;
+        max-width: 50%;
+        box-sizing: border-box;
+        background-color: antiquewhite;
+    }
+
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: darkseagreen;
+        opacity: 1; /* Firefox */
+        font-family: 'federant';
+        font-size: 17px;
+    }
+
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: red;
+    }
+
+    ::-ms-input-placeholder { /* Microsoft Edge */
+        color: red;
+    }
+
+    /* Style inputs with type="text", select elements and textareas */
+    input[type=text], select, textarea {
+        background-color: antiquewhite;
+        margin: auto;
+        font-family: 'federant';
+        font-size: 18px;
+        color: red;
+        box-shadow: 2px 4px 10px #600;
+        text-align: center;
+        width: 80%; /* Full width */
+        padding: 5px; /* Some padding */  
+        border: 1.5px solid #900; /* Gray border */
+        border-radius: 20px; /* Rounded borders */
+        box-sizing: border-box; /* Make sure that padding and width stays in place */
+        margin-top: 10px; /* Add a top margin */
+        margin-bottom: 10px; /* Bottom margin */
+        resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+    }
+
+     /* Style the submit button with a specific background color etc */
+    input[type=submit] {
+        color:#ffeecc;
+        margin: 20px 0;
+        padding: 11px 39px;
+        background: repeating-linear-gradient(to top, #030, #070, lightgreen 100%);
+        width: 150px;
+        border-radius: 30px;
+        font-family: 'Federant';
+        font-size: 20px;
+        text-decoration: none;
+        border: .5px solid #66cc00;
+        box-shadow: 
+        2px 8px 10px black,
+        -2px 8px 10px black;
+        -webkit-transition: background-color 1s ease-out;
+        -moz-transition: background-color 1s ease-out;
+        -o-transition: background-color 1s ease-out;
+        transition: background-color 1s ease-out;
+    }
+
+    /* When moving the mouse over the submit button, add a blue color */
+    input[type=submit]:hover {
+        box-shadow: 2px 8px 10px limegreen;
+        color: antiquewhite;
+        text-shadow:
+        1px 1px 0 lime,
+        -1px -1px 0 green,  
+        1px -1px 0 green,
+        -1px 1px 0 green,
+        1px 1px 0 green;
+        cursor: pointer;
         
+    }
 
-        <script>
-            window.addEventListener("beforeunload", function () {
-            document.body.classList.add("animate-out");
-            });
-        </script>
-        
-        <div id="mySidenav" class="sidenav">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#9747;</a>
-          <a style= "text-decoration: underline" href="index.html">About</a>
-          <a href="menu.html">Menu</a>
-          <a href="contact.html">Contact</a>
-        </div>
+    /* Add a background color and some padding around the form */
+    .container{
+        padding: 50px 0px;
+        width: 850px;
+        max-width: 98%;
+        margin: auto;
+    }
 
-        <span style="float:right;margin-top: 5px;cursor:pointer" onclick="openNav()"><div class=navicon></div><div class="navicon"></div><div class=navicon></div>
-        </span>
+    #form {
+        padding:20px 0px 40px;
+        text-align: center;
+    }
 
-        <script>
+    label{
+        text-align: center;
+        font-size: 28px;
+        text-align: center;
+        font-family:'Quintessential', serif;
+        color:#900;
+        font-weight: bolder;
+        list-style-type: none;
+        text-shadow:
+           1px 1px 0 #ffdead,
+          -1px -1px 0 firebrick,  
+           1px -1px 0 firebrick,
+          -1px 1px 0 firebrick,
+           1px 1px 0 firebrick;
+    }
+    
+    footer{
+        margin-top: 50px;
+        text-align: center;
+        font-size: 20PX;
+        color: #800; 
+    }
+    
+    footer p{
+        width: 100%;
+        font-weight: bolder;
+        font-size: 15px;
+    }
+}
 
-            function openNav() {
-                document.getElementById("mySidenav").style.width = "150px";
-                }
+@media (min-width: 850px){
+    .sidenav, .navicon{
+        display: none;
+    }
+    
+    nav li{
+        margin: 0px 36px;
+    }
+    
+    #sociallink img{
+        width: 50px;
+        margin: 0px 50px;
+    }
+    
+    #logo{
+        font-size: 20px;
+        color: #800;
+        font-style: italic;
+        font-weight: bolder;
+        margin: auto;
+        text-align: center;
+    }
+    
+    #logo img{
+        max-width: 350px;
+    }
+    
+    #info{
+        display:flex;
+        max-width:1000px;
+        margin: 25px auto;
+    }
+    
+    #hours{
+        flex: 3;
+        text-align: center;
+        max-width: 250px;
+        margin: 0 auto;
+    }
+    
+    #reservations{
+        flex: 2;
+        text-align: center;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+    
+    #location{ 
+        text-align: center;
+        flex: 1;
+        max-width: 250px;
+        margin: 0 auto;
+    }
+    
+    h1{
+        font-size: 50px;
+    }
+    
+    p{
+        font-size: 22px;
+        width:350px;
+        margin: auto;
+        font-family: serif;
+    }
+    
+    #reservation{
+        color:#ffeecc;
+        padding: 10px 20px;
+        background: repeating-linear-gradient(to top, #500, #900, red 100%);
+        width: 100px;
+        border-radius: 30px;
+        font-family: 'Federant';
+        font-size: 20px;
+        text-decoration: none;
+        border: .5px solid #800;
+        box-shadow: 2px 4px 8px #700;
+        margin: 5px;
+    }
+    
+    #mobilemenu img{
+        width: 850px;
+    }
+    
+    #mobilemenu{
+        width:850px;
+        margin: auto;
+    }
+    
+    textarea, input{
+        font-family: 'federant', serif;
+        color:red;
+        text-align: center;
+        font-size: 18px;
+        font-weight:bolder;
+        max-width: 500px;
+        background-color: antiquewhite;
+    }
 
-            function closeNav() {
-                document.getElementById("mySidenav").style.width = "0";
-                }
-            
-        </script>
-        
-        <nav>
-            <ul>
-                <li><a style="text-decoration: underline" href="index.html">ABOUT</a></li> 
-                <li><a href="menu.html">MENU</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
-            </ul> 
-        </nav>
-        
-        <div id="logo">
+    select{
+        font-family: 'federant', serif;
+        color:red;
+        text-align: center;
+        font-size: 18px;
+        font-weight:bolder;
+        max-width: 50%;
+        box-sizing: border-box;
+        background-color: antiquewhite;
+    }
 
-            <img id="logomt" src="MTLogo.png">
-            <br>
-            <p>Classic Italian Cuisine Since 1997</p>          
-        </div>
-        
-        <div id="intro"> 
-            
-            <h1>Benvenuti a Mangia Tutti</h1>
-            
-            <div class="slideshow-container">
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: darkseagreen;
+        opacity: 1; /* Firefox */
+    }
 
-            <div class="mySlides fade">
-              <img src="Mare.png" style="width:100%">
-            </div>
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: red;
+    }
 
-            <div class="mySlides fade">
-              <img src="Tuna.png" style="width:100%">
-            </div>
-                
-            <div class="mySlides fade">
-              <img src="DiningRoom1.jpg" style="width:100%">
-            </div>
-                
-            <div class="mySlides fade">
-              <img src="Tiramisu.jpg" style="width:100%">
-            </div>
-                
-            <div class="mySlides fade">
-              <img src="Vino.png" style="width:100%">
-            </div>
-                
-            <div class="mySlides fade">
-              <img src="Bruscheta.png" style="width:100%">
-            </div>
+    ::-ms-input-placeholder { /* Microsoft Edge */
+        color: red;
+    }
 
-            <div class="mySlides fade">
-              <img src="Family.png" style="width:100%">
-            </div>
+    /* Style inputs with type="text", select elements and textareas */
+    input[type=text], select, textarea {
+        margin: auto;
+        text-align: center;
+        box-shadow: 2px 4px 10px #600;
+        width: 90%; /* Full width */
+        padding: 8px; /* Some padding */  
+        border: 1.5px solid red; /* Gray border */
+        border-radius: 20px; /* Rounded borders */
+        box-sizing: border-box; /* Make sure that padding and width stays in place */
+        margin-top: 10px; /* Add a top margin */
+        margin-bottom: 30px; /* Bottom margin */
+        resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+    }
 
-            </div>
-            <br>
+     /* Style the submit button with a specific background color etc */
+    input[type=submit] {
+        color:#ffeecc;
+        letter-spacing: .3px;
+        margin: 20px 0;
+        padding: 10px 39px;
+        background: repeating-linear-gradient(to top, #030, #070, lightgreen 100%);
+        width: 150px;
+        border-radius: 30px;
+        font-family: 'Federant';
+        font-size: 20px;
+        text-decoration: none;
+        border: .5px solid #66cc00;
+        box-shadow: 
+            2px 8px 10px black,
+            -2px 8px 10px black;
+        -webkit-transition: background-color 1s ease-out;
+        -moz-transition: background-color 1s ease-out;
+        -o-transition: background-color 1s ease-out;
+        transition: background-color 1s ease-out;
+    }
 
-            <script>
-            var slideIndex = 0;
-            showSlides();
+    /* When moving the mouse over the submit button, add a blue color */
+    input[type=submit]:hover {
+        box-shadow: 2px 8px 10px limegreen;
+        color: antiquewhite;
+        text-shadow:
+        1px 1px 0 lime,
+        -1px -1px 0 green,  
+        1px -1px 0 green,
+        -1px 1px 0 green,
+        1px 1px 0 green;
+        cursor: pointer;
+    }
 
-            function showSlides() {
-              var i;
-              var slides = document.getElementsByClassName("mySlides");
-              var dots = document.getElementsByClassName("dot");
-              for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";  
-              }
-              slideIndex++;
-              if (slideIndex > slides.length) {slideIndex = 1}    
-              slides[slideIndex-1].style.display = "block";  
-              setTimeout(showSlides, 3000); // Change image every 2 seconds
-            }
-            </script>
+    /* Add a background color and some padding around the form */
+    .container{
+        padding: 100px 30px;
+        background: url(hiclipart.png);
+        background-size:100% 100%;
+        background-repeat: no-repeat;
+        width: 850px;
+        max-width: 95%;
+        margin: 50px auto;
+    }
 
-        </div>
-        
-            <div id="info">
-                <div id="location">
-                    <h2>Location</h2>
-                    <h3>635 Clay St <br> San Francisco, CA 94111 <br>Financial District</h3>
-                </div>
+    #form {
+        padding:20px 0px 40px;
+        text-align: center;
+    }
 
-                <div id="reservations">
-                    <h2>Reservations</h2>
-                    <h3><a style="color:#060;text-decoration: none;cursor:pointer" href="tel:14157882088">(415) 788-2088</a><br><br>
-                    <a id="reservation" href="https://www.yelp.com/reservations/mangia-tutti-ristorante-san-francisco?source=yelp_biz_mapbox">Book Table</a>
-                    <a id="reservation" href="https://www.doordash.com/store/mangia-tutti-ristorante-san-francisco-297529/?gclid=CjwKCAjwm4rqBRBUEiwAwaWjjILJzfNreyUvAq89chl-qKe_odzjSqfGS-v20TiRds95Esv6yA0jgBoCxhMQAvD_BwE&utm_campaign=Northern-California_SanFrancisco&ignore_splash_experience=true&utm_source=gpa-ads">Order Now</a></h3>
-                </div>
+    label{
+        text-align: center;
+        font-size: 32px;
+        text-align: center;
+        font-family:'Quintessential', serif;
+        color:#900;
+        list-style-type: none;
+        font-weight: bolder;
+        text-shadow:
+           1px 1px 0 #ffdead,
+          -1px -1px 0 firebrick,  
+           1px -1px 0 firebrick,
+          -1px 1px 0 firebrick,
+           1px 1px 0 firebrick;
+    }
+    
+    #menupdf{
+        max-width: 850px;
+        margin: auto;
+    }
 
-                <div id="hours">
-                    <h2>Hours</h2>
-                    <h3>Mon - Sat <br>Lunch 11:30 - 3:00<br>Dinner 5:30 - 10:00
-                    <br>Sunday 5:30 - 10:00</h3>
-                </div>
-            </div>
-        
-        <footer>
-            
-            <p><a id="sociallink" href="https://www.facebook.com/MangiaTuttiRistorante/"> <img src="FaceBook.png"></a>
-             &copy; Mangia Tutti Ristorante
-            <a id="sociallink" href="https://www.instagram.com/mangiatuttisf/"> <img src="Instagram.png"></a></p>
-            
-        </footer>
-        
-    </body>
-        
+    footer{
+        margin-top: 100px;
+        text-align: center;
+        font-size: 20PX;
+        color: #800;
+    }
+    
+    footer p{
+        width: 100%;
+        font-weight: bolder;
+    }
+}
