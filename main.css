@@ -317,6 +317,10 @@ img {vertical-align: middle;}
         display: none;
     }
     
+    h1{
+        font-size: 32px;
+    }
+    
     p{
         color: #a00;
         font-size: 17px;
@@ -387,16 +391,17 @@ img {vertical-align: middle;}
 
     select{
         font-family: 'federant', serif;
-        color: red;
+        color: #a00;
         text-align: center;
         font-size: 18px;
         font-weight: bolder;
         max-width: 50%;
         box-sizing: border-box;
+        background-color: antiquewhite;
     }
 
     ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-        color: darkseagreen;
+        color: #c00;
         opacity: 1; /* Firefox */
     }
 
@@ -415,10 +420,10 @@ img {vertical-align: middle;}
         text-align: center;
         width: 75%; /* Full width */
         padding: 8px; /* Some padding */  
-        border: 1.5px solid #e68a00; /* Gray border */
+        border: 1.5px solid #090; /* Gray border */
         border-radius: 20px; /* Rounded borders */
         box-sizing: border-box; /* Make sure that padding and width stays in place */
-        margin-top: 10px; /* Add a top margin */
+        margin-top: 30px; /* Add a top margin */
         margin-bottom: 30px; /* Bottom margin */
         resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
     }
@@ -455,36 +460,26 @@ img {vertical-align: middle;}
         1px 1px 0 green;
         cursor: pointer;
     }
+    
+    #fname{
+        margin-top: 100px;
+    }
 
     /* Add a background color and some padding around the form */
     .container{
-        background: url(hiclipart.png);
+        background: url(Vines.png);
         background-size:100% 100%;
         background-repeat: no-repeat;
         max-width: 95%;
-        margin: 50px auto;
-        padding: 100px 0px;
+        margin: auto;
     }
 
     #form {
-        padding:20px 0px 40px;
+        padding: 20px 0px 40px;
         text-align: center;
         width: 100%;
     }
 
-    label{
-        text-align: center;
-        font-size: 28px;
-        text-align: center;
-        font-family:'Federant', serif;
-        color: #a00;
-        list-style-type: none;
-        font-weight: bolder;
-        font-style: italic;
-        text-shadow:
-           1px 1px 0 orangered;
-    }
-    
     footer{
         margin-top: 50px;
         text-align: center;
@@ -558,6 +553,10 @@ img {vertical-align: middle;}
         margin: auto;
     }
     
+    h1{
+        font-size: 25px;
+    }
+    
     h2{
         font-size: 22px;
     }
@@ -601,7 +600,7 @@ img {vertical-align: middle;}
     }
 
     ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-        color: darkseagreen;
+        color: #b00;
         opacity: 1; /* Firefox */
         font-family: 'federant';
         font-size: 17px;
@@ -621,15 +620,15 @@ img {vertical-align: middle;}
         margin: auto;
         font-family: 'federant';
         font-size: 18px;
-        color: red;
+        color: #b00;
         box-shadow: 2px 4px 10px #600;
         text-align: center;
         width: 80%; /* Full width */
         padding: 5px; /* Some padding */  
-        border: 1.5px solid #e68a00; /* Gray border */
+        border: 1.5px solid #080; /* Gray border */
         border-radius: 20px; /* Rounded borders */
         box-sizing: border-box; /* Make sure that padding and width stays in place */
-        margin-top: 10px; /* Add a top margin */
+        margin-top: 30px; /* Add a top margin */
         margin-bottom: 10px; /* Bottom margin */
         resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
     }
@@ -665,36 +664,24 @@ img {vertical-align: middle;}
         1px -1px 0 green,
         -1px 1px 0 green,
         1px 1px 0 green;
-        cursor: pointer;
-        
+        cursor: pointer;  
+    }
+    
+    #fname{
+        margin-top: 0px;
     }
 
     /* Add a background color and some padding around the form */
     .container{
-        padding: 50px 0px;
         width: 850px;
         max-width: 98%;
         margin: auto;
     }
 
     #form {
-        padding:20px 0px 40px;
         text-align: center;
     }
 
-    label{
-        text-align: center;
-        font-size: 28px;
-        text-align: center;
-        font-family:'Federant', serif;
-        color: #a00;
-        list-style-type: none;
-        font-weight: bolder;
-        font-style: italic;
-        text-shadow:
-           1px 1px 0 orangered;
-    }
-    
     footer{
         margin-top: 50px;
         text-align: center;
@@ -809,7 +796,7 @@ img {vertical-align: middle;}
 
     select{
         font-family: 'federant', serif;
-        color:red;
+        color: #b00;
         text-align: center;
         font-size: 18px;
         font-weight:bolder;
@@ -819,7 +806,7 @@ img {vertical-align: middle;}
     }
 
     ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-        color: darkseagreen;
+        color: #b00;
         opacity: 1; /* Firefox */
     }
 
@@ -838,10 +825,10 @@ img {vertical-align: middle;}
         box-shadow: 2px 4px 10px #600;
         width: 90%; /* Full width */
         padding: 8px; /* Some padding */  
-        border: 1.5px solid #e68a00; /* Gray border */
+        border: 1.5px solid #090; /* Gray border */
         border-radius: 20px; /* Rounded borders */
         box-sizing: border-box; /* Make sure that padding and width stays in place */
-        margin-top: 10px; /* Add a top margin */
+        margin-top: 50px; /* Add a top margin */
         margin-bottom: 30px; /* Bottom margin */
         resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
     }
@@ -850,7 +837,7 @@ img {vertical-align: middle;}
     input[type=submit] {
         color:#ffeecc;
         letter-spacing: .3px;
-        margin: 20px 0;
+        margin: 30px 0;
         padding: 10px 39px;
         background: repeating-linear-gradient(to top, #030, #070, lightgreen 100%);
         width: 150px;
@@ -880,34 +867,24 @@ img {vertical-align: middle;}
         1px 1px 0 green;
         cursor: pointer;
     }
+    
+    #fname{
+        margin-top: 100px;
+    }
 
     /* Add a background color and some padding around the form */
     .container{
-        padding: 100px 30px;
-        background: url(hiclipart.png);
+        background: url(Vines.png);
         background-size:100% 100%;
         background-repeat: no-repeat;
         width: 850px;
         max-width: 95%;
-        margin: 50px auto;
+        margin: auto;
     }
 
     #form {
         padding:20px 0px 40px;
         text-align: center;
-    }
-
-    label{
-        text-align: center;
-        font-size: 28px;
-        text-align: center;
-        font-family:'Federant', serif;
-        color: #a00;
-        list-style-type: none;
-        font-weight: bolder;
-        font-style: italic;
-        text-shadow:
-           1px 1px 0 orangered;
     }
     
     #menupdf{
