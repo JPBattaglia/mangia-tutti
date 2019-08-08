@@ -30,7 +30,7 @@ body{
     margin: 20px;
     background:url(Stucco2MangrTutter.png);
     background-size: 100% 100%;
-    background-attachment: fixed;
+    background-attachment:fixed;
 }
 
 #button1:hover{
@@ -151,12 +151,12 @@ h4{
 }
 
 p{
-        color: #a00;
-        font-size: 17px;
-        width:250px;
-        margin: auto;
-        font-family: serif;
-    }
+    color: #a00;
+    font-size: 17px;
+    width:250px;
+    margin: auto;
+    font-family: serif;
+}
 
 .sidenav {
     height: 100%;
@@ -204,8 +204,8 @@ p{
 
 .sidenav .closebtn {
     margin: 0px;
-    padding: 20px 20px 28px 22px;
-    position:absolute;
+    padding: 15px 20px 28px 22px;
+    position: absolute;
     top: 0px;
     right: 0px;
     font-size: 40px;
@@ -256,7 +256,7 @@ nav li a:hover{
 
 
 #intro{
-    margin: 20px auto 0;
+    margin: 20px auto 0px;
     max-width: 859px;
 }
 
@@ -299,7 +299,7 @@ img {vertical-align: middle;}
 #intro img{
     width: 850px;
     max-width: 850px;
-    margin: 10px auto;
+    margin: 0px auto;
     border: 3px solid firebrick;
     border-radius: 20px;
 }
@@ -530,7 +530,7 @@ img {vertical-align: middle;}
     #intro img{
         border-radius: 15px;
         border: 2px solid firebrick;
-        margin-bottom: 0px;
+        margin: 10px 0px 0px;
     }
     
     #logo{
