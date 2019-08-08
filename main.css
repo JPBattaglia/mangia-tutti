@@ -78,9 +78,11 @@ body{
     }
 
 .menus  {
-    margin: auto;
-    background: url(Dishes-light.jpeg) no-repeat center;
-    height: 600;
+    max-width: 850px;
+    border-radius: 30px;
+    margin:50px auto;
+    background: url(MenuBackgrnd1.png) no-repeat center;
+    height: 500;
     background-size: 850px;
 }
 
@@ -137,7 +139,7 @@ h2{
 
 h3{
     font-size: 22px;
-    font-family: 'quintessential', serif;
+    font-family: 'Quintessential', serif;
     font-weight: 600;
 }
 
@@ -148,6 +150,13 @@ h4{
     margin: auto;
 }
 
+p{
+        color: #a00;
+        font-size: 17px;
+        width:250px;
+        margin: auto;
+        font-family: serif;
+    }
 
 .sidenav {
     height: 100%;
@@ -309,6 +318,7 @@ img {vertical-align: middle;}
     }
     
     p{
+        color: #a00;
         font-size: 17px;
         width:250px;
         margin: auto;
@@ -405,7 +415,7 @@ img {vertical-align: middle;}
         text-align: center;
         width: 75%; /* Full width */
         padding: 8px; /* Some padding */  
-        border: 1.5px solid red; /* Gray border */
+        border: 1.5px solid #e68a00; /* Gray border */
         border-radius: 20px; /* Rounded borders */
         box-sizing: border-box; /* Make sure that padding and width stays in place */
         margin-top: 10px; /* Add a top margin */
@@ -448,7 +458,7 @@ img {vertical-align: middle;}
 
     /* Add a background color and some padding around the form */
     .container{
-        background: url(Vines.png);
+        background: url(hiclipart.png);
         background-size:100% 100%;
         background-repeat: no-repeat;
         max-width: 95%;
@@ -466,16 +476,13 @@ img {vertical-align: middle;}
         text-align: center;
         font-size: 28px;
         text-align: center;
-        font-family:'Quintessential', serif;
-        color:#800;
+        font-family:'Federant', serif;
+        color: #a00;
         list-style-type: none;
         font-weight: bolder;
+        font-style: italic;
         text-shadow:
-           1px 1px 0 #ffdead,
-          -1px -1px 0 firebrick,  
-           1px -1px 0 firebrick,
-          -1px 1px 0 firebrick,
-           1px 1px 0 firebrick;
+           1px 1px 0 orangered;
     }
     
     footer{
@@ -558,6 +565,7 @@ img {vertical-align: middle;}
     }
     
     p{
+        color:#a00;
         font-size: 12px;
         width: 225px;
         margin: auto;
@@ -616,7 +624,7 @@ img {vertical-align: middle;}
         text-align: center;
         width: 80%; /* Full width */
         padding: 5px; /* Some padding */  
-        border: 1.5px solid #900; /* Gray border */
+        border: 1.5px solid #e68a00; /* Gray border */
         border-radius: 20px; /* Rounded borders */
         box-sizing: border-box; /* Make sure that padding and width stays in place */
         margin-top: 10px; /* Add a top margin */
@@ -676,16 +684,13 @@ img {vertical-align: middle;}
         text-align: center;
         font-size: 28px;
         text-align: center;
-        font-family:'Quintessential', serif;
-        color:#900;
-        font-weight: bolder;
+        font-family:'Federant', serif;
+        color: #a00;
         list-style-type: none;
+        font-weight: bolder;
+        font-style: italic;
         text-shadow:
-           1px 1px 0 #ffdead,
-          -1px -1px 0 firebrick,  
-           1px -1px 0 firebrick,
-          -1px 1px 0 firebrick,
-           1px 1px 0 firebrick;
+           1px 1px 0 orangered;
     }
     
     footer{
@@ -762,7 +767,7 @@ img {vertical-align: middle;}
     
     p{
         font-size: 22px;
-        width:350px;
+        width:375px;
         margin: auto;
         font-family: serif;
     }
@@ -831,7 +836,7 @@ img {vertical-align: middle;}
         box-shadow: 2px 4px 10px #600;
         width: 90%; /* Full width */
         padding: 8px; /* Some padding */  
-        border: 1.5px solid red; /* Gray border */
+        border: 1.5px solid #e68a00; /* Gray border */
         border-radius: 20px; /* Rounded borders */
         box-sizing: border-box; /* Make sure that padding and width stays in place */
         margin-top: 10px; /* Add a top margin */
@@ -877,7 +882,7 @@ img {vertical-align: middle;}
     /* Add a background color and some padding around the form */
     .container{
         padding: 100px 30px;
-        background: url(Vines.png);
+        background: url(hiclipart.png);
         background-size:100% 100%;
         background-repeat: no-repeat;
         width: 850px;
@@ -892,18 +897,15 @@ img {vertical-align: middle;}
 
     label{
         text-align: center;
-        font-size: 32px;
+        font-size: 28px;
         text-align: center;
-        font-family:'Quintessential', serif;
-        color:#900;
+        font-family:'Federant', serif;
+        color: #a00;
         list-style-type: none;
         font-weight: bolder;
+        font-style: italic;
         text-shadow:
-           1px 1px 0 #ffdead,
-          -1px -1px 0 firebrick,  
-           1px -1px 0 firebrick,
-          -1px 1px 0 firebrick,
-           1px 1px 0 firebrick;
+           1px 1px 0 orangered;
     }
     
     #menupdf{
