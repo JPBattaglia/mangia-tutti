@@ -519,6 +519,7 @@ img {vertical-align: middle;}
     }
     
     #intro{
+        margin: 5px auto;
         width: 100%;
     }
     
