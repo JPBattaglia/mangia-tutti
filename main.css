@@ -365,6 +365,10 @@ img {vertical-align: middle;}
         margin: auto;
     }
     
+    #location img{
+        width: 80px;
+    }
+    
     #reservation{
         color:#ffeecc;
         padding: 10px 25px;
@@ -583,6 +587,10 @@ img {vertical-align: middle;}
         margin-top: 30px;
     }
     
+    #location img{
+        width: 50px;
+    }
+    
     #reservations{
         margin-top: 25px;
     }
@@ -741,6 +749,10 @@ img {vertical-align: middle;}
         text-align: center;
         max-width: 350px;
         margin: 0 auto;
+    }
+    
+    #location img{
+        width: 75px;
     }
     
     #location{ 
