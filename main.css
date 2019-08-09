@@ -347,6 +347,10 @@ img {vertical-align: middle;}
         margin-top: 25px;
     }
     
+    #reservations h2{
+        margin-bottom: 30px;
+    }
+    
     #sociallink img{
         width: 40px;
         margin: 0px 20px
@@ -595,6 +599,10 @@ img {vertical-align: middle;}
         margin-top: 25px;
     }
 
+    #reservations h2{
+        margin-bottom: 25px;
+    }
+    
     select{
         padding: 0px;
         font-family: 'federant', serif;
@@ -748,11 +756,15 @@ img {vertical-align: middle;}
         flex: 2;
         text-align: center;
         max-width: 350px;
-        margin: 0 auto;
+        margin: auto;
+    }
+    
+    #reservations h2{
+        margin-bottom: 30px;
     }
     
     #location img{
-        width: 75px;
+        width: 50px;
     }
     
     #location{ 
