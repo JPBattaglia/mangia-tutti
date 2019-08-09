@@ -1,13 +1,10 @@
-<!DOCTYPE html>
-
-<html>
+<html class="menu-bg">
     <head>
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">    
-        <meta property="og:title" content="Batt Bros" />
-        <meta property="og:image:type" content="image/png" />
-        <meta property="og:image:width" content="400" />
-        <meta property="og:image:height" content="300" />
-        <meta property="og:image" content="https://i.ibb.co/S33jms1/MTLogo.png" />
+	<meta property="og:title" content="Batt Bros" />
+	<meta property="og:image:type" content="image/png" />
+	<meta property="og:image:width" content="400" />
+	<meta property="og:image:height" content="300" />
+	<meta property="og:image" content="https://i.ibb.co/S33jms1/MTLogo.png" />
         <meta property="og:image:secure_url" content="https://i.ibb.co/S33jms1/MTLogo.png" />
         <meta name="keywords" content="Mangia Tutti, Ristorante, Raul Hernandez, Italian Food">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -23,7 +20,6 @@
     
     <body id="animated-example" class="animated fadeOut">
         
-
         <script>
             window.addEventListener("beforeunload", function () {
             document.body.classList.add("animate-out");
@@ -32,117 +28,47 @@
         
         <div id="mySidenav" class="sidenav">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#9747;</a>
-          <a style= "text-decoration: underline" href="index.html">About</a>
-          <a href="menu.html">Menu</a>
+          <a href="index.html">Home</a>
+          <a style="text-decoration: underline" href="menu.html">Menu</a>
           <a href="contact.html">Contact</a>
         </div>
-
-        <span style="float:right;margin-top: 5px;cursor:pointer" onclick="openNav()"><div class=navicon></div><div class="navicon"></div><div class=navicon></div>
-        </span>
+        
+        <span style="float:right;margin-top: 5px;cursor:pointer" onclick="openNav()"><div class=navicon></div><div class="navicon"></div><div class=navicon></div></span>
 
         <script>
-
-            function openNav() {
-                document.getElementById("mySidenav").style.width = "150px";
-                }
-
-            function closeNav() {
-                document.getElementById("mySidenav").style.width = "0";
-                }
             
+            
+            
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "175px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
         </script>
         
         <nav>
             <ul>
-                <li><a style="text-decoration: underline" href="index.html">ABOUT</a></li> 
-                <li><a href="menu.html">MENU</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="index.html">HOME</a></li> 
+                <li><a style="text-decoration: underline" href="menu.html">MENU</a></li>
+                <li><a href="contact.html">CONTACT</a></li> 
             </ul> 
         </nav>
         
         <div id="logo">
-
-            <img id="logomt" src="MTLogo.png">
-            <br>
-            <p>Classic Italian Cuisine Since 1997</p>          
-        </div>
-        
-        <div id="intro"> 
             
-            <h1>Benvenuti a Mangia Tutti</h1>
+            <img src="MTLogo.png"><br>
+            <p>Classic Italian Cuisine Since 1997</p>
             
-            <div class="slideshow-container">
-
-            <div class="mySlides fade">
-              <img src="Mare.png" style="width:100%">
-            </div>
-                
-            <div class="mySlides fade">
-              <img src="Vino.png" style="width:100%">
-            </div>
-
-            <div class="mySlides fade">
-              <img src="Tuna.png" style="width:100%">
-            </div>
-                
-            <div class="mySlides fade">
-              <img src="DiningRoom1.jpg" style="width:100%">
-            </div>
-                
-            <div class="mySlides fade">
-              <img src="Tiramisu.png" style="width:100%">
-            </div>
-                
-            <div class="mySlides fade">
-              <img src="Bruscheta.png" style="width:100%">
-            </div>
-
-            <div class="mySlides fade">
-              <img src="Family.png" style="width:100%">
-            </div>
-
-            </div>
-            <br>
-
-            <script>
-            var slideIndex = 0;
-            showSlides();
-
-            function showSlides() {
-              var i;
-              var slides = document.getElementsByClassName("mySlides");
-              var dots = document.getElementsByClassName("dot");
-              for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";  
-              }
-              slideIndex++;
-              if (slideIndex > slides.length) {slideIndex = 1}    
-              slides[slideIndex-1].style.display = "block";  
-              setTimeout(showSlides, 3000); // Change image every 2 seconds
-            }
-            </script>
-
         </div>
-        
-            <div id="info">
-                <div id="location">
-                    <h2>Location</h2><a href="https://www.google.com/maps/place/Mangia+Tutti+Ristorante/@37.7944547,-122.4059201,17z/data=!3m1!4b1!4m5!3m4!1s0x808581a2288e46a1:0xd6d7825dc8c60188!8m2!3d37.7944547!4d-122.4037314"><img src="Map.png"></a>
-                    <h3>635 Clay St <br> San Francisco, CA 94111 <br>Financial District</h3>
-                </div>
-
-                <div id="reservations">
-                    <h2>Reservations</h2>
-                    <h3>
-                    <a id="reservation" href="https://www.yelp.com/reservations/mangia-tutti-ristorante-san-francisco?source=yelp_biz_mapbox">Book Table</a>
-                    <a id="reservation" href="https://www.doordash.com/store/mangia-tutti-ristorante-san-francisco-297529/?gclid=CjwKCAjwm4rqBRBUEiwAwaWjjILJzfNreyUvAq89chl-qKe_odzjSqfGS-v20TiRds95Esv6yA0jgBoCxhMQAvD_BwE&utm_campaign=Northern-California_SanFrancisco&ignore_splash_experience=true&utm_source=gpa-ads">Order Now</a></h3><br><a style="color:#060;text-decoration: none;cursor:pointer" href="tel:14157882088"><h3>(415) 788-2088</h3></a>
-                </div>
-
-                <div id="hours">
-                    <h2>Hours</h2>
-                    <h3>Mon - Sat <br>Lunch 11:30 - 3:00<br>Dinner 5:30 - 10:00
-                    <br>Sunday 5:30 - 10:00</h3>
-                </div>
-            </div>
+     
+        <center class="menus">
+            <br><br><br><br><br><br><br><br><br>
+            <a id="button1" href="dinner.html">Dinner Menu</a><br><br><br><br><br>
+            <a id="button2" href="dessert.html">Dessert Menu</a><br><br><br><br><br>
+            <a id="button3" href="wine.html">Wine Menu</a>
+        </center>
         
         <footer>
             
@@ -153,4 +79,3 @@
         </footer>
         
     </body>
-        
