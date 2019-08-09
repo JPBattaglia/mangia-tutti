@@ -742,7 +742,7 @@ img {vertical-align: middle;}
     #info{
         display:flex;
         max-width:1000px;
-        margin: 25px auto;
+        margin: auto;
     }
     
     #hours{
@@ -756,7 +756,7 @@ img {vertical-align: middle;}
         flex: 2;
         text-align: center;
         max-width: 350px;
-        margin: auto;
+        margin: 0px auto;
     }
     
     #reservations h2{
@@ -909,11 +909,6 @@ img {vertical-align: middle;}
     #form {
         padding:20px 0px 40px;
         text-align: center;
-    }
-    
-    #menupdf{
-        max-width: 850px;
-        margin: auto;
     }
 
     footer{
