@@ -2,292 +2,155 @@
 
 <html>
     <head>
-	<meta property="og:title" content="Nino Battaglia" />
-	<meta property="og:image:type" content="image/png" />
-	<meta property="og:image:width" content="400" />
-	<meta property="og:image:height" content="300" />
-	<meta property="og:image" content="https://i.ibb.co/RCjm4by/BattBros.png" />
-	<meta property="og:image:secure_url" content="https://i.ibb.co/RCjm4by/BattBros.png" />
-        <meta name="keywords" content="Nino Battaglia, Graphic Designer, Portfolio">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">    
+        <meta property="og:title" content="Batt Bros" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="400" />
+        <meta property="og:image:height" content="300" />
+        <meta property="og:image" content="https://i.ibb.co/S33jms1/MTLogo.png" />
+        <meta property="og:image:secure_url" content="https://i.ibb.co/S33jms1/MTLogo.png" />
+        <meta name="keywords" content="Mangia Tutti, Ristorante, Raul Hernandez, Italian Food">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Nino Battaglia</title>
-        <meta name="description" content="An interactive portfolio.">
+        <title>Mangia Tutti</title>
+        <meta name="description" content="Traditional Italian Dining in SF FiDi">
         <link rel="stylesheet" href="main.css">
-        <link rel="shortcut icon" type="image/png" href="logo1.png">
-        <link href="https://fonts.googleapis.com/css?family=Federant|Akronim|Kaushan+Script|Fugaz+One|Quintessential" rel="stylesheet"> 
+        <link rel="shortcut icon" type="image/png" href="MTLogo.png">
+        <link href="https://fonts.googleapis.com/css?family=Federant|Akronim|Kaushan+Script|Fugaz+One|Righteous|Orbitron|Kanit|Quintessential" rel="stylesheet"> 
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     
     <body id="animated-example" class="animated fadeOut">
         
-        <script>window.addEventListener("beforeunload", function () {
-  document.body.classList.add("animate-out");
-            });</script>
 
-
+        <script>
+            window.addEventListener("beforeunload", function () {
+            document.body.classList.add("animate-out");
+            });
+        </script>
+        
         <div id="mySidenav" class="sidenav">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#9747;</a>
-          <a style= "text-decoration: underline" href="index.html">About</a>
-          <a href="services.html">Services</a>
+          <a style= "text-decoration: underline" href="index.html">Home</a>
+          <a href="menu.html">Menu</a>
           <a href="contact.html">Contact</a>
         </div>
 
-        <span style="float:right;margin-top: 5px;cursor:pointer" onclick="openNav()"><div class=navicon></div><div class="navicon"></div><div class=navicon></div></span>
+        <span style="float:right;margin-top: 5px;cursor:pointer" onclick="openNav()"><div class=navicon></div><div class="navicon"></div><div class=navicon></div>
+        </span>
 
         <script>
-            
-            
-            
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "150px";
-        }
 
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-        }
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "150px";
+                }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+                }
+            
         </script>
-        
-        <article>
-        
-            <img src="logo1.png" alt="logo">
-            
-        </article>
-        
-        <article class=iconright>
-        
-            <img src="logo1.png" alt="logo">
-            
-        </article>
         
         <nav>
             <ul>
-                <li><a href="index.html" style ="color:white;
-                        border-radius: 30px;
-                        text-shadow:
-                           1px 1px 0 red,
-                          -1px -1px 0 red,  
-                           1px -1px 0 red,
-                          -1px 1px 0 red,
-                           1px 1px 0 red;">About</a></li>
-                <li><a href="gallery.html">Gallery</a></li>   
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li> 
+                <li><a style="text-decoration: underline" href="index.html">HOME</a></li> 
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
             </ul> 
         </nav>
         
-        <div id= "intro">
-        
-            <center>
-                <img src= "NinoGif1.gif" alt="Logo Gif">
-            </center>
+        <div id="logo">
+
+            <img id="logomt" src="MTLogo.png">
+            <br>
+            <p>Classic Italian Cuisine Since 1997</p>          
         </div>
         
-        <header class=vid>
+        <div id="intro"> 
             
-            <h5 class="Name"> Nino Battaglia </h5>
-            <h2 class="slogan">~DeFine DeSign~</h2><br>
+            <h1>Benvenuti a Mangia Tutti</h1>
             
-        </header> 
-        
-        <aside class="intro">
-        
-        <h3>Welcome to my portfolio site.</h3><br>
-        <p>This website was developed in order to showcase what I have accomplished in graphic design for a few clients. Each example on the <a href="gallery.html">Gallery</a> page is the result of a unique process of bringing what is in the imagination out into reality. Most will expand when selected to reveal either previous iterations of the same project, or other versions of the same type of medium.</p><br>
-        <p>I've included a few packages and plans on the <a href="services.html">Services</a> page just to give an idea of what I can offer, but I really prefer to discuss and develop projects on an individual basis. Feel free to message me with any questions or ideas through the form provided on the <a href="contact.html">Contact</a> page.</p><br>
-            
-        </aside>
-        
-        <aside class="intromobile">
-        <h3>Welcome to my portfolio.</h3><br>
-        <p>This was developed to showcase what I've accomplished in graphic design. Select any image below to expand and reveal other iterations, videos or versions of the same medium.</p><br>
-        <p>Scroll through the <a href="services.html">Services</a> page for a list of what I offer and then feel free to contact me with any questions through my <a href="contact.html">Contact</a> page. </p><br>
-            
-        </aside>
-        
-        <div class=newsletter><a href="#openModal99"><button id="Btn">Subscribe To Newsletter</button></a></div>
-                <div id="openModal99" class="modalDialog">
-                <div>       
-		          <a href="#close" title="Close" class="close">&#9747;</a>
-		        <form action="//formspree.io/thenino69@gmail.com" method="POST">
+            <div class="slideshow-container">
 
-                 <br><label for="fname">Name:</label><br>
-                 <input type="text" id="fname" name="fname" placeholder="Your Full Name..."><br>
-                 <label for="email_address">Email:</label><br>
-                 <input type="text" id="email_address" name="email_address" placeholder="Your Email Address..."><br>
-                 <br><input type="submit" value="Submit"><br>
-                </form><br>
-                </div></div>
-        
-        
-        <section id="gallery">
-            
-            <h1>Gallery</h1>
-            <a name="gallery"></a>
-            
-            <button onclick="topFunction()" id="myBtn" title="Go to top"></button>
-            
+            <div class="mySlides fade">
+              <img src="Mare.png" style="width:100%">
+            </div>
+                
+            <div class="mySlides fade">
+              <img src="Vino.png" style="width:100%">
+            </div>
 
-        <script>
-  
-            // When the user scrolls down 20px from the top of the document, show the button
-            window.onscroll = function() {scrollFunction()};
+            <div class="mySlides fade">
+              <img src="Tuna.png" style="width:100%">
+            </div>
+                
+            <div class="mySlides fade">
+              <img src="DiningRoom1.jpg" style="width:100%">
+            </div>
+                
+            <div class="mySlides fade">
+              <img src="Tiramisu.png" style="width:100%">
+            </div>
+                
+            <div class="mySlides fade">
+              <img src="Bruscheta.png" style="width:100%">
+            </div>
 
-            function scrollFunction() {
-            if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
-            document.getElementById("myBtn").style.display = "block";
-            } else {
-            document.getElementById("myBtn").style.display = "none";
-                }
+            <div class="mySlides fade">
+              <img src="Family.png" style="width:100%">
+            </div>
+
+            </div>
+            <br>
+
+            <script>
+            var slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              slides[slideIndex-1].style.display = "block";  
+              setTimeout(showSlides, 3000); // Change image every 2 seconds
             }
+            </script>
 
-            // When the user clicks on the button, scroll to the top of the document
-            function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-            }   
-        </script>
-            
-            
-                <a href="#openModal"><img src="Business%20Card.png"></a>
-                <div id="openModal" class="modalDialog">
-                <div>     
-		          <a href="#close" title="Close" class="close">&#9747;</a>
-		          <img id="modalImg" src="BizCardz.jpeg"><br>Stand Out Business Cards<br><br>
-	            </div>
+        </div>
+        
+            <div id="info">
+                <div id="location">
+                    <h2>Location</h2><a href="https://www.google.com/maps/place/Mangia+Tutti+Ristorante/@37.7944547,-122.4059201,17z/data=!3m1!4b1!4m5!3m4!1s0x808581a2288e46a1:0xd6d7825dc8c60188!8m2!3d37.7944547!4d-122.4037314"><img src="Map.png"></a>
+                    <h3>635 Clay St <br> San Francisco, CA 94111 <br>Financial District</h3>
                 </div>
-                <br>Business Card<br><br>
-    
-                <a href="#openModal19"><img src="AppIcon.gif" alt="App Icon"></a>
-                <div id="openModal19" class="modalDialog">
-                <div>       
-		          <a href="#close" title="Close" class="close">&#9747;</a>
-                    <img id="modalImg" src="ChickenFootApp.png" alt="menu">Apple and Android Application Icons<br><br>
-	            </div>
-                </div><br>App Icon<br><br>
-            
-                <a href="#openModal13"><img src="Poster.jpg" alt="Flyer"></a>
-                <div id="openModal13" class="modalDialog">
-                <div>       
-		          <a href="#close" title="Close" class="close">&#9747;</a>
-                    <img id="modalImg" src="NewsletterNew.jpg" alt="menu">Keeping Clients Informed and Finding New Ones<br><br>
-	            </div>
-                </div>    
-                <br>Flyer/Newsletter<br><br>
-            
-                <a href="#openModal18"><img src="TableMenuMockup.png" alt="Menu"></a>
-                <div id="openModal18" class="modalDialog">
-                <div>       
-		          <a href="#close" title="Close" class="close">&#9747;</a>
-                    <img id="modalImg" src="MenuElla's.png" alt="menu">Restaurant, Bar, Cafe, & To-go Menus<br><br>
-	            </div>
-                </div>    
-                <br>Menu<br><br>
-                
-                <a href="#openModal2"><img src="PhotoAnimation.gif" alt="photo animation"></a>
-                <div id="openModal2" class="modalDialog">
-                <div>       
-		          <a href="#close" title="Close" class="close">&#9747;</a>
-		          <img id="modalImg" src="PhotoAnimationVersion.gif">Add Motion and Animation Effects to Still Images<br><br>
-	            </div>
-                </div><br>Photo Animation<br><br>
-                
-                <a href="#openModal9"><img src="CompanyLogo.png"></a>
-                <div id="openModal9" class="modalDialog">
-                <div>       
-		          <a href="#close" title="Close" class="close">&#9747;</a>
-		          <img id="modalImg" src="Branding.jpg">Establishing a Specific Look and Style for A Company or Organization<br><br>
-                </div></div><br>Logo / Branding<br><br>        
-                <a href="#openModal3"><img src="Product%20Branding.jpg"></a>
-                <div id="openModal3" class="modalDialog">
-                <div>       
-		          <a href="#close" title="Close" class="close">&#9747;</a>
-		          <img id="modalImg" src="MonikerVersions.jpeg">Imagery for a Foundation, Company, or Family Crest<br><br>
-	            </div>
-                </div><br>Moniker<br><br>
-                                   
-                <a href="#openModal4"><img src="DPower.jpg"></a>
-                <div id="openModal4" class="modalDialog">
-                <div>       
-		          <a href="#close" title="Close" class="close">&#9747;</a>
-		          <img id="modalImg" src="EmblemVersion.jpg">Memorable Symbols as a Signature<br><br>
-                </div></div><br>Emblem<br><br>
-                
-                <a href="#openModal5"><img src="MobileAppSplash.png"></a>
-                <div id="openModal5" class="modalDialog">
-                <div>       
-		          <a href="#close" title="Close" class="close">&#9747;</a>
-		          <img id="modalImg" src="SplashVersion.jpg">Opening Imagery for Mobile Applications<br><br>
-                </div></div><br>Mobile App Splash<br><br>
-                
-                <a href="#openModal6"><img src="Avatar.jpg"></a>
-                <div id="openModal6" class="modalDialog">
-                <div>       
-		          <a href="#close" title="Close" class="close">&#9747;</a>
-		          <img id="modalImg" src="AvatarVersions.jpeg">Unique Profile Illustrations<br><br>
-                </div></div><br>Avatar<br><br>
-            
-                <a href="#openModal7"><img src="Graphite.jpg"></a>
-                <div id="openModal7" class="modalDialog">
-                <div>       
-		          <a href="#close" title="Close" class="close">&#9747;</a>
-		          <img id="modalImg" src="GraphiteVersionss.jpg">For Focusing on Detail and Shading <br><br>
-                </div></div><br>Graphite Charcoal<br><br>
-            
-                <a href="#openModal10"><img src="Newsletter.jpg"></a>
-                <div id="openModal10" class="modalDialog">
-                <div>       
-		          <a href="#close" title="Close" class="close">&#9747;</a>
-		          <img id="modalImg" src="StationPostVersion.jpg">Attracting New Prospective Clients<br><br>
-                </div></div><br>Station Post<br><br>
-            
-                <a href="#openModal12"><img src="YinYang.gif"></a>
-                <div id="openModal12" class="modalDialog">
-                <div>       
-		          <a href="#close" title="Close" class="close">&#9747;</a>
-		          <img id="modalImg" src="YinYangVersions.jpg">Brainstorming Iterations<br><br>
-                </div></div><br>Sketch Concept<br><br>
-            
-                <a href="#openModal14"><img src="SloganIcon.jpg"></a>
-                <div id="openModal14" class="modalDialog">
-                <div>       
-		          <a href="#close" title="Close" class="close">&#9747;</a>
-		          <img id="modalImg" src="MoonSpadeVersions.png">Logos with Motos <br><br>
-                </div></div><br>Slogan & Icon<br><br>
-            
-                <a href="#openModal15"><img src="Letterhead.png"></a>
-                <div id="openModal15" class="modalDialog">
-                <div>       
-		          <a href="#close" title="Close" class="close">&#9747;</a>
-		          <img id="modalImg" src="envelope.png">Formal Correspondence Stationary<br><br>
-                </div></div><br>Letterhead<br><br>
-            
-                <a href="#openModal16"><img src="Typography.jpeg"></a>
-                <div id="openModal16" class="modalDialog">
-                <div>       
-		          <a href="#close" title="Close" class="close">&#9747;</a>
-		          <img id="modalImg" src="typographyversions.jpeg">Lettering and Font Styling<br><br>
-                </div></div><br>Typography<br><br>
-            
-                <a href="#openModal17"><img src="LettermarkLogo.png" alt= "Lettermark"></a>
-                <div id="openModal17" class="modalDialog">
-                <div>       
-		          <a href="#close" title="Close" class="close">&#9747;</a>
-		          <img id="modalImg" src="LettermarkVersion.jpg">( P )<br>Subtle Ways to Blend Letters with Images<br><br>
-                </div></div><br>Lettermark<br><br>
-            
-        </section>
+
+                <div id="reservations">
+                    <h2>Reservations</h2>
+                    <h3>
+                    <a id="reservation" href="https://www.yelp.com/reservations/mangia-tutti-ristorante-san-francisco?source=yelp_biz_mapbox">Book Table</a>
+                    <a id="reservation" href="https://www.doordash.com/store/mangia-tutti-ristorante-san-francisco-297529/?gclid=CjwKCAjwm4rqBRBUEiwAwaWjjILJzfNreyUvAq89chl-qKe_odzjSqfGS-v20TiRds95Esv6yA0jgBoCxhMQAvD_BwE&utm_campaign=Northern-California_SanFrancisco&ignore_splash_experience=true&utm_source=gpa-ads">Order Now</a></h3><br><a style="color:#060;text-decoration: none;cursor:pointer" href="tel:14157882088"><h3>(415) 788-2088</h3></a>
+                </div>
+
+                <div id="hours">
+                    <h2>Hours</h2>
+                    <h3>Mon - Sat <br>Lunch 11:30 - 3:00<br>Dinner 5:30 - 10:00
+                    <br>Sunday 5:30 - 10:00</h3>
+                </div>
+            </div>
         
-        
-    
         <footer>
-            <a href="https://www.instagram.com/thenino69/"><img src="Instagram.png" alt="Instagram"></a>&nbsp;
-            &#169; Battaglia 2018&nbsp;
-            <a href="https://www.facebook.com/Nino-303877860279981/?fref=pb&hc_location=profile_browser"><img src="facebook.png" alt="Facebook"></a>
+            
+            <p><a id="sociallink" href="https://www.facebook.com/MangiaTuttiRistorante/"> <img src="FaceBook.png"></a>
+             &copy; Mangia Tutti Ristorante
+            <a id="sociallink" href="https://www.instagram.com/mangiatuttisf/"> <img src="Instagram.png"></a></p>
+            
         </footer>
-
+        
     </body>
-
-
-</html>
+        
