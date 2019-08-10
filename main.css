@@ -118,10 +118,10 @@ body{
 
 h1{
     color: #080;
-    font-family: 'Noto serif';
+    font-family: serif;
     text-align: center;
-    font-weight: bolder;
     font-size: 25px;
+    font-weight: bolder;
     text-shadow:
        2px 1px 0 white;
     font-style: italic;      
