@@ -124,7 +124,8 @@ h1{
     font-weight: bolder;
     text-shadow:
        2px 1px 0 white;
-    font-style: italic;      
+    font-style: italic;
+    letter-spacing: -2px;
 }
 
 h2{
