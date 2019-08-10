@@ -367,6 +367,10 @@ img {vertical-align: middle;}
         margin: auto;
     }
     
+    .menus{
+        margin: 5px;
+    }
+    
     #location img{
         width: 50px;
     }
@@ -504,6 +508,10 @@ img {vertical-align: middle;}
 @media (max-width: 600px){
     nav{
         display: none;
+    }
+    
+    .menus{
+        margin-top: 0px;
     }
     
     #reservation{
