@@ -311,7 +311,7 @@ img {vertical-align: middle;}
 
 
 @media (max-width: 849px) and (min-width: 601px){
-    nav{
+    nav, #rotate{
         display: none;
     }
     
@@ -512,6 +512,10 @@ img {vertical-align: middle;}
     
     .menus{
         margin-top: 0px;
+    }
+    
+    #rotate{
+        width: 70px;
     }
     
     #reservation{
@@ -719,7 +723,7 @@ img {vertical-align: middle;}
 }
 
 @media (min-width: 850px){
-    .sidenav, .navicon{
+    .sidenav, .navicon, #rotate{
         display: none;
     }
     
