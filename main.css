@@ -311,7 +311,7 @@ img {vertical-align: middle;}
 /*=======================================*/
 /*=======================================*/
 
-@media (max-width: 849px) and (min-width: 601px){
+@media (max-width: 849px) and (min-width: 651px){
     nav, #rotate{
         display: none;
     }
@@ -509,7 +509,7 @@ img {vertical-align: middle;}
 /*=======================================*/
 /*=======================================*/
 
-@media (max-width: 600px){
+@media (max-width: 650px){
     nav{
         display: none;
     }
