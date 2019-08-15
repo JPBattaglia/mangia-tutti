@@ -515,7 +515,8 @@ img {vertical-align: middle;}
     }
     
     #rotate{
-        width: 70px;
+        width: 65px;
+        float: left;
     }
     
     #reservation{
