@@ -311,7 +311,7 @@ img {vertical-align: middle;}
 /*=======================================*/
 /*=======================================*/
 
-@media (max-width: 849px) and (min-width: 651px){
+@media (max-width: 849px) and (min-width: 601px){
     nav, #rotate{
         display: none;
     }
@@ -509,7 +509,7 @@ img {vertical-align: middle;}
 /*=======================================*/
 /*=======================================*/
 
-@media (max-width: 650px){
+@media (max-width: 600px){
     nav{
         display: none;
     }
@@ -651,7 +651,7 @@ img {vertical-align: middle;}
         color: #b00;
         box-shadow: 2px 4px 10px #600;
         text-align: center;
-        width: 80%; /* Full width */
+        width: 80%;
         padding: 5px; /* Some padding */  
         border: 1.5px solid #080; /* Gray border */
         border-radius: 20px; /* Rounded borders */
