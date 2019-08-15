@@ -414,7 +414,7 @@ img {vertical-align: middle;}
 
     ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
         color: #c00;
-        opacity: 1; /* Firefox */
+        opacity: .5; /* Firefox */
     }
 
     :-ms-input-placeholder { /* Internet Explorer 10-11 */
@@ -430,7 +430,7 @@ img {vertical-align: middle;}
         margin: auto;
         box-shadow: 2px 4px 10px #600;
         text-align: center;
-        width: 75%; /* Full width */
+        width: 60%; /* Full width */
         padding: 8px; /* Some padding */  
         border: 1.5px solid #090; /* Gray border */
         border-radius: 20px; /* Rounded borders */
@@ -458,6 +458,7 @@ img {vertical-align: middle;}
         -moz-transition: background-color 1s ease-out;
         -o-transition: background-color 1s ease-out;
         transition: background-color 1s ease-out;
+        margin-bottom: 20px;
     }
 
     /* When moving the mouse over the submit button, add a blue color */
@@ -628,7 +629,7 @@ img {vertical-align: middle;}
 
     ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
         color: #b00;
-        opacity: 1; /* Firefox */
+        opacity: .5; /* Firefox */
         font-family: 'federant';
         font-size: 17px;
     }
@@ -846,7 +847,7 @@ img {vertical-align: middle;}
 
     ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
         color: #b00;
-        opacity: 1; /* Firefox */
+        opacity: .5; /* Firefox */
     }
 
     :-ms-input-placeholder { /* Internet Explorer 10-11 */
