@@ -570,6 +570,8 @@ img {
     #intro img{
         margin: 10px auto;
         max-width: 300px;
+        border-radius: 10px;
+        border: 2px solid #a00;
     }
     
     #logo{
