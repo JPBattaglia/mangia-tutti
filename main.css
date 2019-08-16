@@ -557,18 +557,18 @@ img {
     #intro{
         margin: 10px auto;
         height: 180px;
-        max-width: 325px;
+        max-width: 300px;
     }
     
     #intro h1{
         font-size: 22px;
         margin: auto;
-        max-width:325px;
+        max-width:300px;
     }
     
     #intro img{
         margin: 10px auto;
-        max-width: 325px;
+        max-width: 300px;
     }
     
     #logo{
