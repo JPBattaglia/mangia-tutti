@@ -551,7 +551,7 @@ img {
     
     #stage{
         margin:auto;
-        max-width: 400px;
+        max-width: 350px;
     }
     
     #intro{
@@ -570,7 +570,7 @@ img {
         border-radius: 15px;
         border: 2px solid firebrick;
         margin: 10px 0px 0px;
-        width: 400px;
+        max-width: 350px;
     }
     
     #logo{
