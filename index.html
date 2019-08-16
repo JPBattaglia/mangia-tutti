@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">    
+    <head>  
         <meta property="og:title" content="Batt Bros" />
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="400" />
@@ -71,56 +70,36 @@
             
             <h1>Benvenuti a Mangia Tutti</h1>
             
-            <div class="slideshow-container"><a href="https://www.yelp.com/biz_photos/mangia-tutti-ristorante-san-francisco" title="tap for more photos">
-
-            <div class="mySlides fade">
-              <img src="Mare.png" style="width:100%">
-            </div>
-                
-            <div class="mySlides fade">
-              <img src="Vino.png" style="width:100%">
-            </div>
-
-            <div class="mySlides fade">
-              <img src="Tuna.png" style="width:100%">
-            </div>
-                
-            <div class="mySlides fade">
-              <img src="DiningRoom1.jpg" style="width:100%">
-            </div>
-                
-            <div class="mySlides fade">
-              <img src="Tiramisu.png" style="width:100%">
-            </div>
-                
-            <div class="mySlides fade">
-              <img src="Bruscheta.png" style="width:100%">
+            <div id="stage">
+                <img src="Bruscheta.png">
+                <img src="DiningRoom1.jpg">
+                <img src="Mare.png">
+                <img src="Tuna.png">
+                <img src="Tiramisu.png">
+                <img src="Family.png">
+                <img src="Front.png">
             </div>
 
-            <div class="mySlides fade">
-              <img src="Family.png" style="width:100%">
-                </div></a>
-
-            </div>
             <br>
 
-            <script>
-            var slideIndex = 0;
-            showSlides();
+            <script type="text/javascript">
 
-            function showSlides() {
-              var i;
-              var slides = document.getElementsByClassName("mySlides");
-              var dots = document.getElementsByClassName("dot");
-              for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";  
-              }
-              slideIndex++;
-              if (slideIndex > slides.length) {slideIndex = 1}    
-              slides[slideIndex-1].style.display = "block";  
-              setTimeout(showSlides, 3000); // Change image every 2 seconds
-            }
-            </script>
+  // Original JavaScript code by Chirp Internet: www.chirp.com.au
+  // Please acknowledge use of this code by including this header.
+
+  window.addEventListener("DOMContentLoaded", function(e) {
+
+    var stage = document.getElementById("stage");
+    var fadeComplete = function(e) { stage.appendChild(arr[0]); };
+    var arr = stage.getElementsByTagName("img");
+    for(var i=0; i < arr.length; i++) {
+      arr[i].addEventListener("animationend", fadeComplete, false);
+    }
+
+  }, false);
+
+</script>
+
 
         </div>
         
