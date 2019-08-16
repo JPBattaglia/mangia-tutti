@@ -252,12 +252,6 @@ nav li a:hover{
        1px 1px 0 darkred;
 }
 
-
-#intro{
-    margin: 20px auto 0px;
-    max-width: 859px;
-}
-
 img {
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -266,40 +260,40 @@ img {
     user-select: none;
 }
 
-.mySlides {display: none;}
-img {vertical-align: middle;}
+  #stage{
+    position:sticky;
+  }
 
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
+  #stage img:nth-of-type(1) {
+    animation-name: fader;
+    animation-delay: 3s;
+    animation-duration: 2s;
+  }
 
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 2.5s;
-  animation-name: fade;
-  animation-duration: 2.5s;
-}
+  #stage img:nth-of-type(2) {
+  }
 
-@-webkit-keyframes fade {
-  from {opacity: .3} 
-  to {opacity: 1}
-}
+  #stage img:nth-of-type(n+3) {
+    display: none;
+  }
 
-@keyframes fade {
-  from {opacity: .3} 
-  to {opacity: 1}
+  @keyframes fader {
+    from { opacity: 1.0; }
+    to   { opacity: 0.0; }
+  }
+
+#intro{
+    width: 850px;
+    height: 450px;
+    margin: auto;
 }
 
 #intro img{
-    width: 850px;
     max-width: 850px;
-    margin: 0px auto;
+    margin: auto;
     border: 3px solid firebrick;
     border-radius: 20px;
+    position:absolute;
 }
 
 #info{
@@ -319,6 +313,7 @@ img {vertical-align: middle;}
     h1{
         font-size: 32px;
         transform: scale(1, 1.3);
+        padding: 10px;
     }
     
     p{
@@ -334,7 +329,7 @@ img {vertical-align: middle;}
         color: #800;
         font-style: italic;
         font-weight: bolder;
-        width: 350px;
+        width: 360px;
         margin: auto;
         text-align: center;
     }
@@ -356,12 +351,26 @@ img {vertical-align: middle;}
         margin: 0px 20px
     }
     
+    #stage{
+        margin: auto;
+        max-width: 700px;
+    }
+    
+    #intro{
+        margin: auto;
+        height: 320px;
+        max-width: 600px;
+    }
+    
     #intro h1{
         font-size: 38px;
+        margin: auto;
+        max-width:500px;
     }
     
     #intro img{
-        box-shadow: 4px 8px 10px #600;
+        margin: auto;
+        max-width: 600px;
     }
     
     #mobilemenu img{
@@ -540,9 +549,15 @@ img {vertical-align: middle;}
         margin: 5px;
     }
     
+    #stage{
+        margin:auto;
+        max-width: 400px;
+    }
+    
     #intro{
         margin: 5px auto;
         width: 100%;
+        height: 220px;
     }
     
     #intro h1{
@@ -555,7 +570,7 @@ img {vertical-align: middle;}
         border-radius: 15px;
         border: 2px solid firebrick;
         margin: 10px 0px 0px;
-        box-shadow: 4px 8px 10px #600;
+        width: 400px;
     }
     
     #logo{
@@ -739,10 +754,6 @@ img {vertical-align: middle;}
     
     nav li{
         margin: 0px 36px;
-    }
-    
-    #intro img{
-        box-shadow: 4px 8px 10px #600;
     }
     
     #sociallink img{
