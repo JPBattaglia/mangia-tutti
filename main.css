@@ -558,13 +558,13 @@ img {
     #intro{
         margin: 10px auto;
         height: 170px;
-        max-width: 300px;
+        max-width: 310px;
     }
     
     #intro h1{
         font-size: 20px;
         margin: 10px auto 0px;
-        max-width: 300px;
+        max-width: 310px;
         transform: scale(1, 1.3);
     }
     
