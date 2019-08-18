@@ -557,7 +557,7 @@ img {
     
     #intro{
         margin: 10px auto;
-        height: 170px;
+        height: 175px;
         max-width: 310px;
     }
     
@@ -569,7 +569,7 @@ img {
     }
     
     #intro img{
-        margin: 15px auto;
+        margin: 10px auto;
         max-width: 310px;
         border-radius: 10px;
         border: 2px solid #a00;
@@ -586,7 +586,7 @@ img {
     }
     
     #logo img{
-        max-width: 180px;
+        max-width: 200px;
         margin: auto;
     }
     
@@ -639,6 +639,10 @@ img {
     
     #number{
         margin: 0px;
+    }
+    
+    #location h2{
+        margin: 10px;
     }
     
     #location h3{
