@@ -86,6 +86,11 @@ body{
     background-size: 850px;
 }
 
+#menumade {
+    padding-top: 15px;
+    width: 65px;
+}
+
 #button2{
     color:#ffeecc;
     padding: 10px 30px;
@@ -598,6 +603,12 @@ img {
         max-width:850px;
         margin: auto;
     }
+    
+    #menumade {
+        padding-top: 15px;
+        width: 55px;
+    }
+
     
     h2{
         font-size: 22px;
