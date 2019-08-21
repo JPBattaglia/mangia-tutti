@@ -321,6 +321,10 @@ img {
         display: none;
     }
     
+    .navicon{
+        margin: 20px 10px 0px 0px;
+    }
+    
     h1{
         font-size: 32px;
         transform: scale(1, 1.3);
@@ -546,6 +550,7 @@ img {
     .navicon {
         width: 35px;
         height: 55px;
+        margin-top: 10px;
     }
     
     #rotate{
