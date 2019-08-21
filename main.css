@@ -220,6 +220,14 @@ p{
     height: 80px;
 }
 
+.navicon1 {
+    width: 30px;
+    height: 4px;
+    margin: 5px;
+    background: firebrick;
+}
+
+
 nav{
     text-align:center;
     margin:auto;
