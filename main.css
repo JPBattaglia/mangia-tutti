@@ -780,7 +780,7 @@ img {
 /*=======================================*/
 
 @media (min-width: 850px){
-    .sidenav, .navicon, #rotate{
+    .sidenav, .navicon, #rotate, .navicon1{
         display: none;
     }
     
