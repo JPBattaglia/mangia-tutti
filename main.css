@@ -216,10 +216,8 @@ p{
 }
 
 .navicon {
-    width: 30px;
-    height: 4px;
-    background-color: firebrick;
-    margin: 6px 0px;
+    width: 50px;
+    height: 80px;
 }
 
 nav{
@@ -535,6 +533,11 @@ img {
     
     .menus{
         margin-top: 0px;
+    }
+    
+    .navicon {
+        width: 35px;
+        height: 55px;
     }
     
     #rotate{
