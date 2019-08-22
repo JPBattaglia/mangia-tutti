@@ -590,7 +590,7 @@ img {
     #intro h1{
         font-size: 20px;
         margin: 25px auto 0px;
-        max-width: 100%x;
+        max-width: 100%;
         transform: scale(1, 1.3);
     }
     
