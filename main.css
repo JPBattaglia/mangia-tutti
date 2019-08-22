@@ -653,6 +653,14 @@ img {
         margin-top: 10px;
     }
     
+    #hours h2{
+        margin-bottom: 5px;
+    }
+    
+    #hours h3{
+        margin-top: 0px;
+    }
+    
     #location img{
         width: 30px;
     }
@@ -663,10 +671,6 @@ img {
     
     #reservations h3{
         margin: 15px;
-    }
-    
-    #number{
-        margin: 0px;
     }
     
     #location h2{
@@ -773,7 +777,6 @@ img {
     }
 
     footer{
-        margin-top: 50px;
         text-align: center;
         font-size: 20PX;
         color: #800; 
