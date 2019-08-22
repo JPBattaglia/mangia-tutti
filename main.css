@@ -429,6 +429,10 @@ img {
         max-width: 500px;
         background-color: antiquewhite;
     }
+    
+    #message{
+        height: 200px;
+    }
 
     select{
         font-family: 'federant', serif;
@@ -487,7 +491,7 @@ img {
         -moz-transition: background-color 1s ease-out;
         -o-transition: background-color 1s ease-out;
         transition: background-color 1s ease-out;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
     }
 
     /* When moving the mouse over the submit button, add a blue color */
@@ -693,6 +697,10 @@ img {
         background-color: antiquewhite;
     }
 
+    #message{
+        height: 100px;
+    }
+    
     ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
         color: #b00;
         opacity: .5; /* Firefox */
@@ -722,7 +730,7 @@ img {
         border: 1.5px solid #080; /* Gray border */
         border-radius: 20px; /* Rounded borders */
         box-sizing: border-box; /* Make sure that padding and width stays in place */
-        margin-top: 30px; /* Add a top margin */
+        margin-top: 25px; /* Add a top margin */
         margin-bottom: 10px; /* Bottom margin */
         resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
     }
@@ -762,7 +770,7 @@ img {
     }
     
     #fname{
-        margin-top: 0px;
+        margin-top: 50px;
     }
 
     /* Add a background color and some padding around the form */
@@ -899,7 +907,7 @@ img {
         text-align: center;
         font-size: 18px;
         font-weight:bolder;
-        max-width: 500px;
+        max-width: 450px;
         background-color: antiquewhite;
     }
 
@@ -914,6 +922,10 @@ img {
         background-color: antiquewhite;
     }
 
+    #message{
+        height: 200px;
+    }
+    
     ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
         color: #b00;
         opacity: .5; /* Firefox */
@@ -933,7 +945,7 @@ img {
         text-align: center;
         box-shadow: 2px 4px 10px #600;
         width: 90%; /* Full width */
-        padding: 8px; /* Some padding */  
+        padding: 10px; /* Some padding */  
         border: 1.5px solid #090; /* Gray border */
         border-radius: 20px; /* Rounded borders */
         box-sizing: border-box; /* Make sure that padding and width stays in place */
@@ -946,7 +958,7 @@ img {
     input[type=submit] {
         color:#ffeecc;
         letter-spacing: .3px;
-        margin: 40px 0;
+        margin: 40px 0 75px;
         padding: 10px 39px;
         background: repeating-linear-gradient(to top, #030, #070, lightgreen 100%);
         width: 150px;
@@ -978,7 +990,7 @@ img {
     }
     
     #fname{
-        margin-top: 100px;
+        margin-top: 130px;
     }
 
     /* Add a background color and some padding around the form */
@@ -986,8 +998,8 @@ img {
         background: url(Vines.png);
         background-size:100% 100%;
         background-repeat: no-repeat;
-        width: 850px;
-        max-width: 95%;
+        width: 950px;
+        max-width: 100%;
         margin: auto;
     }
 
