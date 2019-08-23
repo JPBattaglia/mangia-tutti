@@ -138,6 +138,7 @@ h2{
     font-size: 28px;
     font-family: 'federant', serif;
     font-weight: bolder;
+    color: #800;
 }
 
 h3{
@@ -625,7 +626,7 @@ img {
 
     
     h2{
-        font-size: 22px;
+        font-size: 24px;
     }
     
     h3{
@@ -661,7 +662,7 @@ img {
     #location img{
         width: 30px;
     }
-
+    
     #reservations h2{
         margin: 15px;
     }
@@ -856,8 +857,7 @@ img {
     }
     
     #location h3{
-        margin: 5px;
-        
+        margin: 5px;   
     }
     
     #number{
