@@ -368,13 +368,12 @@ img {
     
     #stage{
         margin: auto;
-        max-width: 100%;
-        
+        max-width: 85%;
     }
     
     #intro{
         margin: auto;
-        height: 340px;
+        height: 350px;
         max-width: 100%;
     }
     
@@ -583,8 +582,8 @@ img {
     
     #intro{
         margin: 10px auto;
-        height: 230px;
-        max-width: 100%;
+        height: 240px;
+        max-width: 95%;
     }
     
     #intro h1{
