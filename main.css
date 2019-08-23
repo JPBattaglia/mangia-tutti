@@ -700,6 +700,10 @@ img {
         height: 100px;
     }
     
+    #fname{
+        margin-top: 5px;
+    }
+    
     ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
         color: #b00;
         opacity: .5; /* Firefox */
