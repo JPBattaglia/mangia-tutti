@@ -272,7 +272,7 @@ img {
 }
 
   #stage{
-    position:fixed;
+    position:sticky;
     margin:auto;
     max-width: 850px;
   }
