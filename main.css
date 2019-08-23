@@ -165,7 +165,7 @@ p{
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 999;
+    z-index: 1;
     top: 0;
     right: 0;
     background: url(SlideNavBGTrnsprnt.png);
@@ -272,7 +272,7 @@ img {
 }
 
   #stage{
-    position:sticky;
+    position:fixed;
     margin:auto;
     max-width: 850px;
   }
@@ -588,6 +588,7 @@ img {
     #intro img{
         margin: 10px auto;
         max-width: 310px;
+        height: 150px;
         border-radius: 10px;
         border: 2px solid #a00;
     }
