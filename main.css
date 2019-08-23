@@ -855,6 +855,11 @@ img {
         margin: 0 auto;
     }
     
+    #location h3{
+        margin: 5px;
+        
+    }
+    
     #number{
         margin-top: 30px;
     }
