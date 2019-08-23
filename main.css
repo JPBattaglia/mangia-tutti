@@ -272,9 +272,10 @@ img {
 }
 
   #stage{
-    position:sticky;
+    position:absolute;
     margin:auto;
     max-width: 850px;
+    z-index: -1;
   }
 
   #stage img:nth-of-type(1) {
