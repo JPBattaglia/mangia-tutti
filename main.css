@@ -4,26 +4,26 @@ html{
 }
 
 .animated {
-            background-color: #ffdead;
-            background-position: left top;
-            margin-bottom:30px;
-            -webkit-animation-duration: 3s;animation-duration: 3s;
-            -webkit-animation-fill-mode: both;animation-fill-mode: both;
+        background-color: #ffdead;
+        background-position: left top;
+        margin-bottom:30px;
+        -webkit-animation-duration: 3s;animation-duration: 3s;
+        -webkit-animation-fill-mode: both;animation-fill-mode: both;
+        }
+
+        @-webkit-keyframes fadeOut {
+          100% {opacity: 1;}
+          0% {opacity: 0;}
          }
 
-         @-webkit-keyframes fadeOut {
-            100% {opacity: 1;}
-            0% {opacity: 0;}
+        @keyframes fadeOut {
+          100% {opacity: 1;}
+          0% {opacity: 0;}
          }
 
-         @keyframes fadeOut {
-            100% {opacity: 1;}
-            0% {opacity: 0;}
-         }
-
-         .fadeOut {
-            -webkit-animation-name: fadeOut;
-            animation-name: fadeOut;
+.fadeOut {
+        -webkit-animation-name: fadeOut;
+        animation-name: fadeOut;
          }
 
 body{
@@ -296,13 +296,13 @@ img {
   }
 
 #intro{
-    max-width: 90%;
+    max-width: 835px;
     height: 475px;
     margin: auto;
 }
 
 #intro img{
-    max-width: 100%;
+    max-width: 835px;
     margin: auto;
     border: 3px solid firebrick;
     border-radius: 20px;
@@ -368,15 +368,10 @@ img {
         margin: 0px 20px
     }
     
-    #stage{
-        margin: auto;
-        max-width: 85%;
-    }
-    
     #intro{
         margin: auto;
         height: 350px;
-        max-width: 100%;
+        max-width: 565px;
     }
     
     #intro h1{
@@ -387,7 +382,7 @@ img {
     
     #intro img{
         margin: auto;
-        max-width: 100%;
+        max-width: 565px;
     }
     
     #mobilemenu img{
@@ -577,15 +572,10 @@ img {
         font-size: 18px;
     }
     
-    #stage{
-        margin: auto px;
-        max-width: 100%;
-    }
-    
     #intro{
         margin: 10px auto;
-        height: 185px;
-        max-width: 95%;
+        height: 175px;
+        max-width: 310px;
     }
     
     #intro h1{
@@ -597,7 +587,7 @@ img {
     
     #intro img{
         margin: 10px auto;
-        max-width: 100%;
+        max-width: 310px;
         border-radius: 10px;
         border: 2px solid #a00;
     }
