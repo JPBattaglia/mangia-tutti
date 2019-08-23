@@ -373,7 +373,7 @@ img {
     
     #intro{
         margin: auto;
-        height: 350px;
+        height: 370px;
         max-width: 100%;
     }
     
@@ -582,8 +582,8 @@ img {
     
     #intro{
         margin: 10px auto;
-        height: 240px;
-        max-width: 95%;
+        height: 225px;
+        max-width: 90%;
     }
     
     #intro h1{
