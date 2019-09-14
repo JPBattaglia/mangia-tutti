@@ -568,7 +568,8 @@ img {
     }
     
     .menus{
-        margin-top: 0px;
+        max-width: 285px;
+        margin: 0 auto 50px;
     }
     
     .navicon {
