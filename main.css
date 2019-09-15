@@ -328,6 +328,7 @@ img {
 
 #intro img{
     max-width: 835px;
+    height: 395px;
     margin: auto;
     border: 3px solid firebrick;
     border-radius: 20px;
@@ -408,6 +409,7 @@ img {
     #intro img{
         margin: auto;
         max-width: 565px;
+        height: 270px;
     }
     
     #mobilemenu img{
