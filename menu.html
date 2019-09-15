@@ -1,84 +1,641 @@
-<html class="menu-bg">
-    <head>
-	<meta property="og:title" content="Batt Bros" />
-	<meta property="og:image:type" content="image/png" />
-	<meta property="og:image:width" content="400" />
-	<meta property="og:image:height" content="300" />
-	<meta property="og:image" content="https://i.ibb.co/S33jms1/MTLogo.png" />
-        <meta property="og:image:secure_url" content="https://i.ibb.co/S33jms1/MTLogo.png" />
-        <meta name="keywords" content="Mangia Tutti, Ristorante, Raul Hernandez, Italian Food">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Mangia Tutti - Menus</title>
-        <meta name="description" content="Traditional Italian Dining in SF FiDi">
-        <link rel="stylesheet" href="main.css">
-        <link rel="shortcut icon" type="image/png" href="MTLogo.png">
-        <link href="https://fonts.googleapis.com/css?family=Federant|Akronim|Kaushan+Script|Fugaz+One|Righteous|Orbitron|Kanit|Quintessential" rel="stylesheet"> 
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
+html{
+    min-height:100%;
+    overflow:auto;
+}
+
+.animated {
+        background-color: #034;
+        background-position: left top;
+        margin-bottom:30px;
+        -webkit-animation-duration: 3s;animation-duration: 3s;
+        -webkit-animation-fill-mode: both;animation-fill-mode: both;
+        }
+
+        @-webkit-keyframes fadeOut {
+          100% {opacity: 1;}
+          0% {opacity: 0;}
+         }
+
+        @keyframes fadeOut {
+          100% {opacity: 1;}
+          0% {opacity: 0;}
+         }
+
+.fadeOut {
+        -webkit-animation-name: fadeOut;
+        animation-name: fadeOut;
+         }
+
+body{
+    background: -moz-linear-gradient(-45deg, #600 25%, #044, #044 100%);
+    background: -webkit-linear-gradient(-45deg, #600 25%,#044, #044 100%);
+    background: linear-gradient(135deg, #800, #400 40%, #034, #045 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#800', endColorstr='#045',GradientType=1 );
+    }
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background: linear-gradient(to right, #057, #045, #034, #045, #057 100%);
+    background-repeat: repeat;
+    background-size: 100% 103%;
+    overflow-x: hidden;
+    transition: .8s;
+    padding-top: 150px;
+    font-family: 'Orbitron';
+    font-weight: bold;
+}
+
+.sidenav a {
+    padding: 45px 10px;
+    font-size: 22px;
+    color: white;
+    display: block;
+    transition: 1s;
+    max-width: 100%;
+    text-align: center;
+    text-shadow:
+       1px 1px 0 red,
+      -1px -1px 0 #800,  
+       1px -1px 0 #800,
+      -1px 1px 0 #800,
+       1px 1px 0 #800;
+    text-decoration: none;
+}
+
+.sidenav a:hover {
+    color: red;
+    text-shadow:
+       1px 1px 0 tan,
+      -1px -1px 0 white,  
+       1px -1px 0 white,
+      -1px 1px 0 white,
+       1px 1px 0 white;
+}
+
+.sidenav .closebtn {
+    margin: 0px;
+    padding: 5px 20px 28px 22px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+.navicon {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    z-index: 1;
+}
+
+.navicon1 {
+    width: 30px;
+    height: 4px;
+    margin: 5px;
+    background: white;
+}
+
+
+#stage{
+    position:absolute;
+    margin:auto;
+    max-width: 1000px;
+    z-index: -1;
+}
+
+#stage img:nth-of-type(1) {
+    animation-name: fader;
+    animation-delay: 3s;
+    animation-duration: 2s;
+    z-index: 20;
+}
+
+#stage img:nth-of-type(2) {
+    z-index: 10;
+}
+
+#stage img:nth-of-type(n+3) {
+    display: none;
+}
+
+  @keyframes fader {
+    from { opacity: 1.0; }
+    to   { opacity: 0.0; }
+}
+
+
+
+nav{
+    background-color: #034;
+    border-bottom: 3px solid #023;
+    width: 100%;
+
+}
+
+nav p:hover{
+    border-bottom: 3px solid #076;
+    color: #098;
+    font-weight: bolder;
+}
+
+nav img{
+    width: 60px;
+    margin: 10px 0px 10px 15px;
+}
+
+.logoburger{
+    -webkit-transition: width 2s, height 2s, 
+    -webkit-transform 1.5s; /* Safari */
+    transition: width 2s, height 2s, transform 1.5s;
+}
+
+.logoburger:hover{
+    -webkit-transform: rotate(360deg); /* Safari */
+    transform: rotate(360deg);
+}
+
+nav p{
+    float:right;
+    letter-spacing: 2px;
+    color: white;
+    padding: 5px 2px;
+    margin: 25px 30px;
+    font-family: 'Orbitron';
+}
+
+.logo{
+    width: 120px;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    font-family: 'Orbitron';
+    padding: 20px 0;
+    font-weight: bolder; 
+    margin: 0px;
+}
+
+#intro{
+    max-width: 1000px;
+    height: 510px;
+    margin: auto;
+}
+
+#intro img{
+    max-width: 1000px;
+    margin: auto;
+    position:absolute;
+    border-radius: 10px;
+    border: 3px solid #057;
+}
+
+#info{
+    display:flex;
+    max-width:1000px;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 20px;
+    color: #700;
+    flex-wrap: wrap;
+}
+
+.cafe, .restaurant, .pastry{
+    flex: 1;
+    padding: 30px;
+    margin: 25px;
+    text-align: center;
+    font-family: 'orbitron';
+    font-size: 22px;
+    font-weight: bolder; 
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    box-shadow: 15px 15px 1px transparent; 
+    position: relative;
+}
+
+.restaurant img{
+    width:100px;
+    padding: 10px;
+}
+
+.cafe img{
+    width: 95px;
+    height: 85px;
+    padding: 10px;
+}
+
+.pastry img{
+    width: 75px;
+    padding: 10px;
+}
+
+.cafe:hover, .restaurant:hover, .pastry:hover{
+    border: 2px solid #068;
+    cursor: pointer;
+    box-shadow: 15px 15px 5px #023;
+}
+
+.cafe .details, .restaurant .details, .pastry .details {
+    width: 95%;
+    height: 95%;    
+    padding: 5px;
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateY(90deg);
+    transform-origin: 50%; 
+    opacity: 0;
+    transition: all 0.6s ease-in;
+    font-size: 18px;
+    border-radius: 24px;
+    background: -moz-linear-gradient(-45deg, #056 5%,#800 100%);
+    background: -webkit-linear-gradient(-45deg, #056 5%,#800 100%);
+    background: linear-gradient(135deg, #056 5%,#800 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#056', endColorstr='#800',GradientType=1 );
     
-    <body id="animated-example" class="animated fadeOut">
-        
-        <script>
-            window.addEventListener("beforeunload", function () {
-            document.body.classList.add("animate-out");
-            });
-        </script>
-        
-        <div id="mySidenav" class="sidenav">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#9747;</a>
-          <a href="index.html">Home</a>
-          <a style="text-decoration: underline" href="menu.html">Menu</a>
-          <a href="contact.html">Contact</a>
-        </div>
-        
-       <span style="float:right;margin-top: 5px;cursor:pointer" onclick="openNav()"><div ><img class="navicon" style="width:35px; height:30px" src="MenuLeft1.png"></div></span>
+}
+.cafe:hover .details, .restaurant:hover .details, .pastry:hover .details {
+    transform: translate(-50%, -50%) rotateY(0deg);
+    opacity: 1;
+}
 
-        <script>
-            
-            
-            
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "175px";
+.consult{
+    margin: 20px auto 0;
+    max-width: 400px;
+}
+
+#Btn{
+    margin: 0px auto 30px;
+    color:#ffeecc;
+    padding: 10px 30px;
+    background: repeating-linear-gradient(to top, #022, #058, #0d888f 100%);
+    width: 400px;
+    border-radius: 30px;
+    font-family: 'Orbitron';
+    font-weight: bolder;
+    font-size: 20px;
+    text-decoration: none;
+    border: .5px solid #0b7075;
+    box-shadow: 
+        2px 8px 10px #000,
+        -2px 8px 10px #000;
+    text-shadow:
+       1px 1px 0 black,
+      -1px -1px 0 #000,  
+       1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+    }
+
+#Btn:hover{
+    border: .5px solid #060;
+    cursor: pointer;
+    font-weight: bolder;
+    color: #089;
+    text-shadow:
+       1px 1px 0 white,
+      -1px -1px 0 black,  
+       1px -1px 0 black,
+      -1px 1px 0 black,
+       1px 1px 0 black;
+    box-shadow: 
+        2px 6px 10px #057,
+        -2px 6px 10px #057;
+}
+
+.modalDialog {
+    margin: auto;
+	position:fixed;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 600ms ease-in;
+	-moz-transition: opacity 600ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+
+.modalDialog:target {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+        text-align: center;
+        width: 500px;
+        position: relative;
+        margin: 100px auto;
+        padding: 1px 20px 1px 20px;
+        border-radius: 20px;
+        background: -moz-radial-gradient(black, #400);
+        background: -webkit-radial-gradient( #200, #600);
+        border: #066 double 2px;
+        max-width:100%;
         }
 
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
+label{
+    font-size: 20px;
+    text-align: center;
+    font-family:'federant', serif;
+    color:white;
+    list-style-type: none;
+    text-shadow:
+       1px 1px 0 red,
+      -1px -1px 0 red,  
+       1px -1px 0 red,
+      -1px 1px 0 red,
+       1px 1px 0 red;
+}
+
+textarea, input{
+    font-family: 'federant', serif;
+    color:red;
+    text-align: center;
+    font-size: 18px;
+    font-weight:bolder;
+    max-width: 300px;
+}
+
+select{
+    font-family: 'federant', serif;
+    color:red;
+    text-align: center;
+    font-size: 18px;
+    font-weight:bolder;
+    max-width: 50%;
+    box-sizing: border-box;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: skyblue;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: red;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: red;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    margin: auto;
+    text-align: center;
+    width: 100%; /* Full width */
+    padding: 5px; /* Some padding */  
+    border: 6px double #600; /* Gray border */
+    border-radius: 30px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 10px; /* Add a top margin */
+    margin-bottom: 30px; /* Bottom margin */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+textarea {
+    border-radius: 20px;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 22px;
+    background-color: #067;
+    color: white;
+    padding: 5px 30px;
+    border: 1px solid white;
+    cursor: pointer;
+    border-radius: 25px;
+    box-shadow: 0px 5px 25px black;
+    text-shadow:
+       1px 1px 0 black,
+      -1px -1px 0 black,  
+       1px -1px 0 black,
+      -1px 1px 0 black,
+       1px 1px 0 black;
+    -webkit-transition: background-color 1s ease-out;
+    -moz-transition: background-color 1s ease-out;
+    -o-transition: background-color 1s ease-out;
+    transition: background-color 1s ease-out;
+}
+
+/* When moving the mouse over the submit button, add a blue color */
+input[type=submit]:hover {
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: center;
+    border: 1px solid white;
+    background-color: #900;
+    border-radius: 25px;
+    text-shadow:
+       1px 1px 0 black,
+      -1px -1px 0 black,  
+       1px -1px 0 black,
+      -1px 1px 0 black,
+       1px 1px 0 black;
+}
+
+
+.close { 
+    font-family: 'federant';
+	background: -webkit-radial-gradient( orange, red, #200);
+    max-width:100%;
+    border: .5px hidden black;
+	color: white;
+	line-height: 29px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 30px;
+	text-decoration: none;
+	font-weight: bold;
+    font-size: 20px;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 25px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+    text-shadow:
+       1px 1px 0 black,
+      -1px -1px 0 black,  
+       1px -1px 0 black,
+      -1px 1px 0 black,
+       1px 1px 0 black;
+}
+
+.close:hover { 
+    background: black;
+    max-width:100%;
+    border: .5px solid red;
+	color: black;
+    text-shadow:
+       1px 1px 0 red,
+      -1px -1px 0 red,  
+       1px -1px 0 red,
+      -1px 1px 0 red,
+       1px 1px 0 red;
+}
+    
+
+footer p{
+    text-align: center;
+    color: #0bb;
+    font-family: 'Quintessential';
+    font-size: 24px;
+    margin: 0px;
+}
+
+/*=======================================*/
+/*=======================================*/
+
+@media (max-width: 1000px) and (min-width: 701px){
+    
+    nav a{
+        display: none;
+    }
+    
+    #intro{
+        margin: auto;
+        height: 370px;
+        max-width: 700px;
+    }
+    
+    #intro h1{
+        font-size: 32px;
+        margin: 20px auto;
+        max-width:100%;
+    }
+    
+    #intro img{
+        margin: auto;
+        max-width: 700px;
+    }
+    
+    h1{
+        font-size: 28px;
+        margin: 0px;
+    }
+    
+    #info{
+        flex-direction: column;
+        max-width: 60%;
+    }
+    
+    .cafe .details, .restaurant .details, .pastry .details{
+        padding: 20px 10px;
+    }
+}
+
+/*=======================================*/
+/*=======================================*/
+
+@media (max-width: 700px){
+    
+    nav a{
+        display: none;
+    }
+    
+    .logo{
+        width: 75px;
+    }
+    
+    .logoburger{
+        width: 50px;
+    }
+    
+    #intro{
+        margin: auto;
+        height: 210px;
+        max-width: 310px;
+    }
+    
+    #intro img{
+        margin: auto;
+        max-width: 310px;
+        height: 200px;
+    }
+    
+    h1{
+        font-size: 18px;
+        margin: 0px;
+    }
+    
+    #info{
+        flex-direction: column;
+        max-width: 310px;
+    }
+    
+    .cafe, .restaurant, .pastry{
+        min-width: 280px;
+        text-align: center;
+        font-size: 15px;
+        margin: 0px auto;
+        border-radius: 20px;
+        padding: 30px;
+    }
+    
+    .cafe .details, .restaurant .details, .pastry .details{
+        padding: 5px 8px;
+        border-radius: 15px;
+        font-size: 17px;
+    }
+    
+    .consult{
+        margin: 20px auto 0;
+        width: 250px;
+}
+
+#Btn{
+        font-size: 15px;
+        width: 250px;
+        margin: 0px auto 25px;
+        padding: 5px; 
+}
+
+    
+    footer img{
+        width: 50px;
+    }
+    
+    footer p{
+        font-size: 15px;
+    }
+    
+    .modalDialog > div {
+        text-align: center;
+        width: 300px;
+        position: relative;
+        margin: 20px auto;
+        padding: 1px 20px 1px 20px;
+        border-radius: 20px;
+        background: -moz-radial-gradient(black, #400);
+        background: -webkit-radial-gradient( #200, #600);
+        border: #066 double 2px;
+        max-width:100%;
         }
-        </script>
-        
-        <nav>
-            <ul>
-                <li><a href="index.html">HOME</a></li> 
-                <li><a style="text-decoration: underline" href="menu.html">MENU</a></li>
-                <li><a href="contact.html">CONTACT</a></li> 
-            </ul> 
-        </nav>
-        
-        <div id="logo">
-            
-            <img src="MTLogo.png"><br>
-            <p>Classic Italian Cuisine Since 1997</p>
-            
-        </div>
-        
-        <h1>Menus</h1>
-     
-        <center class="menus">
-            <br><br><br>
-            <a id="button1" href="lunch.html">Lunch Menu</a><br><br><br><br><br>
-            <a id="button2" href="dinner.html">Dinner Menu</a><br><br><br><br><br>
-            <a id="button3" href="dessert.html">Dessert Menu</a><br><br><br><br><br>
-            <a id="button4" href="wine.html">Wine Menu</a>
-        </center>
-        
-        <footer>
-            
-            <p><a id="sociallink" href="https://www.facebook.com/MangiaTuttiRistorante/"> <img src="FaceBook.png"></a>
-             &copy; Mangia Tutti Ristorante
-            <a id="sociallink" href="https://www.instagram.com/mangiatuttisf/"><img src="Instagram.png"></a><br> <img id="menumade" src="MENU.png"> made</p>
-            
-        </footer>
-        
-    </body>
+}
+
+@media (min-width: 1000px){
+    
+    .navicon{
+        display: none;
+    }
+}
