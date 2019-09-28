@@ -16,6 +16,7 @@
         <link rel="shortcut icon" type="image/png" href="MTLogo.png">
         <link href="https://fonts.googleapis.com/css?family=Federant|Akronim|Kaushan+Script|Fugaz+One|Righteous|Orbitron|Kanit|Quintessential" rel="stylesheet"> 
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
     
     <body id="animated-example" class="animated fadeOut">
@@ -58,7 +59,7 @@
         
         <div id="logo">
             
-            <img src="MTLogo.png"><br>
+            <img data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" src="MTLogo.png"><br>
             <p>Classic Italian Cuisine Since 1997</p>
             
         </div>
@@ -67,10 +68,12 @@
      
         <center class="menus">
             <br><br><br>
+            <div data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" >
             <a id="button1" href="lunch.html">Lunch Menu</a><br><br><br><br><br>
             <a id="button2" href="dinner.html">Dinner Menu</a><br><br><br><br><br><br>
             <a id="button3" href="dessert.html">Dessert Menu</a><br><br><br><br><br>
             <a id="button4" href="wine.html">Wine Menu</a>
+                </div>
         </center>
         
         <footer>
@@ -81,4 +84,8 @@
             
         </footer>
         
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
     </body>
