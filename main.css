@@ -3,6 +3,12 @@ html{
     overflow:auto;
 }
 
+AOS.init({
+  useClassNames: true,
+  initClassName: false,
+  animatedClassName: 'animated',
+});
+
 .animated {
         background-color: #ffdead;
         background-position: left top;
