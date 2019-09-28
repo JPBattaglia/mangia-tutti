@@ -18,6 +18,7 @@
         <link rel="shortcut icon" type="image/png" href="MTLogo.png">
         <link href="https://fonts.googleapis.com/css?family=Federant|Akronim|Kaushan+Script|Fugaz+One|Righteous|Orbitron|Kanit|Quintessential" rel="stylesheet"> 
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
     
     <body id="animated-example" class="animated fadeOut">
@@ -35,7 +36,7 @@
           <a style="text-decoration: underline" href="contact.html">Contact</a>
         </div>
 
-        <span style="float:right;margin-top: 5px;cursor:pointer" onclick="openNav()"><div ><img class="navicon" style="width:35px; height:30px" src="MenuLeft1.png"></div></span>
+        <span style="float:right;margin-top: 5px;cursor:pointer" onclick="openNav()"><div ><img class=navicon style="width:35px; height:30px" src="MenuLeft1.png"></div></span>
 
         <script>
             
@@ -73,13 +74,13 @@
                  
                  <form action="//formspree.io/mangiatuttiristorante@gmail.com" method="POST">
  
-                 <input type="text" id="fname" name="fname" placeholder="First Name"><br>
+                 <input data-aos="flip-right" data-aos-duration="3000" type="text" id="fname" name="fname" placeholder="First Name"><br>
  
-                 <input type="text" id="lname" name="lname" placeholder="Last Name"><br>
+                 <input data-aos="flip-right" data-aos-duration="3000" type="text" id="lname" name="lname" placeholder="Last Name"><br>
                      
-                 <input type="text" id="email_address" name="email_address" placeholder="Email"><br>
+                 <input data-aos="flip-right" data-aos-duration="3000" type="text" id="email_address" name="email_address" placeholder="Email"><br>
  
-                 <select id="service" name="service">
+                 <select data-aos="flip-right" data-aos-duration="3000" id="service" name="service">
                  <option value="General">General</option>
                  <option value="Logo">Large Party</option>
                  <option value="Icon">Catering</option>
@@ -88,9 +89,9 @@
                  <option value="Other">Other</option>
                  </select><br>
  
-                 <textarea id="message" name="message" placeholder="Write Something..."></textarea><br>
+                 <textarea data-aos="flip-right" data-aos-duration="3000" id="message" name="message" placeholder="Write Something..."></textarea><br>
  
-                 <input type="submit" value="Submit">
+                 <input data-aos="flip-right" data-aos-duration="3000" type="submit" value="Submit">
                 </form><br><br><br>
              </div>
         </section>
@@ -102,6 +103,11 @@
             <a id="sociallink" href="https://www.instagram.com/mangiatuttisf/"><img src="Instagram.png"></a><br> <img id="menumade" src="MENU.png"> made</p>
             
         </footer>
+        
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
         
     </body>
         
