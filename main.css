@@ -599,7 +599,7 @@ img {
         text-decoration: none;
         border: .5px solid #600;
         box-shadow: 2px 4px 8px #700;
-        margin: 0px 5px;
+        margin: 0px 2px;
         font-size: 15px;
     }
     
@@ -816,7 +816,7 @@ img {
     footer p{
         width: 100%;
         font-weight: bolder;
-        font-size: 15px;
+        font-size: 14px;
     }
 }
 
