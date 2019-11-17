@@ -696,7 +696,7 @@ img {
     }
     
     #reservations h3{
-        margin: 15px;
+        margin: 15px 0;
     }
     
     #location h2{
@@ -809,7 +809,6 @@ img {
 
     footer{
         text-align: center;
-        font-size: 20PX;
         color: #800; 
     }
     
