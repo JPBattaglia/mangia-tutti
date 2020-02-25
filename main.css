@@ -3,6 +3,19 @@ html{
     overflow:auto;
 }
 
+#happyhour{
+    margin:auto;
+    width: 380px;
+    font-weight: bold;
+    text-align: center;
+    color:antiquewhite;
+    border: 3px #cc3399 solid;
+    background: repeating-linear-gradient(to top, #330011, #660033, #e6004c 100%);
+    border-radius: 40px;
+    padding: 3px 0;
+    
+}
+
 .animated {
         background-color: #ffdead;
         background-position: left top;
@@ -570,6 +583,14 @@ img {
 @media (max-width: 600px){
     nav{
         display: none;
+    }
+    
+    #happyhour{
+        width: 200px;
+        padding: 5px 10px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        border: 2px #800 solid;
     }
     
     .menus{
