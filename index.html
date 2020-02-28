@@ -23,6 +23,27 @@
     
     <body id="animated-example" class="animated fadeOut">
         
+        <script language="javascript"><!--
+
+function PopUp() {
+
+	var PopWidth = "390";
+	var PopHeight = "450";
+	var PosTop = "200";
+	var PosLeft = "300";
+
+	var SettingS = "toolbar=no,menubar=no,scrollbars=no,resizable=yes,width=" + PopWidth + ",height=" + PopHeight + ",top=" + PosTop + ",left=" + PosLeft;
+	var PopUp = open("","box",SettingS);
+	PopUp.document.clear();
+	PopUp.document.write('<a href="https://imgbb.com/"><img src="https://i.ibb.co/c8ddfMv/Happy-Hour-Wed.png" alt="Happy-Hour-Wed" border="0"></a>');
+}
+
+window.onload=PopUp;
+
+// -->
+</script>
+
+        
 
         <script>
             window.addEventListener("beforeunload", function () {
