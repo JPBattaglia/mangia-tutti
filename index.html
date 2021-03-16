@@ -1,150 +1,153 @@
 <!DOCTYPE html>
 
 <html>
-    <head>  
-        <meta property="og:title" content="Mangia Tutti Ristorante" />
-        <meta property="og:image:type" content="image/png" />
-        <meta property="og:image:width" content="400" />
-        <meta property="og:image:height" content="300" />
-        <meta property="og:image" content="https://i.ibb.co/S33jms1/MTLogo.png" />
-        <meta property="og:image:secure_url" content="https://i.ibb.co/S33jms1/MTLogo.png" />
-        <meta name="keywords" content="Mangia Tutti, Ristorante, Raul Hernandez, Italian Food">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Mangia Tutti - Home</title>
-        <meta name="description" content="Traditional Italian Dining in SF FiDi">
-        <link rel="stylesheet" href="main.css">
-        <link rel="shortcut icon" type="image/png" href="MTLogo.png">
-        <link href="https://fonts.googleapis.com/css?family=Federant|Akronim|Kaushan+Script|Fugaz+One|Noto+Serif|Orbitron|Kanit|Quintessential" rel="stylesheet"> 
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    </head>
-    
-    <body id="animated-example" class="animated fadeOut">
-        
-        
-        <script>
-            window.addEventListener("beforeunload", function () {
-            document.body.classList.add("animate-out");
-            });
-        </script>
-        
-        <div id="mySidenav" class="sidenav">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#9747;</a>
-          <a style= "text-decoration: underline" href="index.html">Home</a>
-          <a href="menu.html">Menu</a>
-          <a href="contact.html">Contact</a>
-        </div>
 
-        <span style="float:right;margin-top: 15px;cursor:pointer" onclick="openNav()"><img data-aos="zoom-in-up" data-aos-anchor="top-bottom" data-aos-duration="3000" class=navicon style="width:38px; height:55px" src="MenuServBurger2.png">
+<head>
+    <meta property="og:title" content="Mangia Tutti Ristorante" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="400" />
+    <meta property="og:image:height" content="300" />
+    <meta property="og:image" content="https://i.ibb.co/S33jms1/MTLogo.png" />
+    <meta property="og:image:secure_url" content="https://i.ibb.co/S33jms1/MTLogo.png" />
+    <meta name="keywords" content="Mangia Tutti, Ristorante, Raul Hernandez, Italian Food">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mangia Tutti - Home</title>
+    <meta name="description" content="Traditional Italian Dining in SF FiDi">
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" type="image/png" href="MTLogo.png">
+    <link href="https://fonts.googleapis.com/css?family=Federant|Akronim|Kaushan+Script|Fugaz+One|Noto+Serif|Orbitron|Kanit|Quintessential" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body id="animated-example" class="animated fadeOut">
+
+
+    <script>
+        window.addEventListener("beforeunload", function() {
+            document.body.classList.add("animate-out");
+        });
+    </script>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#9747;</a>
+        <a style="text-decoration: underline" href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <span style="float:right;margin-top: 15px;cursor:pointer" onclick="openNav()"><img data-aos="zoom-in-up" data-aos-anchor="top-bottom" data-aos-duration="3000" class="navicon" style="width:38px; height:55px" src="MenuServBurger2.png">
         </span>
 
-        <script>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "150px";
+        }
 
-            function openNav() {
-                document.getElementById("mySidenav").style.width = "150px";
-                }
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
 
-            function closeNav() {
-                document.getElementById("mySidenav").style.width = "0";
-                }
-            
-        </script>
-        
-        <nav data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-anchor-placement="top-bottom">
-            <ul>
-                <li><a style="text-decoration: underline" href="index.html">HOME</a></li> 
-                <li><a href="menu.html">MENU</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
-            </ul> 
-        </nav>
-        
-        <div id="logo">
+    <nav data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-anchor-placement="top-bottom">
+        <ul>
+            <li><a style="text-decoration: underline" href="index.html">HOME</a></li>
+            <li><a href="menu.html">MENU</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
 
-            <img  data-aos="flip-right" data-aos-duration="2000" data-aos-delay="500" data-aos-anchor-placement="top-bottom" id="logomt" src="MTLogo.png">
-            <br>
-            <p data-aos="flip-right" data-aos-duration="2000" data-aos-delay="500" data-aos-anchor-placement="top-bottom">Classic Italian Cuisine Since 1997</p>          
+    <div id="logo">
+
+        <img data-aos="flip-right" data-aos-duration="2000" data-aos-delay="500" data-aos-anchor-placement="top-bottom" id="logomt" src="MTLogo.png">
+        <br>
+        <p data-aos="flip-right" data-aos-duration="2000" data-aos-delay="500" data-aos-anchor-placement="top-bottom">Classic Italian Cuisine Since 1997</p>
+    </div>
+
+    <div id="intro">
+
+        <h1 data-aos="fade-down" data-aos-duration="1000" data-aos-delay="300" data-aos-anchor-placement="top-bottom">Benvenuti a Mangia Tutti</h1>
+
+        <div data-aos="fade-down" data-aos-duration="1500" data-aos-anchor-placement="top-bottom" id="stage">
+            <img src="DiningRoom1.jpg">
+            <img src="Bruscheta.png">
+            <img src="Mare.png">
+            <img src="Tuna.png">
+            <img src="Tiramisu.png">
+            <img src="Carpacio.jpg">
+            <img src="Family.png">
+            <img src="Salad.jpg">
+            <img src="Vino.png">
+            <img src="Front.png">
         </div>
-        
-        <div id="intro"> 
-            
-            <h1 data-aos="fade-down" data-aos-duration="1000" data-aos-delay="300" data-aos-anchor-placement="top-bottom">Benvenuti a Mangia Tutti</h1>
-            
-            <div data-aos="fade-down" data-aos-duration="1500" data-aos-anchor-placement="top-bottom" id="stage">
-                <img src="DiningRoom1.jpg">
-                <img src="Bruscheta.png">
-                <img src="Mare.png">
-                <img src="Tuna.png">
-                <img src="Tiramisu.png">
-                <img src="Carpacio.jpg">
-                <img src="Family.png">
-                <img src="Salad.jpg">
-                <img src="Vino.png">
-                <img src="Front.png">
-            </div>
 
-            <br>
+        <br>
 
-            <script type="text/javascript">
+        <script type="text/javascript">
+            // Original JavaScript code by Chirp Internet: www.chirp.com.au
+            // Please acknowledge use of this code by including this header.
 
-              // Original JavaScript code by Chirp Internet: www.chirp.com.au
-              // Please acknowledge use of this code by including this header.
-
-              window.addEventListener("DOMContentLoaded", function(e) {
+            window.addEventListener("DOMContentLoaded", function(e) {
 
                 var stage = document.getElementById("stage");
-                var fadeComplete = function(e) { stage.appendChild(arr[0]); };
+                var fadeComplete = function(e) {
+                    stage.appendChild(arr[0]);
+                };
                 var arr = stage.getElementsByTagName("img");
-                for(var i=0; i < arr.length; i++) {
-                  arr[i].addEventListener("animationend", fadeComplete, false);
+                for (var i = 0; i < arr.length; i++) {
+                    arr[i].addEventListener("animationend", fadeComplete, false);
                 }
 
-              }, false);
+            }, false);
+        </script>
 
-            </script>
+    </div>
 
+    <div id="info">
+        <div id="location">
+            <h2>Location</h2>
+            <a href="https://www.google.com/maps/place/Mangia+Tutti+Ristorante/@37.7944547,-122.4059201,17z/data=!3m1!4b1!4m5!3m4!1s0x808581a2288e46a1:0xd6d7825dc8c60188!8m2!3d37.7944547!4d-122.4037314"><img data-aos="flip-right" data-aos-duration="3000" src="Map.png"></a>
+            <h3>635 Clay St <br> San Francisco, CA 94111 <br>Financial District</h3>
         </div>
-        
-            <div id="info">
-                <div id="location">
-                    <h2>Location</h2><a href="https://www.google.com/maps/place/Mangia+Tutti+Ristorante/@37.7944547,-122.4059201,17z/data=!3m1!4b1!4m5!3m4!1s0x808581a2288e46a1:0xd6d7825dc8c60188!8m2!3d37.7944547!4d-122.4037314"><img data-aos="flip-right" data-aos-duration="3000"  src="Map.png"></a>
-                    <h3>635 Clay St <br> San Francisco, CA 94111 <br>Financial District</h3>
-                </div>
 
-                <div id="reservations">
-                    <h2>Reservations</h2>
-                    <h3 data-aos="flip-right" data-aos-duration="2000"  data-aos-delay="500" data-aos-anchor-placement="top-bottom">
-                    <a id="reservation" href="https://www.yelp.com/reservations/mangia-tutti-ristorante-san-francisco?source=yelp_biz_mapbox">Book Table</a>
-                    <a id="reservation" href="https://www.doordash.com/store/mangia-tutti-ristorante-san-francisco-1349505/en-US">Order Now</a></h3>
-                    <h3 data-aos="slide-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" id="number"><a style="color:#080;text-decoration: none;cursor:pointer" href="tel:14157882088">(415) 788-2088</a></h3>
-                </div>
+        <div id="reservations">
+            <h2>Reservations</h2>
+            <h3 data-aos="flip-right" data-aos-duration="2000" data-aos-delay="500" data-aos-anchor-placement="top-bottom">
+                <a id="reservation" href="https://www.yelp.com/reservations/mangia-tutti-ristorante-san-francisco?source=yelp_biz_mapbox">Book Table</a>
+                <a id="reservation" href="https://www.doordash.com/store/mangia-tutti-ristorante-san-francisco-1349505/en-US">Order Now</a></h3>
+            <h3 data-aos="slide-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" id="number"><a style="color:#080;text-decoration: none;cursor:pointer" href="tel:14157882088">(415) 788-2088</a></h3>
+        </div>
 
-                <div id="hours">
-                    <h2>Hours</h2>
-                    <h3>Mon - Sat <br>Lunch 11:30 - 3:00<br>Dinner 5:30 - 10:00
-                    <br>Sunday 5:30 - 10:00</h3>
-                </div>
-            </div>
-        
-            <div id="happyhour" data-aos="zoom-in-up" data-aos-duration="2000" >
-                
-                <h3>Happy Hour <br> Wednesday 3 - 6</h3><h3>featuring bottomless <br>mimosas and sangria</h3>
-        
-            </div>
-        
-        <footer>
-            
-            <p><a id="sociallink" href="https://www.facebook.com/MangiaTuttiRistorante/"> <img src="FaceBook.png"></a>
-             &copy; Mangia Tutti Ristorante
+        <div id="hours">
+            <h2>Hours</h2>
+            <h3>Mon - Sat <br>Lunch 11:30 - 3:00<br>Dinner 5:30 - 10:00
+                <br>Sunday 5:30 - 10:00</h3>
+        </div>
+    </div>
+
+    <div id="happyhour" data-aos="zoom-in-up" data-aos-duration="2000">
+
+        <h3>Happy Hour <br> Wednesday 3 - 6</h3>
+        <h3>featuring bottomless <br>mimosas and sangria</h3>
+
+    </div>
+
+    <footer>
+
+        <p>
+            <a id="sociallink" href="https://www.facebook.com/MangiaTuttiRistorante/"> <img src="FaceBook.png"></a>
+            &copy; Mangia Tutti Ristorante
             <a id="sociallink" href="https://www.instagram.com/mangiatutti.sf/"><img src="Instagram.png"></a><br><img id="menumade" src="MENU.png"> made</p>
-            
-        </footer>
-        
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-        
-    </body>
-        
+
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
