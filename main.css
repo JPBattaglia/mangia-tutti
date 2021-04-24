@@ -9,9 +9,9 @@ html{
     font-weight: bold;
     text-align: center;
     color:antiquewhite;
-    border: 3px #cc3399 solid;
+    border: 4px #080 solid;
     background: repeating-linear-gradient(to top, #330011, #660033, #e6004c 100%);
-    border-radius: 40px;
+    border-radius: 50px;
     padding: 3px 0;
     
 }
@@ -358,7 +358,7 @@ img {
 /*=======================================*/
 
 @media (max-width: 849px) and (min-width: 601px){
-    nav, #rotate{
+    nav, #rotate, #happy{
         display: none;
     }
     
@@ -406,7 +406,12 @@ img {
     
     #sociallink img{
         width: 40px;
-        margin: 0px 20px
+        margin: 0px 20px;
+        filter: drop-shadow(2px 1px 1px #000);
+    }
+    
+    #sociallink:hover{
+        filter: drop-shadow(-2px -2px 2px #0f0);
     }
     
     #intro{
@@ -581,7 +586,7 @@ img {
 /*=======================================*/
 
 @media (max-width: 600px){
-    nav{
+    nav, #happy{
         display: none;
     }
     
@@ -590,7 +595,7 @@ img {
         padding: 5px 10px;
         border-radius: 20px;
         margin-bottom: 20px;
-        border: 2px #800 solid;
+        border: 3px #080 solid;
     }
     
     .menus{
@@ -844,7 +849,7 @@ img {
 /*=======================================*/
 
 @media (min-width: 850px){
-    .sidenav, .navicon, #rotate, .navicon1{
+    .sidenav, .navicon, #rotate, .navicon1, #happy{
         display: none;
     }
     
@@ -855,6 +860,11 @@ img {
     #sociallink img{
         width: 50px;
         margin: 0px 50px;
+        filter: drop-shadow(2px 1px 1px #800);
+    }
+    
+    #sociallink:hover{
+        filter: drop-shadow(-2px -2px 2px #0f0);
     }
     
     #logo{
