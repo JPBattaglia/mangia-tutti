@@ -102,7 +102,7 @@ body{
     border-radius: 30px;
     margin: 30px auto;
     background: url(MenuBackgrnd1.png) no-repeat center;
-    height: 450;
+    height: 450px;
     background-size: 850px;
 }
 
@@ -406,12 +406,7 @@ img {
     
     #sociallink img{
         width: 40px;
-        margin: 0px 20px;
-        filter: drop-shadow(2px 1px 1px #000);
-    }
-    
-    #sociallink:hover{
-        filter: drop-shadow(-2px -2px 2px #0f0);
+        margin: 0px 20px
     }
     
     #intro{
@@ -860,11 +855,6 @@ img {
     #sociallink img{
         width: 50px;
         margin: 0px 50px;
-        filter: drop-shadow(2px 1px 1px #800);
-    }
-    
-    #sociallink:hover{
-        filter: drop-shadow(-2px -2px 2px #0f0);
     }
     
     #logo{
