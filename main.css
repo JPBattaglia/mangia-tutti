@@ -369,12 +369,17 @@ img {
     width: 100%;
     text-decoration: none;
     transition: .5s;
+    font-family: 'Quinessential';
 }
 
 .menulinks h1{
     width: 100%;
-    margin: auto;
-    
+    margin: auto; 
+}
+
+.menulinks span{
+    color: #0a0;
+    font-size: 40px;
 }
 
 .menulinks a{
@@ -875,8 +880,17 @@ img {
     }
     
     .menulinks h2{
-        width: 200px;
-        font-size: 20px;
+        width: 150px;
+        font-size: 18px;
+    }
+    
+    .menulinks h1{
+        margin: -50px 0;
+        line-height: normal;
+    }
+    
+    .menulinks span{
+        font-size: 25px;
     }
 }
 
