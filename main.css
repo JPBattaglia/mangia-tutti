@@ -267,13 +267,13 @@ p{
 
 nav{
     text-align:center;
-    margin:auto;
+    margin: auto;
     margin-bottom: 20px;
 }
 
 nav li {
     font-family: 'Federant', serif;
-    font-size: 25px;
+    font-size: 22px;
     font-weight:bold;
     display:inline;
     text-align: center;
@@ -284,7 +284,7 @@ nav li {
 nav li a:link, nav li a:visited {
     color: #070;
     text-decoration: none;
-    margin: 5px 45px;
+    margin: 5px;
     text-shadow:
        1px 1px 0 white;  
 }
@@ -352,6 +352,38 @@ img {
     text-align: center;
     padding-bottom: 20px;
     color: #700;
+}
+
+.menulinks{
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    max-width: 1000px;
+}
+
+.menulinks h2{
+    color: #a00;
+    margin: auto;
+    width: 100%;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.menulinks h1{
+    width: 100%;
+    margin: auto;
+    
+}
+
+.menulinks a{
+    text-decoration: none;
+}
+
+.menulinks h2:hover{
+    color: #0a0;
+    transition: .5s;
 }
 
 /*=======================================*/
@@ -514,17 +546,17 @@ img {
     /* Style the submit button with a specific background color etc */
     input[type=submit] {
         color:#ffeecc;
-        padding: 10px 39px;
+        text-align: center;
+        padding: 8px 3px;
         background: repeating-linear-gradient(to top, #030, #070, lightgreen 100%);
-        width: 150px;
+        width: 130px;
         border-radius: 30px;
         font-family: 'Federant';
         font-size: 20px;
         text-decoration: none;
         border: .5px solid #66cc00;
         box-shadow: 
-            2px 8px 10px black,
-            -2px 8px 10px black;
+            -2px 8px 20px #030;
         -webkit-transition: background-color 1s ease-out;
         -moz-transition: background-color 1s ease-out;
         -o-transition: background-color 1s ease-out;
@@ -574,6 +606,10 @@ img {
     footer p{
         width: 100%;
         font-weight: bolder;
+    }
+    
+    .menulinks h2{
+        width: 300px;
     }
 }
 
@@ -796,8 +832,7 @@ img {
         text-decoration: none;
         border: .5px solid #66cc00;
         box-shadow: 
-        2px 8px 10px black,
-        -2px 8px 10px black;
+        -2px 8px 20px #040;
         -webkit-transition: background-color 1s ease-out;
         -moz-transition: background-color 1s ease-out;
         -o-transition: background-color 1s ease-out;
@@ -837,6 +872,11 @@ img {
         width: 100%;
         font-weight: bolder;
         font-size: 15px;
+    }
+    
+    .menulinks h2{
+        width: 200px;
+        font-size: 20px;
     }
 }
 
@@ -1006,17 +1046,16 @@ img {
         color:#ffeecc;
         letter-spacing: .3px;
         margin: 40px 0 75px;
-        padding: 10px 39px;
+        padding: 8px 3px;
         background: repeating-linear-gradient(to top, #030, #070, lightgreen 100%);
-        width: 150px;
+        width: 130px;
         border-radius: 30px;
         font-family: 'Federant';
         font-size: 20px;
         text-decoration: none;
         border: .5px solid #66cc00;
         box-shadow: 
-            2px 8px 10px black,
-            -2px 8px 10px black;
+            -2px 8px 20px #050;
         -webkit-transition: background-color 1s ease-out;
         -moz-transition: background-color 1s ease-out;
         -o-transition: background-color 1s ease-out;
@@ -1043,6 +1082,7 @@ img {
     /* Add a background color and some padding around the form */
     .container{
         background: url(Vines.png);
+        filter: drop-shadow(4px 4px 2px #990);
         background-size:100% 100%;
         background-repeat: no-repeat;
         width: 950px;
