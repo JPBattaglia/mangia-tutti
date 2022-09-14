@@ -430,6 +430,10 @@ img {
         text-align: center;
     }
     
+    #logo p{
+        width: 300px;
+    }
+    
     #hours{
         margin-top: 30px;
     }
