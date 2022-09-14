@@ -369,7 +369,7 @@ img {
     width: 100%;
     text-decoration: none;
     transition: .5s;
-    font-family: 'Quinessential';
+    font-family: serif;
 }
 
 .menulinks h1{
@@ -390,6 +390,7 @@ img {
     color: #0a0;
     transition: .5s;
 }
+
 
 /*=======================================*/
 /*=======================================*/
@@ -887,6 +888,7 @@ img {
     .menulinks h1{
         margin: -50px 0;
         line-height: normal;
+        font-size: 22px;
     }
     
     .menulinks span{
