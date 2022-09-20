@@ -122,8 +122,8 @@ body{
     text-decoration: none;
     border: .5px solid #deb887;
     box-shadow: 
-        2px 8px 10px black,
-        -2px 8px 10px black;
+        2px 8px 10px #613900,
+        -2px 8px 10px #613900;
     }
 
 #button3{
@@ -137,8 +137,8 @@ body{
     text-decoration: none;
     border: .5px solid #66cc00;
     box-shadow: 
-        2px 8px 10px black,
-        -2px 8px 10px black;
+        2px 8px 10px #040,
+        -2px 8px 10px #040;
     }
 
 #button4{
@@ -152,8 +152,8 @@ body{
     text-decoration: none;
     border: .5px solid #cc3399;
     box-shadow: 
-        2px 8px 10px black,
-        -2px 8px 10px black;
+        2px 4px 10px #600,
+        -2px 4px 10px #600;
     }
 
 h1{
@@ -652,6 +652,7 @@ img {
     }
     
     #rotate{
+        margin-top: 10px;
         width: 50px;
         float: left;
     }
@@ -892,7 +893,7 @@ img {
     .menulinks h1{
         margin: -50px 0;
         line-height: normal;
-        font-size: 22px;
+        font-size: 20px;
     }
     
     .menulinks span{
