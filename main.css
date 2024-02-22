@@ -3,6 +3,18 @@ html{
     overflow:auto;
 }
 
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("SITEUNDERMAINTENANCE.png");
+    background-size: 25%;
+    z-index: 9999999999;
+}
+
+
 #happyhour{
     margin:auto;
     width: 380px;
@@ -400,6 +412,10 @@ img {
         display: none;
     }
     
+    .overlay{
+        background-size: 33%;
+    }
+    
     .navicon{
         width: 40px;
         height: 40px;
@@ -629,6 +645,10 @@ img {
 @media (max-width: 600px){
     nav, #happy{
         display: none;
+    }
+    
+    .overlay{
+        background-size: 33%;
     }
     
     #happyhour{
@@ -907,6 +927,10 @@ img {
 @media (min-width: 850px){
     .sidenav, .navicon, #rotate, .navicon1, #happy{
         display: none;
+    }
+    
+    .overlay{
+        background-size: 33%;
     }
     
     nav li{
