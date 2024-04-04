@@ -86,6 +86,13 @@ body{
        1px 1px 0 white;
 }
 
+#button5:hover{
+    box-shadow: 2px 8px 10px #C7B40B;
+    color:#EDCC00;
+    text-shadow:
+       1px 1px 0 white;
+}
+
 #reservation:hover{
     box-shadow: 2px 8px 10px red;
     color:orangered;
@@ -166,6 +173,21 @@ body{
     box-shadow: 
         2px 4px 10px #600,
         -2px 4px 10px #600;
+    }
+
+#button5{
+    color:#ffeecc;
+    padding: 10px 30px;
+    background: repeating-linear-gradient(to top, #663300, #b36b00, #ffdead 100%);
+    width: 100px;
+    border-radius: 30px;
+    font-family: 'Federant';
+    font-size: 20px;
+    text-decoration: none;
+    border: .5px solid #deb887;
+    box-shadow: 
+        2px 8px 10px #613900,
+        -2px 8px 10px #613900;
     }
 
 h1{
@@ -922,6 +944,8 @@ img {
     .menulinks span{
         font-size: 25px;
     }
+    
+    
 }
 
 /*=======================================*/
