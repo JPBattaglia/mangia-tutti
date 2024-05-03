@@ -1,235 +1,235 @@
-html{
-    min-height:100%;
-    overflow:auto;
+*:focus {
+    outline: none;
+    background: none;
 }
 
-.overlay {
+html {
+    min-height: 100%;
+    overflow: auto;
+}
+
+.modalDialog {
+    margin: auto;
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url("SITEUNDERMAINTENANCE.png");
-    background-size: 25%;
-    z-index: 9999999999;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 600ms ease-in;
+    -moz-transition: opacity 600ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
 }
 
+.modalDialog:target {
+    opacity: 1;
+    pointer-events: auto;
+}
 
-#happyhour{
-    margin:auto;
-    width: 380px;
-    font-weight: bold;
+.close {
+    font-family: 'federant';
+    background: -webkit-radial-gradient( orange, red, #200);
+    max-width: 100%;
+    border: .5px hidden black;
+    color: white;
+    line-height: 29px;
+    position: fixed;
+    right: 305px;
     text-align: center;
-    color:antiquewhite;
-    border: 4px #080 solid;
-    background: repeating-linear-gradient(to top, #330011, #660033, #e6004c 100%);
-    border-radius: 50px;
-    padding: 3px 0;
-    
+    top: 40px;
+    width: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 25px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+    text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+.close:hover {
+    background: black;
+    max-width: 100%;
+    border: .5px solid red;
+    color: black;
+    text-shadow: 1px 1px 0 red, -1px -1px 0 red, 1px -1px 0 red, -1px 1px 0 red, 1px 1px 0 red;
+}
+
+.modalDialog>div {
+    color: white;
+    font-family: Federant;
+    line-height: 2;
+    font-size: 22px;
+    text-align: center;
+    width: 55%;
+    position: relative;
+    margin: 50px auto;
+    padding: 50px;
+    border-radius: 15px;
+    background: url(SkylineSLIDE.png);
+    background-size: 100% 120%;
+    border: #807e31 double 5px;
+    max-width: 100%;
+    max-height: calc(100vh - 6rem);
+    overflow-y: auto;
+    text-shadow: -2px -1px 0 black, 2px -1px 0 black, -2px 1px 0 black, 2px 1px 0 black;
 }
 
 .animated {
-        background-color: #ffdead;
-        background-position: left top;
-        margin-bottom:30px;
-        -webkit-animation-duration: 3s;animation-duration: 3s;
-        -webkit-animation-fill-mode: both;animation-fill-mode: both;
-        }
+    background: url(PINECRESTBACKROUND2.png);
+    background-size: 100% 100%;
+    background-position: left top;
+    margin-bottom: 30px;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
 
-        @-webkit-keyframes fadeOut {
-          100% {opacity: 1;}
-          0% {opacity: 0;}
-         }
+@-webkit-keyframes fadeOut {
+    100% {
+        opacity: 1;
+    }
+    0% {
+        opacity: 0;
+    }
+}
 
-        @keyframes fadeOut {
-          100% {opacity: 1;}
-          0% {opacity: 0;}
-         }
+@keyframes fadeOut {
+    100% {
+        opacity: 1;
+    }
+    0% {
+        opacity: 0;
+    }
+}
 
 .fadeOut {
-        -webkit-animation-name: fadeOut;
-        animation-name: fadeOut;
-         }
-
-body{
-    margin: 20px;
-    background:url(Stucco2MangrTutter.png);
-    background-size: 100% 100%;
-    background-attachment:fixed;
+    -webkit-animation-name: fadeOut;
+    animation-name: fadeOut;
 }
 
-#button1:hover{
-    box-shadow: 2px 8px 10px red;
-    color:orangered;
-    text-shadow:
-       1px 1px 0 white;
-}
-
-#button2:hover{
-    box-shadow: 2px 8px 10px #e38d1c;
-    color:tan;
-    text-shadow:
-       1px 1px 0 white;
-}
-
-#button3:hover{
-    box-shadow: 2px 8px 10px limegreen;
-    color: limegreen;
-    text-shadow:
-       1px 1px 0 white;
-}
-
-#button4:hover{
-    box-shadow: 2px 8px 10px #e60073;
-    color: #e60073;
-    text-shadow:
-       1px 1px 0 white;
-}
-
-#button5:hover{
-    box-shadow: 2px 8px 10px #C7B40B;
-    color:#EDCC00;
-    text-shadow:
-       1px 1px 0 white;
-}
-
-#reservation:hover{
-    box-shadow: 2px 8px 10px red;
-    color:orangered;
-    text-shadow:
-       1px 1px 0 white;
-    }
-
-#button1{
-        
-    color:#ffeecc;
-    padding: 10px 35px;
-    background: repeating-linear-gradient(to top, #500, #900, red 100%);
-    width: 100px;
-    border-radius: 30px;
-    font-family: 'Federant';
-    font-size: 20px;
+h4:hover {
+    box-shadow: 2px 8px 10px #b3b300;
+    color: #fff;
+    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     text-decoration: none;
-    border: .5px solid red;
-    box-shadow: 
-        2px 8px 10px black,
-        -2px 8px 10px black;
-    }
+    transition: 1s;
+}
 
-.menus  {
-    max-width: 850px;
-    border-radius: 30px;
-    margin: 30px auto;
-    background: url(MenuBackgrnd1.png) no-repeat center;
-    height: 450px;
-    background-size: 850px;
+h3:hover {
+    color: #0f0;
+    text-shadow: 2px 1px 0 #000;
+    transition: 1s;
 }
 
 #menumade {
     padding-top: 15px;
-    width: 65px;
+    width: 60px;
+    filter: drop-shadow(2px 2px 1px #010);
 }
 
-#button2{
-    color:#ffeecc;
-    padding: 10px 30px;
-    background: repeating-linear-gradient(to top, #663300, #b36b00, #ffdead 100%);
-    width: 100px;
-    border-radius: 30px;
-    font-family: 'Federant';
-    font-size: 20px;
-    text-decoration: none;
-    border: .5px solid #deb887;
-    box-shadow: 
-        2px 8px 10px #613900,
-        -2px 8px 10px #613900;
-    }
-
-#button3{
-    color:#ffeecc;
-    padding: 10px 30px;
-    background: repeating-linear-gradient(to top, #030, #070, lightgreen 100%);
-    width: 100px;
-    border-radius: 30px;
-    font-family: 'Federant';
-    font-size: 20px;
-    text-decoration: none;
-    border: .5px solid #66cc00;
-    box-shadow: 
-        2px 8px 10px #040,
-        -2px 8px 10px #040;
-    }
-
-#button4{
-    color:#ffeecc;
-    padding: 10px 38px;
-    background: repeating-linear-gradient(to top, #330011, #660033, #e6004c 100%);
-    width: 100px;
-    border-radius: 30px;
-    font-family: 'Federant';
-    font-size: 20px;
-    text-decoration: none;
-    border: .5px solid #cc3399;
-    box-shadow: 
-        2px 4px 10px #600,
-        -2px 4px 10px #600;
-    }
-
-#button5{
-    color:#ffeecc;
-    padding: 10px 30px;
-    background: repeating-linear-gradient(to top, #663300, #b36b00, #ffdead 100%);
-    width: 100px;
-    border-radius: 30px;
-    font-family: 'Federant';
-    font-size: 20px;
-    text-decoration: none;
-    border: .5px solid #deb887;
-    box-shadow: 
-        2px 8px 10px #613900,
-        -2px 8px 10px #613900;
-    }
-
-h1{
-    color: #080;
-    font-family: serif;
+h1 {
+    color: #fff;
+    background: #000;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    font-family: 'Kanit';
     text-align: center;
-    font-size: 25px;
     font-weight: bolder;
-    text-shadow:
-       2px 1px 0 white;
-    font-style: italic;
-    letter-spacing: -.5px;
-    margin: 20px auto 20px;
 }
 
-h2{
-    text-decoration: underline;
-    font-size: 28px;
-    font-family: 'federant', serif;
-    font-weight: bolder;
-    color: #800;
-}
-
-h3{
-    font-size: 22px;
+h2 {
+    font-size: 35px;
     font-family: 'Quintessential', serif;
-    font-weight: 600;
-}
-
-h4{
-    font-family: serif;
     font-weight: bolder;
-    width:300px;
+    color: #050;
+    text-align: center;
+    text-shadow: -1px -1px 0 #040, 2px 1px 0 #fff;
+    margin: 40px 0;
+}
+
+h3 {
+    font-size: 28px;
+    font-family: 'Quintessential', serif;
+    font-weight: bolder;
+    text-align: center;
+    width: 220px;
+    margin: 20px auto;
+    color: #253;
+    text-shadow: -1px -1px 0 #050, 2px 1px 0 #fff;
+    transition: 1s;
+}
+
+h4 {
+    position: absolute;
+    top: 50px;
+    left: 43%;
+    font-weight: bolder;
+    margin: 20px auto;
+    font-size: 18px;
+    color: #fff;
+    padding: 8px 10px;
+    background: repeating-linear-gradient(to top, #33331a, #808000, #cccc00 100%);
+    width: 180px;
+    border-radius: 30px;
+    font-family: 'federant';
+    text-decoration: none;
+    border: .5px solid #bbbb77;
+    box-shadow: 2px 4px 8px #000, -2px 4px 8px #000;
+    transition: 1s;
+}
+
+h5 {
+    font-family: Federant;
+    font-size: 26px;
+    line-height: 1.7;
+}
+
+h6 {
+    font-size: 18px;
+    margin: 0px auto;
+    width: 400px;
+    color: #253;
+    text-shadow: -1px -1px 0 #050, 2px 1px 0 #fff;
+}
+
+#mobilemenu h5{
+    width: 410px;
+    margin: auto;
+    color: darkolivegreen;
+}
+
+p {
+    color: #fff;
+    font-size: 17px;
+    width: 250px;
+    margin: auto;
+    font-family: serif;
+}
+
+#map {
+    width: 616px;
+    height: 318px;
+    margin: 50px auto;
+    border: 8px double #666633;
+    border-radius: 10px;
+}
+
+#about {
+    max-width: 75%;
     margin: auto;
 }
 
-p{
-    color: #a00;
-    font-size: 17px;
-    width:250px;
-    margin: auto;
-    font-family: serif;
+#about h2 {
+    color: ghostwhite;
+    text-shadow: 1px 1px 0 #253, -1px -1px 0 #253, 1px -1px 0 #253, -1px 1px 0 #253, 1px 1px 0 #253;
 }
 
 .sidenav {
@@ -239,46 +239,36 @@ p{
     z-index: 1;
     top: 0;
     right: 0;
-    background: url(SlideNavBGTrnsprnt.png);
+    background: url(SLIDENAV2.png);
     background-repeat: repeat;
-    background-size: 100% 103%;
+    background-size: 100% 100%;
     overflow-x: hidden;
     transition: .8s;
     padding-top: 150px;
-    font-family: 'federant';
+    font-family: 'Quintessential';
     font-weight: bold;
 }
 
 .sidenav a {
     padding: 45px 10px;
     font-size: 28px;
-    color: beige;
+    color: white;
     display: block;
     transition: 1s;
     max-width: 100%;
     text-align: center;
-    text-shadow:
-       1px 1px 0 red,
-      -1px -1px 0 #800,  
-       1px -1px 0 #800,
-      -1px 1px 0 #800,
-       1px 1px 0 #800;
+    text-shadow: 1px 1px 0 black, -1px -1px 0 #3a4, 1px -1px 0 #3a4, -1px 1px 0 #3a4, 1px 1px 0 #3a4;
     text-decoration: none;
 }
 
 .sidenav a:hover {
-    color: red;
-    text-shadow:
-       1px 1px 0 tan,
-      -1px -1px 0 white,  
-       1px -1px 0 white,
-      -1px 1px 0 white,
-       1px 1px 0 white;
+    color: #3b4;
+    text-shadow: 1px 1px 0 Black, -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
 }
 
 .sidenav .closebtn {
-    margin: 0px;
-    padding: 15px 20px 28px 22px;
+    margin: 0 40px;
+    padding: 40px 20px 28px 22px;
     position: absolute;
     top: 0px;
     right: 0px;
@@ -286,51 +276,66 @@ p{
     text-decoration: none;
 }
 
-.navicon {
-    width: 50px;
-    height: 80px;
+.sidenav .closebtn:hover {
+    background: none;
 }
 
-.navicon1 {
-    width: 30px;
-    height: 4px;
-    margin: 5px;
-    background: firebrick;
-}
-
-nav{
-    text-align:center;
-    margin: auto;
+nav {
+    margin: 22px auto;
     margin-bottom: 20px;
-}
-
-nav li {
-    font-family: 'Federant', serif;
-    font-size: 22px;
-    font-weight:bold;
-    display:inline;
+    width: 97.2%;
+    max-width: 1600px;
+    height: 135px;
+    background: #807e31;
+    border-bottom: 20px double #eeeedd;
     text-align: center;
-    margin-top: 20px; 
 }
 
-/* unvisited link */
-nav li a:link, nav li a:visited {
-    color: #070;
-    text-decoration: none;
-    margin: 5px;
-    text-shadow:
-       1px 1px 0 white;  
+nav img {
+    float: left;
 }
 
-/* mouse over link */
-nav li a:hover{
-    color:white;
-    text-shadow:
-       1px 1px 0 darkred,
-      -1px -1px 0 darkred,  
-       1px -1px 0 darkred,
-      -1px 1px 0 darkred,
-       1px 1px 0 darkred;
+nav p {
+    color: white;
+    font-family: 'Quintessential';
+    float: right;
+    margin-top: 30px;
+}
+
+#call {
+    width: 150px;
+    margin: auto;
+}
+
+#togo {
+    width: 180px;
+    margin: 35px 0;
+}
+
+.navicon {
+    float: right;
+    width: 53px;
+    height: 40px;
+    margin: 25px 50px;
+    z-index: 100;
+}
+
+.navicon:hover {
+    filter: drop-shadow(2px 2px 8px #C0CB54);
+}
+
+.logo {
+    width: 90px;
+    margin: 12px 0 12px 40px;
+    -webkit-transition: width 2s, height 2s, -webkit-transform 1.5s;
+    /* Safari */
+    transition: width 2s, height 2s, transform 1.5s;
+}
+
+.logo:hover {
+    -webkit-transform: rotate(360deg);
+    /* Safari */
+    transform: rotate(360deg);
 }
 
 img {
@@ -341,123 +346,141 @@ img {
     user-select: none;
 }
 
-  #stage{
-    position:absolute;
-    margin:auto;
-    max-width: 850px;
+#stage {
+    position: absolute;
+    margin: auto;
+    max-width: 1100px;
     z-index: -1;
-  }
+}
 
-  #stage img:nth-of-type(1) {
+#stage img:nth-of-type(1) {
     animation-name: fader;
     animation-delay: 3s;
     animation-duration: 2s;
     z-index: 20;
-  }
-  #stage img:nth-of-type(2) {
+}
+
+#stage img:nth-of-type(2) {
     z-index: 10;
-  }
-  #stage img:nth-of-type(n+3) {
+}
+
+#stage img:nth-of-type(n+3) {
     display: none;
-  }
+}
 
-  @keyframes fader {
-    from { opacity: 1.0; }
-    to   { opacity: 0.0; }
-  }
+@keyframes fader {
+    from {
+        opacity: 1.0;
+    }
+    to {
+        opacity: 0.0;
+    }
+}
 
-#intro{
-    max-width: 835px;
-    height: 475px;
+#intro {
+    max-width: 1050px;
+    height: 600px;
     margin: auto;
 }
 
-#intro img{
-    max-width: 835px;
-    height: 395px;
+#intro img {
+    width: 1050px;
+    height: 530px;
     margin: auto;
-    border: 3px solid firebrick;
-    border-radius: 20px;
-    position:absolute;
+    position: absolute;
 }
 
-#info{
+#info {
     text-align: center;
     padding-bottom: 20px;
     color: #700;
 }
 
-.menulinks{
+#mobilemenu {
+    max-width: 75%;
+    margin: 20px auto;
+}
+
+#mobilemenu img {
     display: flex;
-    width: 60%;
-    justify-content: center;
-    align-items: center;
-    margin: 50px auto;
-    max-width: 1000px;
-}
-
-.menulinks h2{
-    color: #a00;
+    max-width: 100%;
     margin: auto;
+    border: 5px double #666633;
+    border-radius: 4px;
+}
+
+#number {
+    width: 200px;
+    margin: auto;
+}
+
+#form{
+    border: 10px double #888844;
+    border-radius: 20px;
+    width: 50%;
+    margin: auto;
+}
+
+#form h2,
+#mobilemenu h2 {
+    font-size: 50px;
+}
+
+#preloader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #7a0;
+    padding-top: 25%;
+    font-family: 'federant' ;
+    background: #001600 url(Preloader1.gif) no-repeat center center;
+    background-size: 20%;
+    height: 100%;
     width: 100%;
-    text-decoration: none;
-    transition: .5s;
-    font-family: serif;
-}
-
-.menulinks h1{
-    width: 100%;
-    margin: auto; 
-}
-
-.menulinks span{
-    color: #0a0;
-    font-size: 40px;
-}
-
-.menulinks a{
-    text-decoration: none;
-}
-
-.menulinks h2:hover{
-    color: #0a0;
-    transition: .5s;
+    position: fixed;
+    z-index: 9999999999999999;
+    top: 0;
 }
 
 
 /*=======================================*/
+
+
 /*=======================================*/
 
-@media (max-width: 849px) and (min-width: 601px){
-    nav, #rotate, #happy{
+@media (max-width: 1000px) and (min-width: 701px) {
+    
+    .desktop{
         display: none;
     }
     
-    .overlay{
-        background-size: 33%;
+    #rotate {
+        display: none;
     }
     
-    .navicon{
-        width: 40px;
-        height: 40px;
-        margin: 30px 20px 0px 0px;
+    .sidenav .closebtn {
+        margin: 0 15px;
+        padding: 30px 27px 28px 22px;
     }
     
-    h1{
-        font-size: 32px;
-        transform: scale(1, 1.3);
-        padding: 10px;
+    .logo {
+        margin: 12px 0 0 12px;
+        max-width: 75px;
     }
     
-    p{
-        color: #a00;
-        font-size: 17px;
-        width:250px;
+    #togo {
+        margin: 20px 0;
+    }
+    
+    p {
+        color: #fff;
+        font-size: 15px;
+        width: 250px;
         margin: auto;
         font-family: serif;
     }
     
-    #logo{
+    #logo {
         font-size: 18px;
         color: #800;
         font-style: italic;
@@ -467,68 +490,65 @@ img {
         text-align: center;
     }
     
-    #logo p{
-        width: 300px;
-    }
-    
-    #logo img{
-        height: 150px;
-    }
-    
-    #hours{
-        margin-top: 30px;
-    }
-    
-    #reservations{
-        margin-top: 25px;
-    }
-    
-    #reservations h2{
-        margin-bottom: 30px;
-    }
-    
-    #sociallink img{
+    .sociallink img {
         width: 40px;
-        margin: 0px 20px
+        margin: 0px 20px;
+        filter: drop-shadow(2px 1px 1px #000);
     }
     
-    #intro{
+    .sociallink:hover {
+        filter: drop-shadow(1px 1px 3px #fff);
+    }
+    
+    #stage {
+        max-height: 200px;
+    }
+    
+    #intro {
         margin: auto;
-        height: 350px;
-        max-width: 565px;
+        height: 450px;
+        max-width: 700px;
     }
     
-    #intro h1{
-        font-size: 38px;
-        margin: 20px auto;
-        max-width:100%;
+    h1 {
+        font-size: 25px;
+        margin: 10px auto;
+        max-width: 100%;
+        padding: 0;
+        border: 8px double #775;
     }
     
-    #intro img{
-        margin: auto;
-        max-width: 565px;
-        height: 270px;
+    h4 {
+        font-size: 15px;
+        padding: 8px 10px;
+        width: 120px;
+        position: absolute;
+        top: 25px;
+        left: 43%;
+        border-radius: 20px;
     }
     
-    #mobilemenu img{
-        width: 100%;
+    h6{
+        margin: -40px auto 0;
+        font-size: 15px;
+        width: 315px;
     }
     
-    #mobilemenu{
-        max-width:850px;
-        margin: auto;
+    #intro img {
+        margin: 44px auto;
+        max-width: 700px;
+        max-height: 350px;
+        border: 8px double #775;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
     }
     
-    .menus{
+    .menus {
         margin: 5px;
     }
     
-    #location img{
-        width: 50px;
-    }
-    
-    #reservation{
-        color:#ffeecc;
+    #reservation {
+        color: #ffeecc;
         padding: 10px 25px;
         background: repeating-linear-gradient(to top, #500, #900, red 100%);
         width: 100px;
@@ -537,218 +557,305 @@ img {
         text-decoration: none;
         border: .5px solid #600;
         box-shadow: 2px 4px 8px #700;
-        margin: 5px;
-
+        margin: 5px 80px;
     }
     
-    textarea, input{
+    textarea,
+    input {
         font-family: 'federant', serif;
         color: red;
         text-align: center;
         font-size: 18px;
         font-weight: bolder;
         max-width: 500px;
-        background-color: antiquewhite;
+        background-color: #f5f5f0;
     }
     
-    #message{
+    #message {
         height: 200px;
+        background-color: #f5f5f0;
     }
-
-    select{
+    
+    select {
         font-family: 'federant', serif;
         color: #a00;
         text-align: center;
         font-size: 18px;
         font-weight: bolder;
+        padding: 10px 25px;
         max-width: 30%;
         box-sizing: border-box;
         background-color: antiquewhite;
     }
-
-    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    
+     ::placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
         color: #c00;
-        opacity: .5; /* Firefox */
+        opacity: .7;
+        /* Firefox */
     }
-
-    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    
+     :-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
         color: red;
     }
-
-    ::-ms-input-placeholder { /* Microsoft Edge */
+    
+     ::-ms-input-placeholder {
+        /* Microsoft Edge */
         color: red;
     }
-
+    
     /* Style inputs with type="text", select elements and textareas */
-    input[type=text], select, textarea, #myFile {
+    input[type=text],
+    select,
+    textarea {
+        background-color: #f5f5f0;
         margin: auto;
-        box-shadow: 2px 4px 10px #600;
+        box-shadow: 2px 4px 10px #111109;
         text-align: center;
-        width: 60%; /* Full width */
-        padding: 8px; /* Some padding */  
-        border: 1.5px solid #090; /* Gray border */
-        border-radius: 20px; /* Rounded borders */
-        box-sizing: border-box; /* Make sure that padding and width stays in place */
-        margin-top: 30px; /* Add a top margin */
-        margin-bottom: 30px; /* Bottom margin */
-        resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+        width: 65%;
+        /* Full width */
+        padding: 8px;
+        /* Some padding */
+        border: .5px solid #999966;
+        /* Gray border */
+        border-radius: 17px;
+        /* Rounded borders */
+        box-sizing: border-box;
+        /* Make sure that padding and width stays in place */
+        margin-top: 10px;
+        /* Add a top margin */
+        margin-bottom: 30px;
+        /* Bottom margin */
+        resize: vertical;
+        /* Allow the user to vertically resize the textarea (not horizontally) */
     }
-
     /* Style the submit button with a specific background color etc */
     input[type=submit] {
-        color:#ffeecc;
-        text-align: center;
-        padding: 8px 3px;
-        background: repeating-linear-gradient(to top, #030, #070, lightgreen 100%);
-        width: 130px;
+        color: #ffeecc;
+        padding: 10px 39px;
+        background: repeating-linear-gradient(to top, #33331a, #808000, #bfbf5a 100%);
+        width: 150px;
         border-radius: 30px;
         font-family: 'Federant';
         font-size: 20px;
         text-decoration: none;
-        border: .5px solid #66cc00;
-        box-shadow: 
-            -2px 8px 20px #030;
+        border: .5px solid #550;
+        box-shadow: 2px 8px 10px black, -2px 8px 10px black;
         -webkit-transition: background-color 1s ease-out;
         -moz-transition: background-color 1s ease-out;
         -o-transition: background-color 1s ease-out;
         transition: background-color 1s ease-out;
         margin-bottom: 50px;
     }
-
     /* When moving the mouse over the submit button, add a blue color */
     input[type=submit]:hover {
-        box-shadow: 2px 8px 10px limegreen;
+        box-shadow: 2px 8px 10px #220;
         color: antiquewhite;
-        text-shadow:
-        1px 1px 0 lime,
-        -1px -1px 0 green,  
-        1px -1px 0 green,
-        -1px 1px 0 green,
-        1px 1px 0 green;
+        text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
         cursor: pointer;
     }
     
-    #fname{
+    #fname {
         margin-top: 100px;
     }
-
+    
     /* Add a background color and some padding around the form */
-    .container{
+    .container {
         background: url(Vines.png);
-        background-size:100% 100%;
+        background-size: 100% 100%;
         background-repeat: no-repeat;
-        max-width: 95%;
         margin: auto;
     }
-
+    
     #form {
-        padding: 20px 0px 40px;
         text-align: center;
-        width: 100%;
+        width: 80%;
     }
     
-    .input_container {
-        border: 1px solid #e5e5e5;
-        border-radius: 10px;
-        padding: 5px 10px;
-        font-family: 'Helvetica', sans-serif;
-        transition: .5s;
+    #form h2{
+        margin-bottom: -50px;
+        color: #770;
+        text-shadow: 0px 2px 0px #000;
     }
-
-    label:hover {
-        background-color: #eee;
-    }
-
-    footer{
+    
+    footer {
         margin-top: 50px;
         text-align: center;
         font-size: 20PX;
-        color: #800; 
+        color: #fff;
     }
     
-    footer p{
+    footer p {
         width: 100%;
         font-weight: bolder;
+        color: #fff;
     }
     
-    .menulinks h2{
-        width: 300px;
-    }
-}
-
-/*=======================================*/
-/*=======================================*/
-
-@media (max-width: 600px){
-    nav, #happy{
-        display: none;
+    .logo {
+        width: 75px;
+        margin: 10px 0 0 20px;
     }
     
-    .overlay{
-        background-size: 33%;
-    }
-    
-    #happyhour{
-        width: 200px;
-        padding: 5px 10px;
-        border-radius: 20px;
-        margin-bottom: 20px;
-        border: 3px #080 solid;
-    }
-    
-    .menus{
-        max-width: 280px;
-        margin: 0 auto 50px;
-        border-radius: 20px;
+    nav {
+        margin-top: 17px;
+        width: 97%;
+        height: 110px;
+        border-bottom: 15px double #eeeedd;
     }
     
     .navicon {
-        width: 30px;
-        height: 25px;
-        margin: 25px 0px 0px 0px;
+        margin: 20px 30px 0px 0px;
+        width: 48px;
+        height: 36px;
     }
     
-    #rotate{
-        margin-top: 10px;
+    #stage {
+        margin: 6px 0px;
+    }
+    
+    #mobilemenu {
+        max-width: 90%;
+    }
+    
+    .modalDialog>div {
+        width: 80%;
+    }
+    
+    .close {
+        right: 70px;
+        top: 40px;
+    }
+    
+    #menumade{
+        width: 55px;
+    }
+}
+
+
+/*=======================================*/
+
+
+/*=======================================*/
+
+@media (max-width: 700px) {
+    
+    .desktop{
+        display: none;
+    }
+    
+    .animated {
+        background: url(PINECRESTBACKROUND2.png);
+        background-size: cover;
+        background-position: center top;
+    }
+    
+    .logo {
+        max-width: 65px;
+        margin: 0;
+    }
+    
+    nav {
+        margin: 11px auto;
+        padding: 10px 12px;
+        height: 95px;
+        border-bottom: 10px double #eeeedd;
+    }
+    
+    h4 {
+        font-size: 12px;
+        padding: 3px 8px;
+        width: 100px;
+        margin: -10px auto;
+        border-radius: 11px;
+    }
+    
+    #mobilemenu h5{
+        width: 280px;
+        color: olive;
+        font-size: 18px;
+        text-shadow: .5px .5px 0 black, -.5px -.5px 0 black, .5px -.5px 0 black, -.5px .5px 0 black, .5px .5px 0 black;
+    }
+    
+    h6{
+        margin: auto;
+        font-size: 12px;
+        width: 250px;
+    }
+    
+    .sidenav .closebtn {
+        margin: 0px;
+        font-size: 32px;
+        padding: 28px 30px 28px 22px;
+    }
+    #mobilemenu {
+        max-width: 90%;
+        padding-top: 35px;
+    }
+    .navicon {
+        width: 35px;
+        height: 28px;
+        margin: -25px 5px 0px 0px;
+    }
+    #rotate {
         width: 50px;
         float: left;
     }
-    
-    #reservation{
-        color:#ffeecc;
-        padding: 7px 14px;
+    #number {
+        width: 150px;
+        margin: auto;
+    }
+    #reservation {
+        color: #ffeecc;
+        padding: 7px 18px;
         background: repeating-linear-gradient(to top, #500, #900, red 100%);
-        width: 100px;
+        width: 150px;
         border-radius: 30px;
         font-family: 'federant';
         text-decoration: none;
         border: .5px solid #600;
         box-shadow: 2px 4px 8px #700;
-        margin: 0px 2px;
+        margin: 0px 100px;
         font-size: 15px;
     }
-    
-    #intro{
+    #map {
+        width: 286px;
+        height: 108px;
+        margin: 50px auto;
+        border: 4px double #666633;
+        border-radius: 12px;
+    }
+    iframe {
+        width: 278px;
+        height: 100px;
+        border-radius: 8px;
+    }
+    #stage {
+        margin: 2px 0px;
+    }
+    #intro {
         margin: 10px auto;
-        height: 190px;
+        height: 200px;
         max-width: 315px;
     }
-    
-    #intro h1{
-        font-size: 20px;
+    h1 {
+        line-height: 22px;
+        letter-spacing: -.5px;
+        font-size: 15px;
         margin: 25px auto 0px;
-        max-width: 100%;
+        border-top-right-radius: 17px;
+        border-top-left-radius: 17px;
+        border: 3px double #775;
     }
-    
-    #intro img{
-        margin: 10px auto;
+    #intro img {
+        margin: 25px auto 0;
         max-width: 315px;
-        height: 150px;
-        border-radius: 10px;
-        border: 2px solid #a00;
+        height: 180px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        border: 3px double #775;
     }
-    
-    #logo{
+    #logo {
         font-size: 12px;
         color: #800;
         font-style: italic;
@@ -757,301 +864,362 @@ img {
         margin: auto;
         text-align: center;
     }
-    
-    #logo img{
+    #logo img {
         max-width: 185px;
         margin: auto;
     }
-    
-    #mobilemenu img{
-        width: 100%;
-    }
-    
-    #mobilemenu{
-        max-width:850px;
-        margin: 0 auto 50px;
-    }
-    
     #menumade {
-        padding-top: 15px;
-        width: 55px;
+        padding: 10px 0;
+        width: 50px;
     }
-
-    
-    h2{
+    #map {
+        margin: 30px auto 40px;
+    }
+    h2 {
         font-size: 24px;
     }
-    
-    h3{
-        font-size: 20px;
+    #mobilemenu h2 {
+        font-size: 28px;
+        margin: 5px auto 15px;
     }
-    
-    p{
-        color:#a00;
+    h3 {
+        font-size: 20px;
+        width: 150px;
+    }
+    h5 {
+        font-size: 22px;
+    }
+    p {
+        color: #fff;
         font-size: 12px;
         width: 225px;
         margin: auto;
         font-family: serif;
         text-align: center;
     }
-    
-    #sociallink img{
-        width: 20px;
-        margin: 0px 5px;
+    .sociallink img {
+        width: 25px;
+        margin: 0px 10px;
+        filter: drop-shadow(2px 1px 1px #000);
     }
     
-    #hours{
+    .sociallink:hover {
+        filter: drop-shadow(1px 1px 1px #fff);
+    }
+    
+    #hours {
         margin-top: 10px;
     }
-    
-    #hours h2{
+    #hours h2 {
         margin-bottom: 5px;
     }
-    
-    #hours h3{
+    #hours h3 {
         margin-top: 0px;
     }
-    
-    #location img{
+    #location img {
         width: 30px;
     }
-    
-    #reservations h2{
+    #reservations h2 {
         margin: 15px;
     }
-    
-    #reservations h3{
-        margin: 15px 0;
+    #reservations h3 {
+        margin: 15px;
     }
-    
-    #location h2{
+    #location h2 {
         margin: 10px;
     }
-    
-    #location h3{
+    #location h3 {
         margin: 0px;
     }
     
-    select{
+    #form{
+        margin-top: 25px;
+        width: 85%;
+    }
+    #form h2 {
+        font-size: 30px;
+        margin-top: 30px;
+        color: #770;
+        text-shadow: 0px 2px 0px #000;
+    }
+    select {
         padding: 0px;
         font-family: 'federant', serif;
-        color:red;
+        color: red;
         text-align: center;
         font-size: 18px;
-        font-weight:bolder;
+        font-weight: bolder;
         max-width: 50%;
         box-sizing: border-box;
         background-color: antiquewhite;
     }
-
-    #message{
+    #message {
         height: 100px;
-        margin-bottom: 35px;
     }
-    
-    #fname{
+    #fname {
         margin-top: 5px;
     }
-    
-    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+     ::placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
         color: #b00;
-        opacity: .5; /* Firefox */
+        opacity: .5;
+        /* Firefox */
         font-family: 'federant';
         font-size: 17px;
     }
-
-    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+     :-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
         color: red;
     }
-
-    ::-ms-input-placeholder { /* Microsoft Edge */
+     ::-ms-input-placeholder {
+        /* Microsoft Edge */
         color: red;
     }
-
     /* Style inputs with type="text", select elements and textareas */
-    input[type=text], select, textarea {
-        background-color: antiquewhite;
+    input[type=text],
+    select,
+    textarea {
+        background-color: #f5f5f0;
         margin: auto;
         font-family: 'federant';
         font-size: 18px;
         color: #b00;
-        box-shadow: 2px 4px 10px #600;
+        box-shadow: 2px 4px 10px #111109;
         text-align: center;
         width: 80%;
-        padding: 5px; /* Some padding */  
-        border: 1.5px solid #080; /* Gray border */
-        border-radius: 20px; /* Rounded borders */
-        box-sizing: border-box; /* Make sure that padding and width stays in place */
-        margin-top: 25px; /* Add a top margin */
-        margin-bottom: 10px; /* Bottom margin */
-        resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+        padding: 5px;
+        /* Some padding */
+        border: 1.5px solid #999966;
+        /* Gray border */
+        border-radius: 15px;
+        /* Rounded borders */
+        box-sizing: border-box;
+        /* Make sure that padding and width stays in place */
+        margin-top: 25px;
+        /* Add a top margin */
+        margin-bottom: 10px;
+        /* Bottom margin */
+        resize: vertical;
+        /* Allow the user to vertically resize the textarea (not horizontally) */
     }
-
-     /* Style the submit button with a specific background color etc */
+    /* Style the submit button with a specific background color etc */
     input[type=submit] {
-        text-align: center;
-        color:#ffeecc;
-        margin: 0;
-        padding: 7px 20px;
-        background: repeating-linear-gradient(to top, #030, #070, lightgreen 100%);
-        width: 100px;
+        color: #ffeecc;
+        margin: 20px 0;
+        padding: 5px;
+        background: repeating-linear-gradient(to top, #33331a, #808000, #bfbf5a 100%);
+        width: 120px;
         border-radius: 30px;
         font-family: 'Federant';
-        font-size: 17px;
+        font-size: 20px;
         text-decoration: none;
-        border: .5px solid #66cc00;
-        box-shadow: 
-        -2px 8px 20px #040;
+        border: .5px solid #aa0;
+        box-shadow: 2px 8px 10px black, -2px 8px 10px black;
         -webkit-transition: background-color 1s ease-out;
         -moz-transition: background-color 1s ease-out;
         -o-transition: background-color 1s ease-out;
         transition: background-color 1s ease-out;
     }
-
     /* When moving the mouse over the submit button, add a blue color */
     input[type=submit]:hover {
-        box-shadow: 2px 8px 10px limegreen;
+        box-shadow: 2px 8px 10px #220;
         color: antiquewhite;
-        text-shadow:
-        1px 1px 0 lime,
-        -1px -1px 0 green,  
-        1px -1px 0 green,
-        -1px 1px 0 green,
-        1px 1px 0 green;
-        cursor: pointer;  
+        text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+        cursor: pointer;
     }
-
     /* Add a background color and some padding around the form */
-    .container{
+    .container {
         width: 850px;
         max-width: 98%;
         margin: auto;
     }
-
     #form {
         text-align: center;
+        margin-bottom: 20px;
     }
-
-    footer{
+    footer {
+        float: left;
+        width: 100%;
         text-align: center;
-        color: #800; 
+        font-size: 20PX;
+        color: #fff;
     }
-    
-    footer p{
+    footer p {
         width: 100%;
         font-weight: bolder;
         font-size: 15px;
+        color: #fff;
     }
-    
-    .menulinks h2{
-        width: 150px;
+    .modalDialog>div {
+        font-family: federant;
         font-size: 18px;
+        text-align: center;
+        width: 90%;
+        position: relative;
+        margin: 15px auto;
+        padding: 30px 20px;
+        border-radius: 15px;
+        background: url(SkylineSLIDE.png);
+        background-size: 100% 130%;
+        border: #807e31 double 3px;
+        max-width: 100%;
+        max-height: calc(100vh - 6rem);
+        overflow-y: auto;
     }
-    
-    .menulinks h1{
-        margin: -50px 0;
-        line-height: normal;
-        font-size: 20px;
+    .close {
+        right: 5px;
+        top: 5px;
     }
-    
-    .menulinks span{
-        font-size: 25px;
-    }
-    
 }
 
-/*=======================================*/
+
 /*=======================================*/
 
-@media (min-width: 850px){
-    .sidenav, .navicon, #rotate, .navicon1, #happy{
+
+/*=======================================*/
+
+@media (max-width: 1200px) and (min-width: 1000px) {
+    #stage {
+        max-width: 1000px;
+        margin: 18px 0;
+    }
+    h1 {
+        border: 10px double #775;
+        font-size: 40px;
+    }
+    #stage img {
+        max-width: 900px;
+        height: 600px;
+        margin: auto;
+    }
+    #intro {
+        max-width: 900px;
+        height: 600px;
+    }
+    #intro img {
+        margin: 50px auto;
+        border: 8px double #775;
+        height: 500px;
+    }
+    .close {
+        right: 240px;
+    }
+}
+
+
+/*=======================================*/
+
+
+/*=======================================*/
+
+@media (min-width: 1001px) {
+    
+    .navicon, #togo{
         display: none;
     }
     
-    .overlay{
-        background-size: 33%;
+    .desknav{
+        z-index: 999999;
+        float: right;
+        font-size: 20px;
+        margin: 40px;
+    }
+
+    
+    .desktop a{
+        text-transform: uppercase;
+        transition: 1s;
+        margin: 20px;
+        text-decoration: none;
+        padding: 8px 30px;
+        border: 1px solid #c99300;
+        border-radius: 15px; 
+        color: white;
+        transition: 1s;
+        border: 1px solid #595900;
+        text-shadow: 1px 1px 0px black, -1px -1px 0px black, -1px 1px 0px black, 1px -1px 0px black;
+        background: repeating-linear-gradient(to top, #33331a, #808000, #bfbf5a 100%);
+    }
+
+    .desktop a:hover{
+        box-shadow: 2px 6px 10px #b3b300,
+            -2px -6px 10px #b3b300;
+        color: #eded72;
+        text-decoration: none;
+        transition: 1s;
+        background: #222;
+        border: 1px solid #fff;
     }
     
-    nav li{
-        margin: 0px 36px;
+    #rotate,
+    .navicon1 {
+        display: none;
     }
-    
-    #sociallink img{
+    .sociallink img {
         width: 50px;
         margin: 0px 50px;
+        filter: drop-shadow(2px 1px 1px #000);
+    }
+    .sociallink:hover {
+        filter: drop-shadow(-2px -1px 3px #fff);
+    }
+    #intro img {
+        margin: 56px auto;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        border: 8px double #775;
     }
     
-    #logo{
-        font-size: 20px;
-        color: #800;
-        font-style: italic;
-        font-weight: bolder;
-        margin: auto;
-        text-align: center;
+    #info {
+        display: flex;
     }
     
-    #logo img{
-        max-width: 350px;
-        height: 175px;
+    #stage {
+        margin: 18px 0;
     }
     
-    #info{
-        display:flex;
-        max-width:1000px;
-        margin: auto;
-    }
-    
-    #hours{
+    #hours {
         flex: 3;
         text-align: center;
         max-width: 250px;
         margin: 0 auto;
     }
-    
-    #reservations{
+    #reservations {
         flex: 2;
         text-align: center;
         max-width: 350px;
         margin: 0px auto;
     }
-    
-    #reservations h2{
+    #reservations h2 {
         margin-bottom: 30px;
     }
-    
-    #location img{
+    #location img {
         width: 30px;
     }
-    
-    #location{ 
+    #location {
         text-align: center;
         flex: 1;
         max-width: 250px;
         margin: 0 auto;
     }
-    
-    #location h3{
-        margin: 5px;   
+    #location h3 {
+        margin: 5px;
     }
-    
-    #number{
+    #number {
         margin-top: 30px;
     }
-    
-    h1{
-        font-size: 45px;
-        transform: scale(1, 1.2);
+    h1 {
+        font-size: 38px;
+        border: 10px double #775;
     }
-    
-    p{
+    p {
         font-size: 22px;
-        width:375px;
+        width: 375px;
         margin: auto;
         font-family: serif;
     }
-    
-    #reservation{
-        color:#ffeecc;
+    #reservation {
+        color: #ffeecc;
         padding: 10px 20px;
         background: repeating-linear-gradient(to top, #500, #900, red 100%);
         width: 100px;
@@ -1061,133 +1229,133 @@ img {
         text-decoration: none;
         border: .5px solid #800;
         box-shadow: 2px 4px 8px #700;
-        margin: 5px;
     }
-    
-    #mobilemenu img{
-        width: 850px;
+    #mobilemenu {
+        max-width: 75%;
+        margin: 20px auto;
     }
-    
-    #mobilemenu{
-        width:850px;
-        margin: auto;
-    }
-    
-    textarea, input{
+    textarea,
+    input {
         font-family: 'federant', serif;
-        color:red;
+        color: red;
         text-align: center;
         font-size: 18px;
-        font-weight:bolder;
+        font-weight: bolder;
         max-width: 450px;
-        background-color: antiquewhite;
+        background-color: #f5f5f0;
     }
-
-    select{
+    select {
         font-family: 'federant', serif;
         color: #b00;
         text-align: center;
         font-size: 18px;
-        font-weight:bolder;
+        font-weight: bolder;
         max-width: 30%;
         box-sizing: border-box;
         background-color: antiquewhite;
     }
-
-    #message{
-        height: 200px;
-    }
     
-    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    #message {
+        height: 200px;
+        background-color: #f5f5f0;
+    }
+     ::placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
         color: #b00;
-        opacity: .5; /* Firefox */
+        opacity: .5;
+        background-color: #f5f5f0;
+        /* Firefox */
     }
-
-    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+     :-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
         color: red;
     }
-
-    ::-ms-input-placeholder { /* Microsoft Edge */
+     ::-ms-input-placeholder {
+        /* Microsoft Edge */
         color: red;
     }
-
     /* Style inputs with type="text", select elements and textareas */
-    input[type=text], select, textarea {
+    input[type=text],
+    select,
+    textarea {
+        background-color: #f5f5f0;
         margin: auto;
         text-align: center;
-        box-shadow: 2px 4px 10px #600;
-        width: 90%; /* Full width */
-        padding: 10px; /* Some padding */  
-        border: 1.5px solid #090; /* Gray border */
-        border-radius: 20px; /* Rounded borders */
-        box-sizing: border-box; /* Make sure that padding and width stays in place */
-        margin-top: 50px; /* Add a top margin */
-        margin-bottom: 30px; /* Bottom margin */
-        resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+        box-shadow: 2px 4px 10px #111109;
+        width: 90%;
+        /* Full width */
+        padding: 8px;
+        /* Some padding */
+        border: .5px solid #999966;
+        /* Gray border */
+        border-radius: 17px;
+        /* Rounded borders */
+        box-sizing: border-box;
+        /* Make sure that padding and width stays in place */
+        margin-top: 30px;
+        /* Add a top margin */
+        margin-bottom: 30px;
+        /* Bottom margin */
+        resize: vertical;
+        /* Allow the user to vertically resize the textarea (not horizontally) */
     }
-
-     /* Style the submit button with a specific background color etc */
+    /* Style the submit button with a specific background color etc */
     input[type=submit] {
-        color:#ffeecc;
+        color: #ffeecc;
         letter-spacing: .3px;
         margin: 40px 0 75px;
-        padding: 8px 3px;
-        background: repeating-linear-gradient(to top, #030, #070, lightgreen 100%);
-        width: 130px;
+        padding: 10px 39px;
+        background: repeating-linear-gradient(to top, #33331a, #808000, #bfbf5a 100%);
+        width: 150px;
         border-radius: 30px;
         font-family: 'Federant';
         font-size: 20px;
         text-decoration: none;
-        border: .5px solid #66cc00;
-        box-shadow: 
-            -2px 8px 20px #050;
+        border: .5px solid #550;
+        box-shadow: 2px 8px 10px black, -2px 8px 10px black;
         -webkit-transition: background-color 1s ease-out;
         -moz-transition: background-color 1s ease-out;
         -o-transition: background-color 1s ease-out;
         transition: background-color 1s ease-out;
     }
-
     /* When moving the mouse over the submit button, add a blue color */
     input[type=submit]:hover {
-        box-shadow: 2px 8px 10px limegreen;
+        box-shadow: 2px 8px 10px #220;
         color: antiquewhite;
-        text-shadow:
-        1px 1px 0 lime,
-        -1px -1px 0 green,  
-        1px -1px 0 green,
-        -1px 1px 0 green,
-        1px 1px 0 green;
+        text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
         cursor: pointer;
     }
-    
-    #fname{
-        margin-top: 130px;
+    #fname {
+        margin-top: 100px;
     }
-
     /* Add a background color and some padding around the form */
-    .container{
+    .container {
         background: url(Vines.png);
-        filter: drop-shadow(4px 4px 2px #990);
-        background-size:100% 100%;
+        background-size: 100% 100%;
         background-repeat: no-repeat;
         width: 950px;
         max-width: 100%;
         margin: auto;
     }
-
     #form {
-        padding:20px 0px 40px;
         text-align: center;
-    }
-
-    footer{
-        margin-top: 100px;
-        text-align: center;
-        color: #800;
     }
     
-    footer p{
+    #form h2{
+        margin-bottom: -50px;
+        color: #770;
+        text-shadow: 0px 2px 0px #000;
+    }
+    
+    footer {
+        margin-top: 100px;
+        text-align: center;
+        font-size: 20PX;
+        color: #fff;
+    }
+    footer p {
         width: 100%;
         font-weight: bolder;
+        color: #fff;
     }
 }
