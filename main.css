@@ -343,8 +343,8 @@ img {
 
   #stage{
     position:absolute;
-    margin:auto;
-    max-width: 850px;
+    margin: auto;
+    width: 1000px;
     z-index: -1;
   }
 
@@ -367,14 +367,14 @@ img {
   }
 
 #intro{
-    max-width: 835px;
-    height: 475px;
+    width: 1000px;
+    height: 550px;
     margin: auto;
 }
 
 #intro img{
-    max-width: 835px;
-    height: 395px;
+    width: 1000px;
+    height: 450px;
     margin: auto;
     border: 3px solid firebrick;
     border-radius: 20px;
@@ -1195,5 +1195,22 @@ img {
     footer p{
         width: 100%;
         font-weight: bolder;
+    }
+}
+
+/*=======================================*/
+/*=======================================*/
+
+@media (min-width: 850px) and (max-width: 1050px){
+    
+    #stage, #intro img{
+        width: 750px;
+        height: 350px;
+    }
+    
+    #intro{
+        width: 750px;
+        height: 450px;
+        margin: auto;
     }
 }
