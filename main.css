@@ -477,19 +477,25 @@ img {
     
     #hours{
         margin-top: 30px;
+        max-width: 50%;
+        margin: auto;
     }
     
     #reservations{
         margin-top: 25px;
+        max-width: 50%;
+        margin: auto;
     }
     
     #reservations h2{
         margin-bottom: 30px;
+        max-width: 50%;
+        margin: auto;
     }
     
     #sociallink img{
         width: 40px;
-        margin: 0px 20px
+        margin: 0px 20px;
     }
     
     #intro{
@@ -501,7 +507,8 @@ img {
     #intro h1{
         font-size: 38px;
         margin: 20px auto;
-        max-width:100%;
+        max-width: 75%;
+        margin: auto;
     }
     
     #intro img{
@@ -691,7 +698,7 @@ img {
     }
     
     .overlay{
-        background-size: 33%;
+        background-size: 50%;
     }
     
     #happyhour{
@@ -737,6 +744,10 @@ img {
     #intro{
         margin: 10px auto;
         height: 190px;
+        max-width: 315px;
+    }
+    
+    #stage{
         max-width: 315px;
     }
     
@@ -986,6 +997,7 @@ img {
         width: 50px;
         margin: 0px 50px;
     }
+    
     
     #logo{
         font-size: 20px;
