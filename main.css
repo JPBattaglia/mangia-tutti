@@ -395,7 +395,7 @@ img {
     width: 60%;
     justify-content: center;
     align-items: center;
-    margin: 50px auto;
+    margin: 0px auto 50px;
     max-width: 1000px;
 }
 
