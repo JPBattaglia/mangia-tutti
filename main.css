@@ -374,7 +374,7 @@ img {
 
 #intro img{
     width: 100%;
-    height: 700px;
+    height: 600px;
     margin:  auto;
     position: absolute;
     border-bottom: 3px solid #c00;
@@ -1038,7 +1038,7 @@ img {
     #info{
         display:flex;
         max-width:1000px;
-        margin: -150px auto;
+        margin: -245px auto;
     }
     
     #hours{
@@ -1221,7 +1221,7 @@ img {
     }
 
     footer{
-        margin-top: 200px;
+        margin-top: 275px;
         text-align: center;
         color: #800;
     }
