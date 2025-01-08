@@ -779,6 +779,7 @@ img {
     }
     
     #info{
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -786,9 +787,8 @@ img {
     }
     
     #intro h1{
-        width: 300px;
-        font-size: 40px;
-        margin: -10px auto 0px;
+        font-size: 32px;
+        margin: 130px auto 0px;
         max-width: 100%;
         text-shadow: -2px 1px 1px white, 2px 1px 1px white, -2px -1px 1px white, 2px -1px 1px white;
     }
