@@ -92,10 +92,12 @@ body{
 }
 
 #reservation:hover{
-    box-shadow: 2px 8px 10px red;
-    color:orangered;
+    box-shadow: 2px 8px 25px white;
+    color:red;
+    transition: 500ms;
+    border: 1.5px solid red;
     text-shadow:
-       1px 1px 0 white;
+       1px 1px 1px white, 1px -1px 1px white, -1px 1px 1px white, -1px -1px 1px white;
     }
 
 #button1{
@@ -568,7 +570,7 @@ img {
         border: .5px solid #600;
         box-shadow: 2px 4px 8px #700;
         margin: 5px;
-
+        transition: 500ms;
     }
     
     #number{
@@ -770,6 +772,7 @@ img {
         box-shadow: 2px 4px 8px #700;
         margin: 0px 2px;
         font-size: 15px;
+        transition: 500ms;
     }
     
     #intro {
@@ -1144,6 +1147,7 @@ img {
         border: .5px solid #800;
         box-shadow: 2px 4px 8px #700;
         margin: 5px;
+        transition: 500ms;
     }
     
     #mobilemenu img{
