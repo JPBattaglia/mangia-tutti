@@ -1,153 +1,106 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-    <meta property="og:title" content="Mangia Tutti Ristorante" />
-    <meta property="og:image:type" content="image/png" />
-    <meta property="og:image:width" content="400" />
-    <meta property="og:image:height" content="300" />
-    <meta property="og:image" content="https://i.ibb.co/9vCBVTJ/Logo-Original.png" />
-    <meta property="og:image:secure_url" content="https://i.ibb.co/9vCBVTJ/Logo-Original.png" />
-    <meta name="keywords" content="Mangia Tutti, Ristorante, Raul Hernandez, Italian Food">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Mangia Tutti - Home</title>
-    <meta name="description" content="Traditional Italian Dining in SF FiDi">
-    <link rel="stylesheet" href="main.css">
-    <link rel="shortcut icon" type="image/png" href="MTLogo.png">
-    <link href="https://fonts.googleapis.com/css?family=Federant|Akronim|Kaushan+Script|Fugaz+One|Noto+Serif|Orbitron|Kanit|Quintessential" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mangia Tutti</title>
+  <meta name="description" content="Official website notice for Mangia Tutti.">
+  <meta name="robots" content="noindex, nofollow">
+  <style>
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      min-height: 100%;
+      font-family: Georgia, "Times New Roman", serif;
+      background:
+        radial-gradient(circle at top, rgba(176,141,87,.18), transparent 35%),
+        linear-gradient(180deg, #171a20 0%, #0f1115 100%);
+      color: #f5f1e8;
+    }
+
+    body {  
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 24px;
+    }
+
+    .card {
+      margin-top: 75px;
+      justify-content: center;
+      align-items: center;  
+      width: min(820px, 100%);
+      background: rgba(255,255,255,.08);
+      border: 3px solid rgba(0, 136, 47, 0.739);
+      border-radius: 20px;
+      box-shadow: 0 20px 60px rgba(0,0,0,.35);
+      padding: 56px 32px 42px;
+      text-align: center;
+    }
+
+    .logo-row {
+      display: grid;
+      place-items: center;
+      margin-bottom: 36px;
+    }
+
+    .logo-shell {
+      width: min(430px, 80vw);
+      display: grid;
+      place-items: center;
+    }
+
+    .logo {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      filter: drop-shadow(1px 0px 1px white);
+    }
+
+    h1 {
+      margin: 0 0 16px;
+      font-size: clamp(34px, 6vw, 56px);
+      line-height: 1.05;
+      font-weight: 600;
+    }
+
+    .divider {
+      width: 72px;
+      height: 2px;
+      margin: 0 auto 24px;
+      background: linear-gradient(90deg, transparent, #b08d57, transparent);
+    }
+
+    p {
+      margin: 0 auto 16px;
+      max-width: 560px;
+      font-size: 18px;
+      line-height: 1.7;
+      color: #c9c2b5;
+    }
+
+    .small {
+      margin-top: 28px;
+      font-size: 14px;
+      color: rgba(245,241,232,.62);
+    }
+  </style>
 </head>
-
-<body id="animated-example" class="animated fadeOut">
-
-    <script>
-        window.addEventListener("beforeunload", function() {
-            document.body.classList.add("animate-out");
-        });
-    </script>
-
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#9747;</a>
-        <a style="text-decoration: underline" href="index.html">Home</a>
-        <a href="menu.html">Menu</a>
-        <a href="contact.html">Contact</a>
+<body>
+  <main class="card">
+    <div class="logo-row">
+      <div class="logo-shell">
+        <img class="logo" src="MangiaTutterLogoRedo Transparent.png" alt="Mangia Tutti logo">
+      </div>
     </div>
 
-    <span style="float:right;margin-top: 5px;cursor:pointer" onclick="openNav()"><div ><img data-aos="fade-up" data-aos-duration="3000" class="navicon" src="MenuLeft1.png"></div></span>
+    <h1>Mangia Tutti</h1>
+    <div class="divider"></div>
 
-    <script>
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "150px";
-        }
-
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-        }
-    </script>
-        
-    <nav data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-anchor-placement="top-bottom">
-        <ul>
-            <li><a style="border-bottom: 5px double #fff;" href="index.html">HOME</a></li>
-            <li><a href="menu.html">MENU</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-        </ul>
-    </nav>
-
-    <div id="logo">
-
-        <img data-aos="flip-right" data-aos-duration="2000" data-aos-delay="500" data-aos-anchor-placement="top-bottom" id="logomt" src="MTLogo.png">
-        <br>
-        <p data-aos="flip-right" data-aos-duration="2000" data-aos-delay="500" data-aos-anchor-placement="top-bottom">Classic Italian Cuisine Since 1997</p>
-        
-    </div>
-
-
-    <div id="intro">
-
-        <div data-aos="fade-down" data-aos-duration="1500" data-aos-anchor-placement="top-bottom" id="stage">
-            <img src="DiningRoom1.jpg">
-            <img src="Bruscheta.png">
-            <img src="Mare.png">
-            <img src="Tuna.png">
-            <img src="Tiramisu.png">
-            <img src="Rav.jpg">
-            <img src="Carpacio.jpg">
-            <img src="Salad.jpg">
-            <img src="Vino.png">
-        </div>
-        
-        <br><br><br>
-        
-        <h1 data-aos="fade-down" data-aos-duration="1000" data-aos-delay="300" data-aos-anchor-placement="top-bottom">Benvenuti a Mangia Tutti</h1>
-
-        <br>
-
-        <script type="text/javascript">
-            window.addEventListener("DOMContentLoaded", function(e) {
-
-                var stage = document.getElementById("stage");
-                var fadeComplete = function(e) {
-                    stage.appendChild(arr[0]);
-                };
-                var arr = stage.getElementsByTagName("img");
-                for (var i = 0; i < arr.length; i++) {
-                    arr[i].addEventListener("animationend", fadeComplete, false);
-                }
-
-            }, false);
-        </script>
-
-    </div>
-
-    <div id="info">
-        <div id="location">
-            <h2>Location</h2>
-            <a href="https://www.google.com/maps/place/Mangia+Tutti+Ristorante/@37.7944547,-122.4059201,17z/data=!3m1!4b1!4m5!3m4!1s0x808581a2288e46a1:0xd6d7825dc8c60188!8m2!3d37.7944547!4d-122.4037314"><img data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" src="Map1.png"></a>
-            <h3>635 Clay St <br> San Francisco, CA 94111 <br>Financial District</h3>
-        </div>
-
-        <div id="reservations">
-            <h2>Reservations</h2>
-            <h3 data-aos="flip-right" data-aos-duration="2000" data-aos-delay="500" data-aos-anchor-placement="top-bottom">
-                <a id="reservation" href="https://tableagent.com/san-francisco/mangia-tutti/">Book Table</a>
-                <!-- <a id="reservation" href="https://food.google.com/chooseprovider?restaurantId=/m/04fjpk5&g2lbs=AGgkzMwxvlPhNzPsKwOzi-uSJQJOcxbMkenDTFL-IjWi3iUkS-kz2lRgI19fGK57wyQwE56DNyfEDnosvWgjz0GQAHwaRDHRwA%3D%3D&hl=en-US&gl=us&cs=1&ssta=1&fo_m=MfohQo559jFvMWwP9igWZeWQMczq7voErUdXMWvkddHzV46uMT_RFPQ05bfKMQVr5-7IofUJMU_hT8vrWuwRMUv3d8yCO4PgMUOzJVpjPL1YMfaXTPp5KXh-&fo_s=OA,AH&orderType=1&ius=true&sei=Cb8VPdUZv8G-EVGvu5Ypd3cm&utm_campaign&utm_source=search">Order Now</a> --></h3>
-            <h3 data-aos="slide-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" id="number"><a style="color:#080;text-decoration: none;cursor:pointer" href="tel:14157882088">(415) 788-2088</a></h3>
-        </div>
-
-        <div id="hours">
-            <h2>Hours</h2>
-            <h3>Mon - Sat <br>Lunch 11:30 - 3:00<br>Dinner 5:30 - 10:00
-                <br>Sunday 5:30 - 10:00</h3>
-        </div>
-    </div>
-
-
-    <footer>
-
-        <p>
-            <a id="sociallink" href="https://www.facebook.com/MangiaTuttiRistorante/"> <img src="FaceBook.png"></a>
-            
-            &copy; Mangia Tutti Ristorante
-            
-            <a id="sociallink" href="https://www.instagram.com/mangiatutti.sf/"><img src="Instagram.png"></a><br>
-            
-            <a href="https://menu-made.com/"><img id="menumade" src="MENU.png"></a>
-        
-        </p>
-
-    </footer>
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-    
-   <!-- <div data-aos="zoom-out-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" style="opacity: .85;" class="overlay"></div> --> 
-
+    <p style="color:rgb(245, 83, 83); font-weight: bolder;">This business is no longer operating.</p>
+    <p>This website is being maintained temporarily only as a closure notice while the domain remains active.</p>
+    <p class="small">Thank you to everyone who supported Mangia Tutti over the years.</p>
+  </main>
 </body>
-
 </html>
