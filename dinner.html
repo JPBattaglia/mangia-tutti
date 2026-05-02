@@ -1,94 +1,111 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mangia Tutti - CLOSED</title>
+  <meta name="description" content="Official website notice for Mangia Tutti.">
+  <meta name="robots" content="noindex, nofollow">
+  <style>
+    * { box-sizing: border-box; }
 
-<html>
-    <head>
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">    
-        <meta property="og:title" content="Batt Bros" />
-        <meta property="og:image:type" content="image/png" />
-        <meta property="og:image:width" content="400" />
-        <meta property="og:image:height" content="300" />
-        <meta property="og:image" content="https://i.ibb.co/9vCBVTJ/Logo-Original.png" />
-        <meta property="og:image:secure_url" content="https://i.ibb.co/9vCBVTJ/Logo-Original.png" />
-        <meta name="keywords" content="Mangia Tutti, Ristorante, Raul Hernandez, Italian Food">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Mangia Tutti - Dinner</title>
-        <meta name="description" content="Traditional Italian Dining in SF FiDi">
-        <link rel="stylesheet" href="main.css">
-        <link rel="shortcut icon" type="image/png" href="MTLogo.png">
-        <link href="https://fonts.googleapis.com/css?family=Federant|Akronim|Kaushan+Script|Fugaz+One|Righteous|Orbitron|Kanit|Quintessential" rel="stylesheet"> 
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
-    
-    <body id="animated-example" class="animated fadeOut">
-        
+    html, body {
+      margin: 0;
+      min-height: 100%;
+      font-family: Georgia, "Times New Roman", serif;
+      background:
+        radial-gradient(circle at top, rgba(176,141,87,.18), transparent 35%),
+        linear-gradient(180deg, #171a20 0%, #0f1115 100%);
+      color: #f5f1e8;
+    }
 
-        <script>
-            window.addEventListener("beforeunload", function () {
-            document.body.classList.add("animate-out");
-            });
-        </script>
-        
-        <div id="mySidenav" class="sidenav">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#9747;</a>
-          <a style= "text-decoration: underline" href="index.html">Home</a>
-          <a href="menu.html">Menu</a>
-          <a href="contact.html">Contact</a>
-        </div>
+    body {  
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 24px;
+    }
 
-        <span style="float:right;margin-top: 5px;cursor:pointer" onclick="openNav()"><div ><img class=navicon src="MenuLeft1.png"></div></span>
-        
-        <img id="rotate" src="Landscape.gif">
+    .card {
+      margin-top: 65px;
+      justify-content: center;
+      align-items: center;  
+      width: min(820px, 100%);
+      background: rgba(255,255,255,.08);
+      border: 3px solid rgba(0, 136, 47, 0.739);
+      border-radius: 20px;
+      box-shadow: 0 20px 60px rgba(0,0,0,.35);
+      padding: 56px 32px 42px;
+      text-align: center;
+    }
 
-        <script>
+    .logo-row {
+      display: grid;
+      place-items: center;
+      margin-bottom: 36px;
+    }
 
-            function openNav() {
-                document.getElementById("mySidenav").style.width = "150px";
-                }
+    .logo-shell {
+      width: min(430px, 80vw);
+      display: grid;
+      place-items: center;
+    }
 
-            function closeNav() {
-                document.getElementById("mySidenav").style.width = "0";
-                }
-            
-        </script>
-        
-        <nav>
-            <ul>
-                <li><a href="index.html">HOME</a></li> 
-                <li><a style="text-decoration: underline" href="menu.html">MENU</a></li>
-                <li><a href="contact.html">CONTACT</a></li> 
-            </ul> 
-        </nav>
-        
-        <div id="logo">
-            
-            <img src="MTLogo.png"><br>
-            <p>Classic Italian Cuisine Since 1997</p><br>
+    .logo {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      filter: drop-shadow(2px 2px 1px rgb(255, 225, 0));
+    }
 
-        </div>
-        
-        <div class="menulinks"><br><a href="dessert.html"><h2><span>&#171;&nbsp;</span>Dessert</h2></a><h1>Dinner Menu</h1><a href="lunch.html"><h2>Lunch<span>&nbsp;&#187;</span></h2></a><br></div>
-                
-        <div id="mobilemenu">
-        
-            <img src="MTDinnerTop22.png"><img src="MTDinnerMid22.png"><img src="DinnerBottom.png">
-        
-        </div>
-                
-         <footer>
+    h1 {
+      margin:0;
+      font-size: 40px;
+      line-height: 1.05;
+      font-weight: 600;
+    }
 
-        <p>
-            <a id="sociallink" href="https://www.facebook.com/MangiaTuttiRistorante/"> <img src="FaceBook.png"></a>
-            
-            &copy; Mangia Tutti Ristorante
-            
-            <a id="sociallink" href="https://www.instagram.com/mangiatutti.sf/"><img src="Instagram.png"></a><br>
-            
-            <a href="https://menu-made.com/"><img id="menumade" src="MENU.png"> </a>
-        
-        </p>
+    .divider {
+      width: 72px;
+      height: 2px;
+      margin: 28px auto 12px;
+      background: linear-gradient(90deg, transparent, #b08d57, transparent);
+    }
 
-    </footer>
-        
-    </body>
+    p {
+      margin: 0 auto 16px;
+      max-width: 560px;
+      font-size: 18px;
+      line-height: 1.7;
+      color: #c9c2b5;
+    }
+
+    .tall-text {
+      display: inline-block;
+      transform: scaleY(2); /* Makes text 2x taller */
+    }
+
+    .small {
+      margin-top: 28px;
+      font-size: 14px;
+      color: rgb(255, 225, 0);
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="logo-row">
+      <div class="logo-shell">
+        <img class="logo" src="MangiaTutterLogoRedo Transparent.png" alt="Mangia Tutti logo">
+      </div>
+    </div>
+
+    <h1 class="tall-text" style="letter-spacing: 1px;font-style: oblique;font-stretch: ultra-expanded;">Shut Down</h1>
+    <div class="divider"></div>
+
+    <p style="color:rgb(245, 83, 83); font-weight: bolder;">This business is no longer operating.</p>
+    <p>This website is being maintained temporarily only as a closure notice while the domain remains active.</p>
+    <p class="small">Thank you to everyone who supported Mangia Tutti over the years.</p>
+  </main>
+</body>
+</html>
