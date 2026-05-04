@@ -23,11 +23,12 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      min-height: 100vh;
       padding: 24px;
     }
 
     .card {
-      margin-top: 65px;
+      margin-top: 0;
       justify-content: center;
       align-items: center;  
       width: min(820px, 100%);
@@ -89,6 +90,43 @@
       margin-top: 28px;
       font-size: 14px;
       color: rgb(255, 225, 0);
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 16px;
+      }
+
+      .card {
+        width: 100%;
+        margin-top: 0;
+        padding: 42px 18px 34px;
+      }
+
+      .logo-row {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 28px;
+      }
+
+      .logo-shell {
+        width: 100%;
+        max-width: 560px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+      }
+
+      .logo {
+        display: block;
+        width: min(88vw, 560px);
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+      }
     }
   </style>
 </head>
